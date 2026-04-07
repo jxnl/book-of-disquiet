@@ -1,0 +1,8 @@
+[project]
+name = "book-of-d"
+version = "0.1.0"
+description = "Astro reader and Desktop-PDF import workflow for The Book of Disquiet"
+requires-python = ">=3.12"
+dependencies = [
+    "pymupdf>=1.27.2",
+]

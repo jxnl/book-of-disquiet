@@ -1,0 +1,7 @@
+.astro/
+dist/
+node_modules/
+output/
+.venv/
+.DS_Store
+book-of-d-826eb20.zip

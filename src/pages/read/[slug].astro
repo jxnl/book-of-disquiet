@@ -1,0 +1,127 @@
+---
+import BookLayout from "@/layouts/BookLayout.astro"
+import { getChapter, getChapterSlugs } from "@/lib/book"
+
+export function getStaticPaths() {
+  return getChapterSlugs().map((slug) => ({
+    params: { slug },
+  }))
+}
+
+const slugs = getChapterSlugs()
+const slug = Astro.params.slug as string
+const chapter = getChapter(slug)
+const canonicalIndex = slugs.indexOf(slug)
+const prevSlug = slugs[(canonicalIndex - 1 + slugs.length) % slugs.length]
+const nextSlug = slugs[(canonicalIndex + 1) % slugs.length]
+const showTitle = !/^Fragment \d+$/.test(chapter.title)
+---
+
+<BookLayout title={`${chapter.title} | The Book of Disquiet`}>
+  <main
+    class="mx-auto min-h-screen max-w-7xl bg-white px-5 sm:px-8"
+    data-reader-slug={slug}
+  >
+    <a
+      id="prev-link"
+      href={`/read/${prevSlug}/`}
+      class="fixed inset-y-0 left-0 z-10 w-8 cursor-w-resize sm:w-[14vw]"
+      aria-label="Previous fragment"
+    >
+      <span class="sr-only">Previous fragment</span>
+    </a>
+    <a
+      id="next-link"
+      href={`/read/${nextSlug}/`}
+      class="fixed inset-y-0 right-0 z-10 w-8 cursor-e-resize sm:w-[14vw]"
+      aria-label="Next fragment"
+    >
+      <span class="sr-only">Next fragment</span>
+    </a>
+
+    <article class="book-measure mx-auto w-full pt-16 pb-14 sm:pt-24">
+      <div>
+        <p class="mb-7 text-left font-book text-[0.98rem] font-semibold leading-none tracking-[0.01em] text-ink">
+          {chapter.chapterLabel}
+        </p>
+        {
+          showTitle && (
+            <h1 class="mb-10 text-center font-book text-[1.15rem] italic leading-[1.25] tracking-[0.01em] text-ink sm:text-[1.2rem]">
+              {chapter.title}
+            </h1>
+          )
+        }
+        <div
+          class="book-page font-book text-[1.08rem] text-ink sm:text-[1.12rem]"
+          set:html={chapter.bodyHtml}
+        />
+      </div>
+    </article>
+
+    <div
+      id="highlight-tooltip"
+      class="highlight-tooltip"
+      role="toolbar"
+      aria-label="Selected text actions"
+    >
+      <button
+        id="save-highlight"
+        type="button"
+        class="highlight-tooltip-action"
+        aria-label="Save highlight"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M6 3h12v18l-6-4-6 4Z" />
+        </svg>
+      </button>
+      <button
+        id="search-selection"
+        type="button"
+        class="highlight-tooltip-action"
+        aria-label="Search selected text"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <circle cx="11" cy="11" r="7" />
+          <path d="m21 21-4.3-4.3" />
+        </svg>
+      </button>
+    </div>
+
+    <form
+      id="search-form"
+      class="group fixed bottom-6 left-5 z-20 w-24 sm:left-8"
+      autocomplete="off"
+    >
+      <label class="sr-only" for="search-query">Search fragments</label>
+      <input
+        id="search-query"
+        name="q"
+        type="search"
+        value={Astro.url.searchParams.get("q") || ""}
+        placeholder="search"
+        class="w-full border-0 bg-transparent px-0 py-0 font-book text-[1rem] italic tracking-[0.01em] text-ink opacity-10 outline-none transition-opacity duration-500 placeholder:text-fog focus:opacity-100 group-hover:opacity-100"
+      />
+    </form>
+
+  </main>
+
+  <script>
+    import { setupReaderPage } from "../../scripts/book-ui"
+
+    setupReaderPage()
+  </script>
+</BookLayout>

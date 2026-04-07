@@ -1,0 +1,17 @@
+---
+title: "Fragment 54"
+chapter_label: "54"
+source_pdf: "Book of Disquiet, The - Fernando Pessoa.pdf"
+source_pages: "137-139"
+fragment_number: "54"
+---
+
+In my dreams I’ve sometimes tried to be the unique and imposing individual that the Romantics envisaged in themselves, and I always end up laughing out loud at the very idea. The ultimate man exists in the dreams of all ordinary men, and Romanticism is merely the turning inside out of the empire we normally carry around inside us. Nearly all men dream, deep down, of their own mighty imperialism: the subjection of all men, the surrender of all women, the adoration of all peoples and – for the noblest dreamers – of all eras. Few men devoted, like me, to dreaming are lucid enough to laugh at the aesthetic possibility of dreaming of themselves in this way.
+
+The gravest accusation against Romanticism has still not been made: that it plays out the inner truth of human nature. Its excesses, its absurdities and its ability to seduce and move hearts all come from its being the outer representation of what’s deepest in the soul – a concrete, visible representation that would even be possible, if human possibility depended on something besides Fate.
+
+Even I, who laugh at these seductions that play on the mind, very often catch myself thinking how nice it would be to be famous, how pleasant to be doted on, how colourful to be triumphant! But I’m unable to envision myself in these lofty roles without a hearty snicker from the other I that’s always near by, like a downtown street. See myself famous? What I see is a famous bookkeeper. Feel myself raised to the thrones of renown? It happens in the office on the Rua dos Douradores, and my colleagues ruin the scene. Hear myself cheered by swarming crowds? The cheering reaches me in my rented room on the fourth floor and collides with the shabby furniture and the banality that humiliates me from the kitchen to my dreams. I didn’t even have castles in Spain, like the Spanish grandees of all illusions. My castles were made of old, grubby playing cards from an incomplete deck that could never be used to play anything; they didn’t even fall but had to be knocked down by the impatient hand of the old maid, who wanted to put back the tablecloth that had been pulled to one side, because the hour for tea had struck like a curse from Fate. But even this vision is flawed, for I have neither the house in the country nor the elderly aunts, at whose table I might sip a relaxing cup of tea at the end of an evening with the family. My dream even failed in its metaphors and depictions. My empire didn’t even happen among the old playing cards. My march of triumph didn’t get as far as a teapot or an old cat. I’ll die as I’ve lived, amid all the junk on the outskirts, sold by weight among the postscripts of the broken.
+
+May I at least carry, to the boundless possibility contained in the abyss of everything, the glory of my disillusion like that of a great dream, and the splendour of not believing like a banner of defeat: a banner in feeble hands, but still and all a banner, dragged through mud and the blood of the weak but raised high for who knows what reason – whether in defiance, or as a challenge, or in mere desperation – as we vanish into quicksand. No one knows for what reason, because no one knows anything, and the sand swallows those with banners as it swallows those without. And the sand covers everything: my life, my prose, my eternity.
+
+I carry my awareness of defeat like a banner of victory.

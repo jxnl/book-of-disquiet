@@ -1,0 +1,15 @@
+---
+title: "Fragment 25"
+chapter_label: "25"
+source_pdf: "Book of Disquiet, The - Fernando Pessoa.pdf"
+source_pages: "88-89"
+fragment_number: "25"
+---
+
+It’s a hopelessly bad lithograph. I stare at it without knowing if I see it. It’s one among others in the shop window – in the middle of the window under the steps.
+
+She holds Spring against her breast and stares at me with sad eyes. Her smile shines, because the paper’s glossy, and her cheeks are red. The sky behind her is the colour of light blue cloth. She has a sculpted, almost tiny mouth, and above its postcard expression her eyes keep staring at me with an enormous sorrow. The arm holding the flowers reminds me of someone else’s. Her dress or blouse has a low neck that reveals one shoulder. Her eyes are genuinely sad: they stare at me from the depth of the lithographic reality with a truth of some sort. She came with Spring. Her eyes are large, but that’s not what makes them sad. I tear myself from the window with violent steps. I cross the street and turn around with impotent indignation. She still holds the Spring she was given, and her eyes are sad like all the things in life I’ve missed out on. Seen from a distance, the lithograph turns out to be more colourful. The figure’s hair is tied at the top by a pinker than pink ribbon; I hadn’t noticed. In human eyes, even in lithographic ones, there’s something terrible: the inevitable warning of consciousness, the silent shout that there’s a soul there. With a huge effort I pull out of the sleep in which I was steeped, and like a dog I shake off the drops of dark fog. Oblivious to my departure, as if bidding farewell to something else, those sad eyes of the whole of life – of this metaphysical lithograph that we observe from a distance – stare at me as if I knew something of God. The print, which has a calendar at the bottom, is framed above and below by two flatly curved, badly painted black strips. Within these upper and lower limits, above 1929 and an outmoded calligraphic vignette adorning the inevitable 1st of January, the sad eyes ironically smile at me.
+
+Funny where I knew that figure from. In the corner at the back of the office there’s an identical calendar which I’ve seen countless times, but due to some lithographic mystery, or some mystery of my own, the eyes of the office copy express no sorrow. It’s just a lithograph. (Printed on glossy paper, it sleeps away its subdued life above the head of left-handed Alves.)
+
+All of this makes me want to smile, but I feel a profound anxiety. I feel the chill of a sudden sickness in my soul. I don’t have the strength to balk at this absurdity. What window overlooking what secret of God am I confronting against my will? Where does the window under the stairs lead to? What eyes stared at me from out of the lithograph? I’m practically trembling. I involuntarily raise my eyes to the far corner of the office where the real lithograph is. I keep raising my eyes to that corner of the office where the real lithograph is. I keep raising my eyes to that corner.

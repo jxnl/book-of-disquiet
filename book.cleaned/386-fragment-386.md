@@ -1,0 +1,17 @@
+---
+title: "Fragment 386"
+chapter_label: "386"
+source_pdf: "Book of Disquiet, The - Fernando Pessoa.pdf"
+source_pages: "664-666"
+fragment_number: "386"
+---
+
+Together and apart we walked along the forest’s sharply turning paths. Foreign to us, our steps were united, for they went in unison over the crackling softness of the yellow and half-green leaves that matted the ground’s unevenness. But they also went separately, for we were two minds, with nothing in common except for the fact that what we weren’t was treading in unison over the same resonant ground.
+
+Autumn had already begun, and besides the leaves under our feet we could hear, in the wind’s rough accompaniment, the constant falling of other leaves, or sounds of leaves, wherever we walked or had walked. There was no landscape but the forest, which veiled all others. But it was a good enough place for people like us, whose only life was to walk diversely and in unison over a moribund ground. I believe it was the close of day, the close of that day or any day, or perhaps all days, in an autumn that was all autumns, in the symbolic and true forest.
+
+Not even we could say what homes, duties and loves we’d left behind. We were, in that moment, no more than wayfarers between what we had forgotten and what we didn’t know, knights on foot defending an abandoned ideal. But that explained, along with the steady sound of trampled leaves and the forever rough sound of an unsteady wind, the reason for our departure, or for our return, since, not knowing what the path was, or why, we didn’t know if we were coming or going. And always, all around us, the sound of leaves we couldn’t see, falling we didn’t know where, lulled the forest to sleep with sadness.
+
+Although we paid no attention to each other, neither of us would have continued alone. We kept each other company with the drowsiness we both felt. The sound of our steps in unison helped each of us to think without the other, whereas our own solitary steps would have brought the other to mind. The forest was all false clearings, as if the forest itself were false, or were ending, but neither it nor the falseness was going to end. Our steps kept going in unison, and around the sound of the leaves we were trampling we heard a very soft sound of leaves falling in the forest that had become everything, in the forest that was the universe.
+
+Who were we? Were we two, or two forms of one? We didn’t know and we didn’t ask. A hazy sun presumably existed, for it wasn’t night in the forest. A vague aim presumably existed, for we were walking. Some world or other presumably existed, since a forest existed. But what it was or might be was foreign to us, two perpetual walkers treading in unison over dead leaves, anonymous and impossible listeners to falling leaves. Nothing else. A now harsh now gentle murmur of the inscrutable wind, a now loud now soft rustle of the unfallen leaves, a vestige, a doubt, a goal that had perished, an illusion that never was – the forest, the two walkers, and I, I, unsure of which one I was, or if I was both, or neither, and without seeing it to the end I watched the tragedy of nothing ever having existed but the autumn and the forest, the always rough and unsteady wind, and the always fallen or falling leaves. And always, as if surely there were a sun and day out there, one could see clearly – to nowhere – in the clamorous silence of the forest.

@@ -1,0 +1,46 @@
+---
+import BookLayout from "@/layouts/BookLayout.astro"
+import { getChapter, getChapterSlugs } from "@/lib/book"
+
+const slugs = getChapterSlugs()
+const firstChapter = getChapter(slugs[0])
+---
+
+<BookLayout title="The Book of Disquiet">
+  <main class="mx-auto min-h-screen bg-white px-6 sm:px-10">
+    <section class="book-measure mx-auto pt-24 sm:pt-32">
+      <p class="mb-14 font-book text-[1rem] tracking-[0.01em] text-ink">
+        Fernando Pessoa
+      </p>
+
+      <h1 class="mb-12 font-book text-[2.2rem] font-normal leading-[1.05] tracking-[0.01em] text-ink sm:text-[2.6rem]">
+        The Book of Disquiet
+      </h1>
+
+      <a
+        id="start-random"
+        href={firstChapter.path}
+        class="font-book text-[1rem] italic tracking-[0.01em] text-ink transition-colors hover:text-fog"
+      >
+        begin
+      </a>
+
+      <form id="search-form" class="group max-w-[10rem] pt-24" autocomplete="off">
+        <label class="sr-only" for="search-query">Search fragments</label>
+        <input
+          id="search-query"
+          name="q"
+          type="search"
+          placeholder="search"
+          class="w-full border-0 bg-transparent px-0 py-0 font-book text-[1rem] italic tracking-[0.01em] text-ink opacity-10 outline-none transition-opacity duration-500 placeholder:text-fog focus:opacity-100 group-hover:opacity-100"
+        />
+      </form>
+    </section>
+  </main>
+
+  <script>
+    import { setupHomePage } from "../scripts/book-ui"
+
+    setupHomePage()
+  </script>
+</BookLayout>

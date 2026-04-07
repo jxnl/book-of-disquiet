@@ -1,0 +1,5212 @@
+[
+  {
+    "order": 1,
+    "slug": "001-fragment-1",
+    "title": "Fragment 1",
+    "chapter_label": "1",
+    "fragment_number": 1,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "54-57",
+    "target": "book.cleaned/001-fragment-1.md"
+  },
+  {
+    "order": 2,
+    "slug": "002-fragment-2",
+    "title": "Fragment 2",
+    "chapter_label": "2",
+    "fragment_number": 2,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "58",
+    "target": "book.cleaned/002-fragment-2.md"
+  },
+  {
+    "order": 3,
+    "slug": "003-fragment-3",
+    "title": "Fragment 3",
+    "chapter_label": "3",
+    "fragment_number": 3,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "59-60",
+    "target": "book.cleaned/003-fragment-3.md"
+  },
+  {
+    "order": 4,
+    "slug": "004-fragment-4",
+    "title": "Fragment 4",
+    "chapter_label": "4",
+    "fragment_number": 4,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "61",
+    "target": "book.cleaned/004-fragment-4.md"
+  },
+  {
+    "order": 5,
+    "slug": "005-fragment-5",
+    "title": "Fragment 5",
+    "chapter_label": "5",
+    "fragment_number": 5,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "62",
+    "target": "book.cleaned/005-fragment-5.md"
+  },
+  {
+    "order": 6,
+    "slug": "006-fragment-6",
+    "title": "Fragment 6",
+    "chapter_label": "6",
+    "fragment_number": 6,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "63",
+    "target": "book.cleaned/006-fragment-6.md"
+  },
+  {
+    "order": 7,
+    "slug": "007-fragment-7",
+    "title": "Fragment 7",
+    "chapter_label": "7",
+    "fragment_number": 7,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "64-66",
+    "target": "book.cleaned/007-fragment-7.md"
+  },
+  {
+    "order": 8,
+    "slug": "008-fragment-8",
+    "title": "Fragment 8",
+    "chapter_label": "8",
+    "fragment_number": 8,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "67-68",
+    "target": "book.cleaned/008-fragment-8.md"
+  },
+  {
+    "order": 9,
+    "slug": "009-fragment-9",
+    "title": "Fragment 9",
+    "chapter_label": "9",
+    "fragment_number": 9,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "69",
+    "target": "book.cleaned/009-fragment-9.md"
+  },
+  {
+    "order": 10,
+    "slug": "010-fragment-10",
+    "title": "Fragment 10",
+    "chapter_label": "10",
+    "fragment_number": 10,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "70",
+    "target": "book.cleaned/010-fragment-10.md"
+  },
+  {
+    "order": 11,
+    "slug": "011-litany",
+    "title": "Litany",
+    "chapter_label": "11",
+    "fragment_number": 11,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "71",
+    "target": "book.cleaned/011-litany.md"
+  },
+  {
+    "order": 12,
+    "slug": "012-fragment-12",
+    "title": "Fragment 12",
+    "chapter_label": "12",
+    "fragment_number": 12,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "72-73",
+    "target": "book.cleaned/012-fragment-12.md"
+  },
+  {
+    "order": 13,
+    "slug": "013-fragment-13",
+    "title": "Fragment 13",
+    "chapter_label": "13",
+    "fragment_number": 13,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "74",
+    "target": "book.cleaned/013-fragment-13.md"
+  },
+  {
+    "order": 14,
+    "slug": "014-fragment-14",
+    "title": "Fragment 14",
+    "chapter_label": "14",
+    "fragment_number": 14,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "75",
+    "target": "book.cleaned/014-fragment-14.md"
+  },
+  {
+    "order": 15,
+    "slug": "015-fragment-15",
+    "title": "Fragment 15",
+    "chapter_label": "15",
+    "fragment_number": 15,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "76",
+    "target": "book.cleaned/015-fragment-15.md"
+  },
+  {
+    "order": 16,
+    "slug": "016-fragment-16",
+    "title": "Fragment 16",
+    "chapter_label": "16",
+    "fragment_number": 16,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "77",
+    "target": "book.cleaned/016-fragment-16.md"
+  },
+  {
+    "order": 17,
+    "slug": "017-fragment-17",
+    "title": "Fragment 17",
+    "chapter_label": "17",
+    "fragment_number": 17,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "78",
+    "target": "book.cleaned/017-fragment-17.md"
+  },
+  {
+    "order": 18,
+    "slug": "018-fragment-18",
+    "title": "Fragment 18",
+    "chapter_label": "18",
+    "fragment_number": 18,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "79-80",
+    "target": "book.cleaned/018-fragment-18.md"
+  },
+  {
+    "order": 19,
+    "slug": "019-fragment-19",
+    "title": "Fragment 19",
+    "chapter_label": "19",
+    "fragment_number": 19,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "81-82",
+    "target": "book.cleaned/019-fragment-19.md"
+  },
+  {
+    "order": 20,
+    "slug": "020-fragment-20",
+    "title": "Fragment 20",
+    "chapter_label": "20",
+    "fragment_number": 20,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "83",
+    "target": "book.cleaned/020-fragment-20.md"
+  },
+  {
+    "order": 21,
+    "slug": "021-fragment-21",
+    "title": "Fragment 21",
+    "chapter_label": "21",
+    "fragment_number": 21,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "84",
+    "target": "book.cleaned/021-fragment-21.md"
+  },
+  {
+    "order": 22,
+    "slug": "022-fragment-22",
+    "title": "Fragment 22",
+    "chapter_label": "22",
+    "fragment_number": 22,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "85",
+    "target": "book.cleaned/022-fragment-22.md"
+  },
+  {
+    "order": 23,
+    "slug": "023-absurdity",
+    "title": "Absurdity",
+    "chapter_label": "23",
+    "fragment_number": 23,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "86",
+    "target": "book.cleaned/023-absurdity.md"
+  },
+  {
+    "order": 24,
+    "slug": "024-fragment-24",
+    "title": "Fragment 24",
+    "chapter_label": "24",
+    "fragment_number": 24,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "87",
+    "target": "book.cleaned/024-fragment-24.md"
+  },
+  {
+    "order": 25,
+    "slug": "025-fragment-25",
+    "title": "Fragment 25",
+    "chapter_label": "25",
+    "fragment_number": 25,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "88-89",
+    "target": "book.cleaned/025-fragment-25.md"
+  },
+  {
+    "order": 26,
+    "slug": "026-fragment-26",
+    "title": "Fragment 26",
+    "chapter_label": "26",
+    "fragment_number": 26,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "90",
+    "target": "book.cleaned/026-fragment-26.md"
+  },
+  {
+    "order": 27,
+    "slug": "027-fragment-27",
+    "title": "Fragment 27",
+    "chapter_label": "27",
+    "fragment_number": 27,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "91-92",
+    "target": "book.cleaned/027-fragment-27.md"
+  },
+  {
+    "order": 28,
+    "slug": "028-fragment-28",
+    "title": "Fragment 28",
+    "chapter_label": "28",
+    "fragment_number": 28,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "93",
+    "target": "book.cleaned/028-fragment-28.md"
+  },
+  {
+    "order": 29,
+    "slug": "029-fragment-29",
+    "title": "Fragment 29",
+    "chapter_label": "29",
+    "fragment_number": 29,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "94-95",
+    "target": "book.cleaned/029-fragment-29.md"
+  },
+  {
+    "order": 30,
+    "slug": "030-fragment-30",
+    "title": "Fragment 30",
+    "chapter_label": "30",
+    "fragment_number": 30,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "96-97",
+    "target": "book.cleaned/030-fragment-30.md"
+  },
+  {
+    "order": 31,
+    "slug": "031-fragment-31",
+    "title": "Fragment 31",
+    "chapter_label": "31",
+    "fragment_number": 31,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "98-100",
+    "target": "book.cleaned/031-fragment-31.md"
+  },
+  {
+    "order": 32,
+    "slug": "032-symphony-of-a-restless-night",
+    "title": "Symphony of a Restless Night",
+    "chapter_label": "32",
+    "fragment_number": 32,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "101",
+    "target": "book.cleaned/032-symphony-of-a-restless-night.md"
+  },
+  {
+    "order": 33,
+    "slug": "033-fragment-33",
+    "title": "Fragment 33",
+    "chapter_label": "33",
+    "fragment_number": 33,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "102-103",
+    "target": "book.cleaned/033-fragment-33.md"
+  },
+  {
+    "order": 34,
+    "slug": "034-fragment-34",
+    "title": "Fragment 34",
+    "chapter_label": "34",
+    "fragment_number": 34,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "104",
+    "target": "book.cleaned/034-fragment-34.md"
+  },
+  {
+    "order": 35,
+    "slug": "035-fragment-35",
+    "title": "Fragment 35",
+    "chapter_label": "35",
+    "fragment_number": 35,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "105",
+    "target": "book.cleaned/035-fragment-35.md"
+  },
+  {
+    "order": 36,
+    "slug": "036-fragment-36",
+    "title": "Fragment 36",
+    "chapter_label": "36",
+    "fragment_number": 36,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "106-107",
+    "target": "book.cleaned/036-fragment-36.md"
+  },
+  {
+    "order": 37,
+    "slug": "037-dolorous-interlude",
+    "title": "Dolorous Interlude",
+    "chapter_label": "37",
+    "fragment_number": 37,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "108",
+    "target": "book.cleaned/037-dolorous-interlude.md"
+  },
+  {
+    "order": 38,
+    "slug": "038-fragment-38",
+    "title": "Fragment 38",
+    "chapter_label": "38",
+    "fragment_number": 38,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "109",
+    "target": "book.cleaned/038-fragment-38.md"
+  },
+  {
+    "order": 39,
+    "slug": "039-fragment-39",
+    "title": "Fragment 39",
+    "chapter_label": "39",
+    "fragment_number": 39,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "110-112",
+    "target": "book.cleaned/039-fragment-39.md"
+  },
+  {
+    "order": 40,
+    "slug": "040-fragment-40",
+    "title": "Fragment 40",
+    "chapter_label": "40",
+    "fragment_number": 40,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "113-114",
+    "target": "book.cleaned/040-fragment-40.md"
+  },
+  {
+    "order": 41,
+    "slug": "041-fragment-41",
+    "title": "Fragment 41",
+    "chapter_label": "41",
+    "fragment_number": 41,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "115-116",
+    "target": "book.cleaned/041-fragment-41.md"
+  },
+  {
+    "order": 42,
+    "slug": "042-fragment-42",
+    "title": "Fragment 42",
+    "chapter_label": "42",
+    "fragment_number": 42,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "117-118",
+    "target": "book.cleaned/042-fragment-42.md"
+  },
+  {
+    "order": 43,
+    "slug": "043-fragment-43",
+    "title": "Fragment 43",
+    "chapter_label": "43",
+    "fragment_number": 43,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "119-120",
+    "target": "book.cleaned/043-fragment-43.md"
+  },
+  {
+    "order": 44,
+    "slug": "044-fragment-44",
+    "title": "Fragment 44",
+    "chapter_label": "44",
+    "fragment_number": 44,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "121",
+    "target": "book.cleaned/044-fragment-44.md"
+  },
+  {
+    "order": 45,
+    "slug": "045-fragment-45",
+    "title": "Fragment 45",
+    "chapter_label": "45",
+    "fragment_number": 45,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "122",
+    "target": "book.cleaned/045-fragment-45.md"
+  },
+  {
+    "order": 46,
+    "slug": "046-fragment-46",
+    "title": "Fragment 46",
+    "chapter_label": "46",
+    "fragment_number": 46,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "123-124",
+    "target": "book.cleaned/046-fragment-46.md"
+  },
+  {
+    "order": 47,
+    "slug": "047-fragment-47",
+    "title": "Fragment 47",
+    "chapter_label": "47",
+    "fragment_number": 47,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "125",
+    "target": "book.cleaned/047-fragment-47.md"
+  },
+  {
+    "order": 48,
+    "slug": "048-fragment-48",
+    "title": "Fragment 48",
+    "chapter_label": "48",
+    "fragment_number": 48,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "126",
+    "target": "book.cleaned/048-fragment-48.md"
+  },
+  {
+    "order": 49,
+    "slug": "049-fragment-49",
+    "title": "Fragment 49",
+    "chapter_label": "49",
+    "fragment_number": 49,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "127-128",
+    "target": "book.cleaned/049-fragment-49.md"
+  },
+  {
+    "order": 50,
+    "slug": "050-fragment-50",
+    "title": "Fragment 50",
+    "chapter_label": "50",
+    "fragment_number": 50,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "129-131",
+    "target": "book.cleaned/050-fragment-50.md"
+  },
+  {
+    "order": 51,
+    "slug": "051-fragment-51",
+    "title": "Fragment 51",
+    "chapter_label": "51",
+    "fragment_number": 51,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "132-133",
+    "target": "book.cleaned/051-fragment-51.md"
+  },
+  {
+    "order": 52,
+    "slug": "052-fragment-52",
+    "title": "Fragment 52",
+    "chapter_label": "52",
+    "fragment_number": 52,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "134",
+    "target": "book.cleaned/052-fragment-52.md"
+  },
+  {
+    "order": 53,
+    "slug": "053-fragment-53",
+    "title": "Fragment 53",
+    "chapter_label": "53",
+    "fragment_number": 53,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "135-136",
+    "target": "book.cleaned/053-fragment-53.md"
+  },
+  {
+    "order": 54,
+    "slug": "054-fragment-54",
+    "title": "Fragment 54",
+    "chapter_label": "54",
+    "fragment_number": 54,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "137-139",
+    "target": "book.cleaned/054-fragment-54.md"
+  },
+  {
+    "order": 55,
+    "slug": "055-fragment-55",
+    "title": "Fragment 55",
+    "chapter_label": "55",
+    "fragment_number": 55,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "140-141",
+    "target": "book.cleaned/055-fragment-55.md"
+  },
+  {
+    "order": 56,
+    "slug": "056-fragment-56",
+    "title": "Fragment 56",
+    "chapter_label": "56",
+    "fragment_number": 56,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "142-143",
+    "target": "book.cleaned/056-fragment-56.md"
+  },
+  {
+    "order": 57,
+    "slug": "057-fragment-57",
+    "title": "Fragment 57",
+    "chapter_label": "57",
+    "fragment_number": 57,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "144",
+    "target": "book.cleaned/057-fragment-57.md"
+  },
+  {
+    "order": 58,
+    "slug": "058-fragment-58",
+    "title": "Fragment 58",
+    "chapter_label": "58",
+    "fragment_number": 58,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "145-146",
+    "target": "book.cleaned/058-fragment-58.md"
+  },
+  {
+    "order": 59,
+    "slug": "059-fragment-59",
+    "title": "Fragment 59",
+    "chapter_label": "59",
+    "fragment_number": 59,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "147-150",
+    "target": "book.cleaned/059-fragment-59.md"
+  },
+  {
+    "order": 60,
+    "slug": "060-dolorous-interlude",
+    "title": "Dolorous Interlude",
+    "chapter_label": "60",
+    "fragment_number": 60,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "151",
+    "target": "book.cleaned/060-dolorous-interlude.md"
+  },
+  {
+    "order": 61,
+    "slug": "061-fragment-61",
+    "title": "Fragment 61",
+    "chapter_label": "61",
+    "fragment_number": 61,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "152",
+    "target": "book.cleaned/061-fragment-61.md"
+  },
+  {
+    "order": 62,
+    "slug": "062-fragment-62",
+    "title": "Fragment 62",
+    "chapter_label": "62",
+    "fragment_number": 62,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "153-155",
+    "target": "book.cleaned/062-fragment-62.md"
+  },
+  {
+    "order": 63,
+    "slug": "063-fragment-63",
+    "title": "Fragment 63",
+    "chapter_label": "63",
+    "fragment_number": 63,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "156-157",
+    "target": "book.cleaned/063-fragment-63.md"
+  },
+  {
+    "order": 64,
+    "slug": "064-fragment-64",
+    "title": "Fragment 64",
+    "chapter_label": "64",
+    "fragment_number": 64,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "158",
+    "target": "book.cleaned/064-fragment-64.md"
+  },
+  {
+    "order": 65,
+    "slug": "065-fragment-65",
+    "title": "Fragment 65",
+    "chapter_label": "65",
+    "fragment_number": 65,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "159",
+    "target": "book.cleaned/065-fragment-65.md"
+  },
+  {
+    "order": 66,
+    "slug": "066-with-a-shrug",
+    "title": "With a Shrug",
+    "chapter_label": "66",
+    "fragment_number": 66,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "160-161",
+    "target": "book.cleaned/066-with-a-shrug.md"
+  },
+  {
+    "order": 67,
+    "slug": "067-fragment-67",
+    "title": "Fragment 67",
+    "chapter_label": "67",
+    "fragment_number": 67,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "162-163",
+    "target": "book.cleaned/067-fragment-67.md"
+  },
+  {
+    "order": 68,
+    "slug": "068-fragment-68",
+    "title": "Fragment 68",
+    "chapter_label": "68",
+    "fragment_number": 68,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "164",
+    "target": "book.cleaned/068-fragment-68.md"
+  },
+  {
+    "order": 69,
+    "slug": "069-fragment-69",
+    "title": "Fragment 69",
+    "chapter_label": "69",
+    "fragment_number": 69,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "165",
+    "target": "book.cleaned/069-fragment-69.md"
+  },
+  {
+    "order": 70,
+    "slug": "070-fragment-70",
+    "title": "Fragment 70",
+    "chapter_label": "70",
+    "fragment_number": 70,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "166-168",
+    "target": "book.cleaned/070-fragment-70.md"
+  },
+  {
+    "order": 71,
+    "slug": "071-fragment-71",
+    "title": "Fragment 71",
+    "chapter_label": "71",
+    "fragment_number": 71,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "169",
+    "target": "book.cleaned/071-fragment-71.md"
+  },
+  {
+    "order": 72,
+    "slug": "072-fragment-72",
+    "title": "Fragment 72",
+    "chapter_label": "72",
+    "fragment_number": 72,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "170-171",
+    "target": "book.cleaned/072-fragment-72.md"
+  },
+  {
+    "order": 73,
+    "slug": "073-fragment-73",
+    "title": "Fragment 73",
+    "chapter_label": "73",
+    "fragment_number": 73,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "172-173",
+    "target": "book.cleaned/073-fragment-73.md"
+  },
+  {
+    "order": 74,
+    "slug": "074-thunderstorm",
+    "title": "Thunderstorm",
+    "chapter_label": "74",
+    "fragment_number": 74,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "174",
+    "target": "book.cleaned/074-thunderstorm.md"
+  },
+  {
+    "order": 75,
+    "slug": "075-fragment-75",
+    "title": "Fragment 75",
+    "chapter_label": "75",
+    "fragment_number": 75,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "175",
+    "target": "book.cleaned/075-fragment-75.md"
+  },
+  {
+    "order": 76,
+    "slug": "076-fragment-76",
+    "title": "Fragment 76",
+    "chapter_label": "76",
+    "fragment_number": 76,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "176-177",
+    "target": "book.cleaned/076-fragment-76.md"
+  },
+  {
+    "order": 77,
+    "slug": "077-fragment-77",
+    "title": "Fragment 77",
+    "chapter_label": "77",
+    "fragment_number": 77,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "178",
+    "target": "book.cleaned/077-fragment-77.md"
+  },
+  {
+    "order": 78,
+    "slug": "078-fragment-78",
+    "title": "Fragment 78",
+    "chapter_label": "78",
+    "fragment_number": 78,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "179-180",
+    "target": "book.cleaned/078-fragment-78.md"
+  },
+  {
+    "order": 79,
+    "slug": "079-fragment-79",
+    "title": "Fragment 79",
+    "chapter_label": "79",
+    "fragment_number": 79,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "181-182",
+    "target": "book.cleaned/079-fragment-79.md"
+  },
+  {
+    "order": 80,
+    "slug": "080-dolorous-interlude",
+    "title": "Dolorous Interlude",
+    "chapter_label": "80",
+    "fragment_number": 80,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "183-184",
+    "target": "book.cleaned/080-dolorous-interlude.md"
+  },
+  {
+    "order": 81,
+    "slug": "081-fragment-81",
+    "title": "Fragment 81",
+    "chapter_label": "81",
+    "fragment_number": 81,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "185",
+    "target": "book.cleaned/081-fragment-81.md"
+  },
+  {
+    "order": 82,
+    "slug": "082-fragment-82",
+    "title": "Fragment 82",
+    "chapter_label": "82",
+    "fragment_number": 82,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "186",
+    "target": "book.cleaned/082-fragment-82.md"
+  },
+  {
+    "order": 83,
+    "slug": "083-fragment-83",
+    "title": "Fragment 83",
+    "chapter_label": "83",
+    "fragment_number": 83,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "187-188",
+    "target": "book.cleaned/083-fragment-83.md"
+  },
+  {
+    "order": 84,
+    "slug": "084-fragment-84",
+    "title": "Fragment 84",
+    "chapter_label": "84",
+    "fragment_number": 84,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "189-190",
+    "target": "book.cleaned/084-fragment-84.md"
+  },
+  {
+    "order": 85,
+    "slug": "085-fragment-85",
+    "title": "Fragment 85",
+    "chapter_label": "85",
+    "fragment_number": 85,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "191",
+    "target": "book.cleaned/085-fragment-85.md"
+  },
+  {
+    "order": 86,
+    "slug": "086-fragment-86",
+    "title": "Fragment 86",
+    "chapter_label": "86",
+    "fragment_number": 86,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "192",
+    "target": "book.cleaned/086-fragment-86.md"
+  },
+  {
+    "order": 87,
+    "slug": "087-fragment-87",
+    "title": "Fragment 87",
+    "chapter_label": "87",
+    "fragment_number": 87,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "193-194",
+    "target": "book.cleaned/087-fragment-87.md"
+  },
+  {
+    "order": 88,
+    "slug": "088-fragment-88",
+    "title": "Fragment 88",
+    "chapter_label": "88",
+    "fragment_number": 88,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "195-196",
+    "target": "book.cleaned/088-fragment-88.md"
+  },
+  {
+    "order": 89,
+    "slug": "089-fragment-89",
+    "title": "Fragment 89",
+    "chapter_label": "89",
+    "fragment_number": 89,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "197",
+    "target": "book.cleaned/089-fragment-89.md"
+  },
+  {
+    "order": 90,
+    "slug": "090-fragment-90",
+    "title": "Fragment 90",
+    "chapter_label": "90",
+    "fragment_number": 90,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "198-199",
+    "target": "book.cleaned/090-fragment-90.md"
+  },
+  {
+    "order": 91,
+    "slug": "091-fragment-91",
+    "title": "Fragment 91",
+    "chapter_label": "91",
+    "fragment_number": 91,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "200-201",
+    "target": "book.cleaned/091-fragment-91.md"
+  },
+  {
+    "order": 92,
+    "slug": "092-fragment-92",
+    "title": "Fragment 92",
+    "chapter_label": "92",
+    "fragment_number": 92,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "202-206",
+    "target": "book.cleaned/092-fragment-92.md"
+  },
+  {
+    "order": 93,
+    "slug": "093-fragment-93",
+    "title": "Fragment 93",
+    "chapter_label": "93",
+    "fragment_number": 93,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "207",
+    "target": "book.cleaned/093-fragment-93.md"
+  },
+  {
+    "order": 94,
+    "slug": "094-fragment-94",
+    "title": "Fragment 94",
+    "chapter_label": "94",
+    "fragment_number": 94,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "208",
+    "target": "book.cleaned/094-fragment-94.md"
+  },
+  {
+    "order": 95,
+    "slug": "095-fragment-95",
+    "title": "Fragment 95",
+    "chapter_label": "95",
+    "fragment_number": 95,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "209-210",
+    "target": "book.cleaned/095-fragment-95.md"
+  },
+  {
+    "order": 96,
+    "slug": "096-fragment-96",
+    "title": "Fragment 96",
+    "chapter_label": "96",
+    "fragment_number": 96,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "211",
+    "target": "book.cleaned/096-fragment-96.md"
+  },
+  {
+    "order": 97,
+    "slug": "097-fragment-97",
+    "title": "Fragment 97",
+    "chapter_label": "97",
+    "fragment_number": 97,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "212",
+    "target": "book.cleaned/097-fragment-97.md"
+  },
+  {
+    "order": 98,
+    "slug": "098-fragment-98",
+    "title": "Fragment 98",
+    "chapter_label": "98",
+    "fragment_number": 98,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "213-214",
+    "target": "book.cleaned/098-fragment-98.md"
+  },
+  {
+    "order": 99,
+    "slug": "099-fragment-99",
+    "title": "Fragment 99",
+    "chapter_label": "99",
+    "fragment_number": 99,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "215-216",
+    "target": "book.cleaned/099-fragment-99.md"
+  },
+  {
+    "order": 100,
+    "slug": "100-fragment-100",
+    "title": "Fragment 100",
+    "chapter_label": "100",
+    "fragment_number": 100,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "217",
+    "target": "book.cleaned/100-fragment-100.md"
+  },
+  {
+    "order": 101,
+    "slug": "101-fragment-101",
+    "title": "Fragment 101",
+    "chapter_label": "101",
+    "fragment_number": 101,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "218",
+    "target": "book.cleaned/101-fragment-101.md"
+  },
+  {
+    "order": 102,
+    "slug": "102-fragment-102",
+    "title": "Fragment 102",
+    "chapter_label": "102",
+    "fragment_number": 102,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "219-220",
+    "target": "book.cleaned/102-fragment-102.md"
+  },
+  {
+    "order": 103,
+    "slug": "103-fragment-103",
+    "title": "Fragment 103",
+    "chapter_label": "103",
+    "fragment_number": 103,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "221",
+    "target": "book.cleaned/103-fragment-103.md"
+  },
+  {
+    "order": 104,
+    "slug": "104-fragment-104",
+    "title": "Fragment 104",
+    "chapter_label": "104",
+    "fragment_number": 104,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "222",
+    "target": "book.cleaned/104-fragment-104.md"
+  },
+  {
+    "order": 105,
+    "slug": "105-aesthetics-of-abdication",
+    "title": "Aesthetics of Abdication",
+    "chapter_label": "105",
+    "fragment_number": 105,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "223",
+    "target": "book.cleaned/105-aesthetics-of-abdication.md"
+  },
+  {
+    "order": 106,
+    "slug": "106-fragment-106",
+    "title": "Fragment 106",
+    "chapter_label": "106",
+    "fragment_number": 106,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "224-225",
+    "target": "book.cleaned/106-fragment-106.md"
+  },
+  {
+    "order": 107,
+    "slug": "107-fragment-107",
+    "title": "Fragment 107",
+    "chapter_label": "107",
+    "fragment_number": 107,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "226-227",
+    "target": "book.cleaned/107-fragment-107.md"
+  },
+  {
+    "order": 108,
+    "slug": "108-fragment-108",
+    "title": "Fragment 108",
+    "chapter_label": "108",
+    "fragment_number": 108,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "228",
+    "target": "book.cleaned/108-fragment-108.md"
+  },
+  {
+    "order": 109,
+    "slug": "109-storm",
+    "title": "(storm)",
+    "chapter_label": "109",
+    "fragment_number": 109,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "229",
+    "target": "book.cleaned/109-storm.md"
+  },
+  {
+    "order": 110,
+    "slug": "110-fragment-110",
+    "title": "Fragment 110",
+    "chapter_label": "110",
+    "fragment_number": 110,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "230-231",
+    "target": "book.cleaned/110-fragment-110.md"
+  },
+  {
+    "order": 111,
+    "slug": "111-fragment-111",
+    "title": "Fragment 111",
+    "chapter_label": "111",
+    "fragment_number": 111,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "232",
+    "target": "book.cleaned/111-fragment-111.md"
+  },
+  {
+    "order": 112,
+    "slug": "112-fragment-112",
+    "title": "Fragment 112",
+    "chapter_label": "112",
+    "fragment_number": 112,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "233-234",
+    "target": "book.cleaned/112-fragment-112.md"
+  },
+  {
+    "order": 113,
+    "slug": "113-fragment-113",
+    "title": "Fragment 113",
+    "chapter_label": "113",
+    "fragment_number": 113,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "235",
+    "target": "book.cleaned/113-fragment-113.md"
+  },
+  {
+    "order": 114,
+    "slug": "114-aesthetics-of-artificiality",
+    "title": "Aesthetics of Artificiality",
+    "chapter_label": "114",
+    "fragment_number": 114,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "236-237",
+    "target": "book.cleaned/114-aesthetics-of-artificiality.md"
+  },
+  {
+    "order": 115,
+    "slug": "115-fragment-115",
+    "title": "Fragment 115",
+    "chapter_label": "115",
+    "fragment_number": 115,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "238",
+    "target": "book.cleaned/115-fragment-115.md"
+  },
+  {
+    "order": 116,
+    "slug": "116-fragment-116",
+    "title": "Fragment 116",
+    "chapter_label": "116",
+    "fragment_number": 116,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "239",
+    "target": "book.cleaned/116-fragment-116.md"
+  },
+  {
+    "order": 117,
+    "slug": "117-fragment-117",
+    "title": "Fragment 117",
+    "chapter_label": "117",
+    "fragment_number": 117,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "240-241",
+    "target": "book.cleaned/117-fragment-117.md"
+  },
+  {
+    "order": 118,
+    "slug": "118-fragment-118",
+    "title": "Fragment 118",
+    "chapter_label": "118",
+    "fragment_number": 118,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "242",
+    "target": "book.cleaned/118-fragment-118.md"
+  },
+  {
+    "order": 119,
+    "slug": "119-fragment-119",
+    "title": "Fragment 119",
+    "chapter_label": "119",
+    "fragment_number": 119,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "243",
+    "target": "book.cleaned/119-fragment-119.md"
+  },
+  {
+    "order": 120,
+    "slug": "120-fragment-120",
+    "title": "Fragment 120",
+    "chapter_label": "120",
+    "fragment_number": 120,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "244-245",
+    "target": "book.cleaned/120-fragment-120.md"
+  },
+  {
+    "order": 121,
+    "slug": "121-fragment-121",
+    "title": "Fragment 121",
+    "chapter_label": "121",
+    "fragment_number": 121,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "246",
+    "target": "book.cleaned/121-fragment-121.md"
+  },
+  {
+    "order": 122,
+    "slug": "122-fragment-122",
+    "title": "Fragment 122",
+    "chapter_label": "122",
+    "fragment_number": 122,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "247-248",
+    "target": "book.cleaned/122-fragment-122.md"
+  },
+  {
+    "order": 123,
+    "slug": "123-fragment-123",
+    "title": "Fragment 123",
+    "chapter_label": "123",
+    "fragment_number": 123,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "249-250",
+    "target": "book.cleaned/123-fragment-123.md"
+  },
+  {
+    "order": 124,
+    "slug": "124-chapter-on-indifference-or-something-like-that",
+    "title": "(Chapter on Indifference or something like that)",
+    "chapter_label": "124",
+    "fragment_number": 124,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "251-252",
+    "target": "book.cleaned/124-chapter-on-indifference-or-something-like-that.md"
+  },
+  {
+    "order": 125,
+    "slug": "125-fragment-125",
+    "title": "Fragment 125",
+    "chapter_label": "125",
+    "fragment_number": 125,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "253-254",
+    "target": "book.cleaned/125-fragment-125.md"
+  },
+  {
+    "order": 126,
+    "slug": "126-fragment-126",
+    "title": "Fragment 126",
+    "chapter_label": "126",
+    "fragment_number": 126,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "255-256",
+    "target": "book.cleaned/126-fragment-126.md"
+  },
+  {
+    "order": 127,
+    "slug": "127-fragment-127",
+    "title": "Fragment 127",
+    "chapter_label": "127",
+    "fragment_number": 127,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "257-258",
+    "target": "book.cleaned/127-fragment-127.md"
+  },
+  {
+    "order": 128,
+    "slug": "128-fragment-128",
+    "title": "Fragment 128",
+    "chapter_label": "128",
+    "fragment_number": 128,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "259",
+    "target": "book.cleaned/128-fragment-128.md"
+  },
+  {
+    "order": 129,
+    "slug": "129-fragment-129",
+    "title": "Fragment 129",
+    "chapter_label": "129",
+    "fragment_number": 129,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "260",
+    "target": "book.cleaned/129-fragment-129.md"
+  },
+  {
+    "order": 130,
+    "slug": "130-fragment-130",
+    "title": "Fragment 130",
+    "chapter_label": "130",
+    "fragment_number": 130,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "261-262",
+    "target": "book.cleaned/130-fragment-130.md"
+  },
+  {
+    "order": 131,
+    "slug": "131-fragment-131",
+    "title": "Fragment 131",
+    "chapter_label": "131",
+    "fragment_number": 131,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "263",
+    "target": "book.cleaned/131-fragment-131.md"
+  },
+  {
+    "order": 132,
+    "slug": "132-fragment-132",
+    "title": "Fragment 132",
+    "chapter_label": "132",
+    "fragment_number": 132,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "264",
+    "target": "book.cleaned/132-fragment-132.md"
+  },
+  {
+    "order": 133,
+    "slug": "133-fragment-133",
+    "title": "Fragment 133",
+    "chapter_label": "133",
+    "fragment_number": 133,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "265-266",
+    "target": "book.cleaned/133-fragment-133.md"
+  },
+  {
+    "order": 134,
+    "slug": "134-fragment-134",
+    "title": "Fragment 134",
+    "chapter_label": "134",
+    "fragment_number": 134,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "267",
+    "target": "book.cleaned/134-fragment-134.md"
+  },
+  {
+    "order": 135,
+    "slug": "135-fragment-135",
+    "title": "Fragment 135",
+    "chapter_label": "135",
+    "fragment_number": 135,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "268-269",
+    "target": "book.cleaned/135-fragment-135.md"
+  },
+  {
+    "order": 136,
+    "slug": "136-fragment-136",
+    "title": "Fragment 136",
+    "chapter_label": "136",
+    "fragment_number": 136,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "270",
+    "target": "book.cleaned/136-fragment-136.md"
+  },
+  {
+    "order": 137,
+    "slug": "137-fragment-137",
+    "title": "Fragment 137",
+    "chapter_label": "137",
+    "fragment_number": 137,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "271",
+    "target": "book.cleaned/137-fragment-137.md"
+  },
+  {
+    "order": 138,
+    "slug": "138-fragment-138",
+    "title": "Fragment 138",
+    "chapter_label": "138",
+    "fragment_number": 138,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "272-273",
+    "target": "book.cleaned/138-fragment-138.md"
+  },
+  {
+    "order": 139,
+    "slug": "139-fragment-139",
+    "title": "Fragment 139",
+    "chapter_label": "139",
+    "fragment_number": 139,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "274-275",
+    "target": "book.cleaned/139-fragment-139.md"
+  },
+  {
+    "order": 140,
+    "slug": "140-fragment-140",
+    "title": "Fragment 140",
+    "chapter_label": "140",
+    "fragment_number": 140,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "276-277",
+    "target": "book.cleaned/140-fragment-140.md"
+  },
+  {
+    "order": 141,
+    "slug": "141-rainy-landscape",
+    "title": "Rainy Landscape",
+    "chapter_label": "141",
+    "fragment_number": 141,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "278",
+    "target": "book.cleaned/141-rainy-landscape.md"
+  },
+  {
+    "order": 142,
+    "slug": "142-fragment-142",
+    "title": "Fragment 142",
+    "chapter_label": "142",
+    "fragment_number": 142,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "279",
+    "target": "book.cleaned/142-fragment-142.md"
+  },
+  {
+    "order": 143,
+    "slug": "143-fragment-143",
+    "title": "Fragment 143",
+    "chapter_label": "143",
+    "fragment_number": 143,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "280-281",
+    "target": "book.cleaned/143-fragment-143.md"
+  },
+  {
+    "order": 144,
+    "slug": "144-fragment-144",
+    "title": "Fragment 144",
+    "chapter_label": "144",
+    "fragment_number": 144,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "282-283",
+    "target": "book.cleaned/144-fragment-144.md"
+  },
+  {
+    "order": 145,
+    "slug": "145-fragment-145",
+    "title": "Fragment 145",
+    "chapter_label": "145",
+    "fragment_number": 145,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "284-286",
+    "target": "book.cleaned/145-fragment-145.md"
+  },
+  {
+    "order": 146,
+    "slug": "146-fragment-146",
+    "title": "Fragment 146",
+    "chapter_label": "146",
+    "fragment_number": 146,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "287",
+    "target": "book.cleaned/146-fragment-146.md"
+  },
+  {
+    "order": 147,
+    "slug": "147-fragment-147",
+    "title": "Fragment 147",
+    "chapter_label": "147",
+    "fragment_number": 147,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "288",
+    "target": "book.cleaned/147-fragment-147.md"
+  },
+  {
+    "order": 148,
+    "slug": "148-fragment-148",
+    "title": "Fragment 148",
+    "chapter_label": "148",
+    "fragment_number": 148,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "289",
+    "target": "book.cleaned/148-fragment-148.md"
+  },
+  {
+    "order": 149,
+    "slug": "149-fragment-149",
+    "title": "Fragment 149",
+    "chapter_label": "149",
+    "fragment_number": 149,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "290-293",
+    "target": "book.cleaned/149-fragment-149.md"
+  },
+  {
+    "order": 150,
+    "slug": "150-fragment-150",
+    "title": "Fragment 150",
+    "chapter_label": "150",
+    "fragment_number": 150,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "294-295",
+    "target": "book.cleaned/150-fragment-150.md"
+  },
+  {
+    "order": 151,
+    "slug": "151-fragment-151",
+    "title": "Fragment 151",
+    "chapter_label": "151",
+    "fragment_number": 151,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "296-297",
+    "target": "book.cleaned/151-fragment-151.md"
+  },
+  {
+    "order": 152,
+    "slug": "152-fragment-152",
+    "title": "Fragment 152",
+    "chapter_label": "152",
+    "fragment_number": 152,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "298-299",
+    "target": "book.cleaned/152-fragment-152.md"
+  },
+  {
+    "order": 153,
+    "slug": "153-fragment-153",
+    "title": "Fragment 153",
+    "chapter_label": "153",
+    "fragment_number": 153,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "300",
+    "target": "book.cleaned/153-fragment-153.md"
+  },
+  {
+    "order": 154,
+    "slug": "154-fragment-154",
+    "title": "Fragment 154",
+    "chapter_label": "154",
+    "fragment_number": 154,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "301",
+    "target": "book.cleaned/154-fragment-154.md"
+  },
+  {
+    "order": 155,
+    "slug": "155-fragment-155",
+    "title": "Fragment 155",
+    "chapter_label": "155",
+    "fragment_number": 155,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "302-304",
+    "target": "book.cleaned/155-fragment-155.md"
+  },
+  {
+    "order": 156,
+    "slug": "156-fragment-156",
+    "title": "Fragment 156",
+    "chapter_label": "156",
+    "fragment_number": 156,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "305",
+    "target": "book.cleaned/156-fragment-156.md"
+  },
+  {
+    "order": 157,
+    "slug": "157-fragment-157",
+    "title": "Fragment 157",
+    "chapter_label": "157",
+    "fragment_number": 157,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "306-307",
+    "target": "book.cleaned/157-fragment-157.md"
+  },
+  {
+    "order": 158,
+    "slug": "158-fragment-158",
+    "title": "Fragment 158",
+    "chapter_label": "158",
+    "fragment_number": 158,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "308",
+    "target": "book.cleaned/158-fragment-158.md"
+  },
+  {
+    "order": 159,
+    "slug": "159-fragment-159",
+    "title": "Fragment 159",
+    "chapter_label": "159",
+    "fragment_number": 159,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "309-310",
+    "target": "book.cleaned/159-fragment-159.md"
+  },
+  {
+    "order": 160,
+    "slug": "160-fragment-160",
+    "title": "Fragment 160",
+    "chapter_label": "160",
+    "fragment_number": 160,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "311-312",
+    "target": "book.cleaned/160-fragment-160.md"
+  },
+  {
+    "order": 161,
+    "slug": "161-fragment-161",
+    "title": "Fragment 161",
+    "chapter_label": "161",
+    "fragment_number": 161,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "313-314",
+    "target": "book.cleaned/161-fragment-161.md"
+  },
+  {
+    "order": 162,
+    "slug": "162-fragment-162",
+    "title": "Fragment 162",
+    "chapter_label": "162",
+    "fragment_number": 162,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "315",
+    "target": "book.cleaned/162-fragment-162.md"
+  },
+  {
+    "order": 163,
+    "slug": "163-fragment-163",
+    "title": "Fragment 163",
+    "chapter_label": "163",
+    "fragment_number": 163,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "316",
+    "target": "book.cleaned/163-fragment-163.md"
+  },
+  {
+    "order": 164,
+    "slug": "164-fragment-164",
+    "title": "Fragment 164",
+    "chapter_label": "164",
+    "fragment_number": 164,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "317",
+    "target": "book.cleaned/164-fragment-164.md"
+  },
+  {
+    "order": 165,
+    "slug": "165-fragment-165",
+    "title": "Fragment 165",
+    "chapter_label": "165",
+    "fragment_number": 165,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "318",
+    "target": "book.cleaned/165-fragment-165.md"
+  },
+  {
+    "order": 166,
+    "slug": "166-fragment-166",
+    "title": "Fragment 166",
+    "chapter_label": "166",
+    "fragment_number": 166,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "319-320",
+    "target": "book.cleaned/166-fragment-166.md"
+  },
+  {
+    "order": 167,
+    "slug": "167-fragment-167",
+    "title": "Fragment 167",
+    "chapter_label": "167",
+    "fragment_number": 167,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "321-322",
+    "target": "book.cleaned/167-fragment-167.md"
+  },
+  {
+    "order": 168,
+    "slug": "168-fragment-168",
+    "title": "Fragment 168",
+    "chapter_label": "168",
+    "fragment_number": 168,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "323",
+    "target": "book.cleaned/168-fragment-168.md"
+  },
+  {
+    "order": 169,
+    "slug": "169-fragment-169",
+    "title": "Fragment 169",
+    "chapter_label": "169",
+    "fragment_number": 169,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "324-325",
+    "target": "book.cleaned/169-fragment-169.md"
+  },
+  {
+    "order": 170,
+    "slug": "170-fragment-170",
+    "title": "Fragment 170",
+    "chapter_label": "170",
+    "fragment_number": 170,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "326-327",
+    "target": "book.cleaned/170-fragment-170.md"
+  },
+  {
+    "order": 171,
+    "slug": "171-fragment-171",
+    "title": "Fragment 171",
+    "chapter_label": "171",
+    "fragment_number": 171,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "328-331",
+    "target": "book.cleaned/171-fragment-171.md"
+  },
+  {
+    "order": 172,
+    "slug": "172-fragment-172",
+    "title": "Fragment 172",
+    "chapter_label": "172",
+    "fragment_number": 172,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "332",
+    "target": "book.cleaned/172-fragment-172.md"
+  },
+  {
+    "order": 173,
+    "slug": "173-fragment-173",
+    "title": "Fragment 173",
+    "chapter_label": "173",
+    "fragment_number": 173,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "333",
+    "target": "book.cleaned/173-fragment-173.md"
+  },
+  {
+    "order": 174,
+    "slug": "174-fragment-174",
+    "title": "Fragment 174",
+    "chapter_label": "174",
+    "fragment_number": 174,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "334-335",
+    "target": "book.cleaned/174-fragment-174.md"
+  },
+  {
+    "order": 175,
+    "slug": "175-fragment-175",
+    "title": "Fragment 175",
+    "chapter_label": "175",
+    "fragment_number": 175,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "336-337",
+    "target": "book.cleaned/175-fragment-175.md"
+  },
+  {
+    "order": 176,
+    "slug": "176-the-inn-of-reason",
+    "title": "The Inn of Reason",
+    "chapter_label": "176",
+    "fragment_number": 176,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "338",
+    "target": "book.cleaned/176-the-inn-of-reason.md"
+  },
+  {
+    "order": 177,
+    "slug": "177-fragment-177",
+    "title": "Fragment 177",
+    "chapter_label": "177",
+    "fragment_number": 177,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "339",
+    "target": "book.cleaned/177-fragment-177.md"
+  },
+  {
+    "order": 178,
+    "slug": "178-fragment-178",
+    "title": "Fragment 178",
+    "chapter_label": "178",
+    "fragment_number": 178,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "340-341",
+    "target": "book.cleaned/178-fragment-178.md"
+  },
+  {
+    "order": 179,
+    "slug": "179-fragment-179",
+    "title": "Fragment 179",
+    "chapter_label": "179",
+    "fragment_number": 179,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "342",
+    "target": "book.cleaned/179-fragment-179.md"
+  },
+  {
+    "order": 180,
+    "slug": "180-fragment-180",
+    "title": "Fragment 180",
+    "chapter_label": "180",
+    "fragment_number": 180,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "343",
+    "target": "book.cleaned/180-fragment-180.md"
+  },
+  {
+    "order": 181,
+    "slug": "181-fragment-181",
+    "title": "Fragment 181",
+    "chapter_label": "181",
+    "fragment_number": 181,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "344-345",
+    "target": "book.cleaned/181-fragment-181.md"
+  },
+  {
+    "order": 182,
+    "slug": "182-interlude",
+    "title": "Interlude",
+    "chapter_label": "182",
+    "fragment_number": 182,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "346-347",
+    "target": "book.cleaned/182-interlude.md"
+  },
+  {
+    "order": 183,
+    "slug": "183-fragment-183",
+    "title": "Fragment 183",
+    "chapter_label": "183",
+    "fragment_number": 183,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "348-349",
+    "target": "book.cleaned/183-fragment-183.md"
+  },
+  {
+    "order": 184,
+    "slug": "184-fragment-184",
+    "title": "Fragment 184",
+    "chapter_label": "184",
+    "fragment_number": 184,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "350-351",
+    "target": "book.cleaned/184-fragment-184.md"
+  },
+  {
+    "order": 185,
+    "slug": "185-interlude",
+    "title": "Interlude",
+    "chapter_label": "185",
+    "fragment_number": 185,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "352",
+    "target": "book.cleaned/185-interlude.md"
+  },
+  {
+    "order": 186,
+    "slug": "186-fragment-186",
+    "title": "Fragment 186",
+    "chapter_label": "186",
+    "fragment_number": 186,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "353",
+    "target": "book.cleaned/186-fragment-186.md"
+  },
+  {
+    "order": 187,
+    "slug": "187-fragment-187",
+    "title": "Fragment 187",
+    "chapter_label": "187",
+    "fragment_number": 187,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "354-355",
+    "target": "book.cleaned/187-fragment-187.md"
+  },
+  {
+    "order": 188,
+    "slug": "188-fragment-188",
+    "title": "Fragment 188",
+    "chapter_label": "188",
+    "fragment_number": 188,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "356",
+    "target": "book.cleaned/188-fragment-188.md"
+  },
+  {
+    "order": 189,
+    "slug": "189-rainy-day",
+    "title": "Rainy Day",
+    "chapter_label": "189",
+    "fragment_number": 189,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "357",
+    "target": "book.cleaned/189-rainy-day.md"
+  },
+  {
+    "order": 190,
+    "slug": "190-fragment-190",
+    "title": "Fragment 190",
+    "chapter_label": "190",
+    "fragment_number": 190,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "358",
+    "target": "book.cleaned/190-fragment-190.md"
+  },
+  {
+    "order": 191,
+    "slug": "191-fragment-191",
+    "title": "Fragment 191",
+    "chapter_label": "191",
+    "fragment_number": 191,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "359-360",
+    "target": "book.cleaned/191-fragment-191.md"
+  },
+  {
+    "order": 192,
+    "slug": "192-fragment-192",
+    "title": "Fragment 192",
+    "chapter_label": "192",
+    "fragment_number": 192,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "361",
+    "target": "book.cleaned/192-fragment-192.md"
+  },
+  {
+    "order": 193,
+    "slug": "193-fragment-193",
+    "title": "Fragment 193",
+    "chapter_label": "193",
+    "fragment_number": 193,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "362-365",
+    "target": "book.cleaned/193-fragment-193.md"
+  },
+  {
+    "order": 194,
+    "slug": "194-fragment-194",
+    "title": "Fragment 194",
+    "chapter_label": "194",
+    "fragment_number": 194,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "366",
+    "target": "book.cleaned/194-fragment-194.md"
+  },
+  {
+    "order": 195,
+    "slug": "195-fragment-195",
+    "title": "Fragment 195",
+    "chapter_label": "195",
+    "fragment_number": 195,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "367",
+    "target": "book.cleaned/195-fragment-195.md"
+  },
+  {
+    "order": 196,
+    "slug": "196-fragment-196",
+    "title": "Fragment 196",
+    "chapter_label": "196",
+    "fragment_number": 196,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "368-369",
+    "target": "book.cleaned/196-fragment-196.md"
+  },
+  {
+    "order": 197,
+    "slug": "197-fragment-197",
+    "title": "Fragment 197",
+    "chapter_label": "197",
+    "fragment_number": 197,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "370",
+    "target": "book.cleaned/197-fragment-197.md"
+  },
+  {
+    "order": 198,
+    "slug": "198-holiday-notes",
+    "title": "Holiday Notes",
+    "chapter_label": "198",
+    "fragment_number": 198,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "371-373",
+    "target": "book.cleaned/198-holiday-notes.md"
+  },
+  {
+    "order": 199,
+    "slug": "199-fragment-199",
+    "title": "Fragment 199",
+    "chapter_label": "199",
+    "fragment_number": 199,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "374",
+    "target": "book.cleaned/199-fragment-199.md"
+  },
+  {
+    "order": 200,
+    "slug": "200-fragment-200",
+    "title": "Fragment 200",
+    "chapter_label": "200",
+    "fragment_number": 200,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "375-376",
+    "target": "book.cleaned/200-fragment-200.md"
+  },
+  {
+    "order": 201,
+    "slug": "201-fragment-201",
+    "title": "Fragment 201",
+    "chapter_label": "201",
+    "fragment_number": 201,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "377-378",
+    "target": "book.cleaned/201-fragment-201.md"
+  },
+  {
+    "order": 202,
+    "slug": "202-fragment-202",
+    "title": "Fragment 202",
+    "chapter_label": "202",
+    "fragment_number": 202,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "379-381",
+    "target": "book.cleaned/202-fragment-202.md"
+  },
+  {
+    "order": 203,
+    "slug": "203-fragment-203",
+    "title": "Fragment 203",
+    "chapter_label": "203",
+    "fragment_number": 203,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "382",
+    "target": "book.cleaned/203-fragment-203.md"
+  },
+  {
+    "order": 204,
+    "slug": "204-fragment-204",
+    "title": "Fragment 204",
+    "chapter_label": "204",
+    "fragment_number": 204,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "383-384",
+    "target": "book.cleaned/204-fragment-204.md"
+  },
+  {
+    "order": 205,
+    "slug": "205-fragment-205",
+    "title": "Fragment 205",
+    "chapter_label": "205",
+    "fragment_number": 205,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "385",
+    "target": "book.cleaned/205-fragment-205.md"
+  },
+  {
+    "order": 206,
+    "slug": "206-forest",
+    "title": "Forest",
+    "chapter_label": "206",
+    "fragment_number": 206,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "386",
+    "target": "book.cleaned/206-forest.md"
+  },
+  {
+    "order": 207,
+    "slug": "207-fragment-207",
+    "title": "Fragment 207",
+    "chapter_label": "207",
+    "fragment_number": 207,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "387-388",
+    "target": "book.cleaned/207-fragment-207.md"
+  },
+  {
+    "order": 208,
+    "slug": "208-fragment-208",
+    "title": "Fragment 208",
+    "chapter_label": "208",
+    "fragment_number": 208,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "389-391",
+    "target": "book.cleaned/208-fragment-208.md"
+  },
+  {
+    "order": 209,
+    "slug": "209-fragment-209",
+    "title": "Fragment 209",
+    "chapter_label": "209",
+    "fragment_number": 209,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "392-393",
+    "target": "book.cleaned/209-fragment-209.md"
+  },
+  {
+    "order": 210,
+    "slug": "210-aesthetics-of-discouragement",
+    "title": "Aesthetics of Discouragement",
+    "chapter_label": "210",
+    "fragment_number": 210,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "394",
+    "target": "book.cleaned/210-aesthetics-of-discouragement.md"
+  },
+  {
+    "order": 211,
+    "slug": "211-fragment-211",
+    "title": "Fragment 211",
+    "chapter_label": "211",
+    "fragment_number": 211,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "395",
+    "target": "book.cleaned/211-fragment-211.md"
+  },
+  {
+    "order": 212,
+    "slug": "212-fragment-212",
+    "title": "Fragment 212",
+    "chapter_label": "212",
+    "fragment_number": 212,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "396",
+    "target": "book.cleaned/212-fragment-212.md"
+  },
+  {
+    "order": 213,
+    "slug": "213-fragment-213",
+    "title": "Fragment 213",
+    "chapter_label": "213",
+    "fragment_number": 213,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "397-398",
+    "target": "book.cleaned/213-fragment-213.md"
+  },
+  {
+    "order": 214,
+    "slug": "214-fragment-214",
+    "title": "Fragment 214",
+    "chapter_label": "214",
+    "fragment_number": 214,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "399-400",
+    "target": "book.cleaned/214-fragment-214.md"
+  },
+  {
+    "order": 215,
+    "slug": "215-fragment-215",
+    "title": "Fragment 215",
+    "chapter_label": "215",
+    "fragment_number": 215,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "401",
+    "target": "book.cleaned/215-fragment-215.md"
+  },
+  {
+    "order": 216,
+    "slug": "216-fragment-216",
+    "title": "Fragment 216",
+    "chapter_label": "216",
+    "fragment_number": 216,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "402-403",
+    "target": "book.cleaned/216-fragment-216.md"
+  },
+  {
+    "order": 217,
+    "slug": "217-fragment-217",
+    "title": "Fragment 217",
+    "chapter_label": "217",
+    "fragment_number": 217,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "404",
+    "target": "book.cleaned/217-fragment-217.md"
+  },
+  {
+    "order": 218,
+    "slug": "218-fragment-218",
+    "title": "Fragment 218",
+    "chapter_label": "218",
+    "fragment_number": 218,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "405",
+    "target": "book.cleaned/218-fragment-218.md"
+  },
+  {
+    "order": 219,
+    "slug": "219-fragment-219",
+    "title": "Fragment 219",
+    "chapter_label": "219",
+    "fragment_number": 219,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "406-408",
+    "target": "book.cleaned/219-fragment-219.md"
+  },
+  {
+    "order": 220,
+    "slug": "220-dolorous-interlude",
+    "title": "Dolorous Interlude",
+    "chapter_label": "220",
+    "fragment_number": 220,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "409",
+    "target": "book.cleaned/220-dolorous-interlude.md"
+  },
+  {
+    "order": 221,
+    "slug": "221-fragment-221",
+    "title": "Fragment 221",
+    "chapter_label": "221",
+    "fragment_number": 221,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "410-411",
+    "target": "book.cleaned/221-fragment-221.md"
+  },
+  {
+    "order": 222,
+    "slug": "222-fragment-222",
+    "title": "Fragment 222",
+    "chapter_label": "222",
+    "fragment_number": 222,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "412",
+    "target": "book.cleaned/222-fragment-222.md"
+  },
+  {
+    "order": 223,
+    "slug": "223-fragment-223",
+    "title": "Fragment 223",
+    "chapter_label": "223",
+    "fragment_number": 223,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "413",
+    "target": "book.cleaned/223-fragment-223.md"
+  },
+  {
+    "order": 224,
+    "slug": "224-fragment-224",
+    "title": "Fragment 224",
+    "chapter_label": "224",
+    "fragment_number": 224,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "414-415",
+    "target": "book.cleaned/224-fragment-224.md"
+  },
+  {
+    "order": 225,
+    "slug": "225-fragment-225",
+    "title": "Fragment 225",
+    "chapter_label": "225",
+    "fragment_number": 225,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "416-417",
+    "target": "book.cleaned/225-fragment-225.md"
+  },
+  {
+    "order": 226,
+    "slug": "226-fragment-226",
+    "title": "Fragment 226",
+    "chapter_label": "226",
+    "fragment_number": 226,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "418",
+    "target": "book.cleaned/226-fragment-226.md"
+  },
+  {
+    "order": 227,
+    "slug": "227-fragment-227",
+    "title": "Fragment 227",
+    "chapter_label": "227",
+    "fragment_number": 227,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "419-420",
+    "target": "book.cleaned/227-fragment-227.md"
+  },
+  {
+    "order": 228,
+    "slug": "228-fragment-228",
+    "title": "Fragment 228",
+    "chapter_label": "228",
+    "fragment_number": 228,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "421",
+    "target": "book.cleaned/228-fragment-228.md"
+  },
+  {
+    "order": 229,
+    "slug": "229-fragment-229",
+    "title": "Fragment 229",
+    "chapter_label": "229",
+    "fragment_number": 229,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "422",
+    "target": "book.cleaned/229-fragment-229.md"
+  },
+  {
+    "order": 230,
+    "slug": "230-fragment-230",
+    "title": "Fragment 230",
+    "chapter_label": "230",
+    "fragment_number": 230,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "423",
+    "target": "book.cleaned/230-fragment-230.md"
+  },
+  {
+    "order": 231,
+    "slug": "231-fragment-231",
+    "title": "Fragment 231",
+    "chapter_label": "231",
+    "fragment_number": 231,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "424",
+    "target": "book.cleaned/231-fragment-231.md"
+  },
+  {
+    "order": 232,
+    "slug": "232-fragment-232",
+    "title": "Fragment 232",
+    "chapter_label": "232",
+    "fragment_number": 232,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "425-426",
+    "target": "book.cleaned/232-fragment-232.md"
+  },
+  {
+    "order": 233,
+    "slug": "233-fragment-233",
+    "title": "Fragment 233",
+    "chapter_label": "233",
+    "fragment_number": 233,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "427",
+    "target": "book.cleaned/233-fragment-233.md"
+  },
+  {
+    "order": 234,
+    "slug": "234-fragment-234",
+    "title": "Fragment 234",
+    "chapter_label": "234",
+    "fragment_number": 234,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "428",
+    "target": "book.cleaned/234-fragment-234.md"
+  },
+  {
+    "order": 235,
+    "slug": "235-fragment-235",
+    "title": "Fragment 235",
+    "chapter_label": "235",
+    "fragment_number": 235,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "429-432",
+    "target": "book.cleaned/235-fragment-235.md"
+  },
+  {
+    "order": 236,
+    "slug": "236-fragment-236",
+    "title": "Fragment 236",
+    "chapter_label": "236",
+    "fragment_number": 236,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "433",
+    "target": "book.cleaned/236-fragment-236.md"
+  },
+  {
+    "order": 237,
+    "slug": "237-notes-for-a-rule-of-life",
+    "title": "Notes for a Rule of Life",
+    "chapter_label": "237",
+    "fragment_number": 237,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "434",
+    "target": "book.cleaned/237-notes-for-a-rule-of-life.md"
+  },
+  {
+    "order": 238,
+    "slug": "238-fragment-238",
+    "title": "Fragment 238",
+    "chapter_label": "238",
+    "fragment_number": 238,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "435",
+    "target": "book.cleaned/238-fragment-238.md"
+  },
+  {
+    "order": 239,
+    "slug": "239-fragment-239",
+    "title": "Fragment 239",
+    "chapter_label": "239",
+    "fragment_number": 239,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "436",
+    "target": "book.cleaned/239-fragment-239.md"
+  },
+  {
+    "order": 240,
+    "slug": "240-rainy-landscape",
+    "title": "Rainy Landscape",
+    "chapter_label": "240",
+    "fragment_number": 240,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "437-438",
+    "target": "book.cleaned/240-rainy-landscape.md"
+  },
+  {
+    "order": 241,
+    "slug": "241-triangular-dream",
+    "title": "Triangular Dream",
+    "chapter_label": "241",
+    "fragment_number": 241,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "439",
+    "target": "book.cleaned/241-triangular-dream.md"
+  },
+  {
+    "order": 242,
+    "slug": "242-fragment-242",
+    "title": "Fragment 242",
+    "chapter_label": "242",
+    "fragment_number": 242,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "440",
+    "target": "book.cleaned/242-fragment-242.md"
+  },
+  {
+    "order": 243,
+    "slug": "243-fragment-243",
+    "title": "Fragment 243",
+    "chapter_label": "243",
+    "fragment_number": 243,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "441-442",
+    "target": "book.cleaned/243-fragment-243.md"
+  },
+  {
+    "order": 244,
+    "slug": "244-fragment-244",
+    "title": "Fragment 244",
+    "chapter_label": "244",
+    "fragment_number": 244,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "443",
+    "target": "book.cleaned/244-fragment-244.md"
+  },
+  {
+    "order": 245,
+    "slug": "245-fragment-245",
+    "title": "Fragment 245",
+    "chapter_label": "245",
+    "fragment_number": 245,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "444",
+    "target": "book.cleaned/245-fragment-245.md"
+  },
+  {
+    "order": 246,
+    "slug": "246-fragment-246",
+    "title": "Fragment 246",
+    "chapter_label": "246",
+    "fragment_number": 246,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "445",
+    "target": "book.cleaned/246-fragment-246.md"
+  },
+  {
+    "order": 247,
+    "slug": "247-fragment-247",
+    "title": "Fragment 247",
+    "chapter_label": "247",
+    "fragment_number": 247,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "446",
+    "target": "book.cleaned/247-fragment-247.md"
+  },
+  {
+    "order": 248,
+    "slug": "248-fragment-248",
+    "title": "Fragment 248",
+    "chapter_label": "248",
+    "fragment_number": 248,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "447",
+    "target": "book.cleaned/248-fragment-248.md"
+  },
+  {
+    "order": 249,
+    "slug": "249-fragment-249",
+    "title": "Fragment 249",
+    "chapter_label": "249",
+    "fragment_number": 249,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "448-450",
+    "target": "book.cleaned/249-fragment-249.md"
+  },
+  {
+    "order": 250,
+    "slug": "250-fragment-250",
+    "title": "Fragment 250",
+    "chapter_label": "250",
+    "fragment_number": 250,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "451-452",
+    "target": "book.cleaned/250-fragment-250.md"
+  },
+  {
+    "order": 251,
+    "slug": "251-fragments-of-an-autobiography",
+    "title": "Fragments of an Autobiography",
+    "chapter_label": "251",
+    "fragment_number": 251,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "453-456",
+    "target": "book.cleaned/251-fragments-of-an-autobiography.md"
+  },
+  {
+    "order": 252,
+    "slug": "252-fragment-252",
+    "title": "Fragment 252",
+    "chapter_label": "252",
+    "fragment_number": 252,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "457",
+    "target": "book.cleaned/252-fragment-252.md"
+  },
+  {
+    "order": 253,
+    "slug": "253-fragment-253",
+    "title": "Fragment 253",
+    "chapter_label": "253",
+    "fragment_number": 253,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "458",
+    "target": "book.cleaned/253-fragment-253.md"
+  },
+  {
+    "order": 254,
+    "slug": "254-fragment-254",
+    "title": "Fragment 254",
+    "chapter_label": "254",
+    "fragment_number": 254,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "459-461",
+    "target": "book.cleaned/254-fragment-254.md"
+  },
+  {
+    "order": 255,
+    "slug": "255-fragment-255",
+    "title": "Fragment 255",
+    "chapter_label": "255",
+    "fragment_number": 255,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "462-464",
+    "target": "book.cleaned/255-fragment-255.md"
+  },
+  {
+    "order": 256,
+    "slug": "256-fragment-256",
+    "title": "Fragment 256",
+    "chapter_label": "256",
+    "fragment_number": 256,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "465-466",
+    "target": "book.cleaned/256-fragment-256.md"
+  },
+  {
+    "order": 257,
+    "slug": "257-fragment-257",
+    "title": "Fragment 257",
+    "chapter_label": "257",
+    "fragment_number": 257,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "467",
+    "target": "book.cleaned/257-fragment-257.md"
+  },
+  {
+    "order": 258,
+    "slug": "258-fragment-258",
+    "title": "Fragment 258",
+    "chapter_label": "258",
+    "fragment_number": 258,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "468",
+    "target": "book.cleaned/258-fragment-258.md"
+  },
+  {
+    "order": 259,
+    "slug": "259-fragment-259",
+    "title": "Fragment 259",
+    "chapter_label": "259",
+    "fragment_number": 259,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "469-471",
+    "target": "book.cleaned/259-fragment-259.md"
+  },
+  {
+    "order": 260,
+    "slug": "260-fragment-260",
+    "title": "Fragment 260",
+    "chapter_label": "260",
+    "fragment_number": 260,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "472-474",
+    "target": "book.cleaned/260-fragment-260.md"
+  },
+  {
+    "order": 261,
+    "slug": "261-fragment-261",
+    "title": "Fragment 261",
+    "chapter_label": "261",
+    "fragment_number": 261,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "475",
+    "target": "book.cleaned/261-fragment-261.md"
+  },
+  {
+    "order": 262,
+    "slug": "262-fragment-262",
+    "title": "Fragment 262",
+    "chapter_label": "262",
+    "fragment_number": 262,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "476-477",
+    "target": "book.cleaned/262-fragment-262.md"
+  },
+  {
+    "order": 263,
+    "slug": "263-fragment-263",
+    "title": "Fragment 263",
+    "chapter_label": "263",
+    "fragment_number": 263,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "478-480",
+    "target": "book.cleaned/263-fragment-263.md"
+  },
+  {
+    "order": 264,
+    "slug": "264-fragment-264",
+    "title": "Fragment 264",
+    "chapter_label": "264",
+    "fragment_number": 264,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "481",
+    "target": "book.cleaned/264-fragment-264.md"
+  },
+  {
+    "order": 265,
+    "slug": "265-fragment-265",
+    "title": "Fragment 265",
+    "chapter_label": "265",
+    "fragment_number": 265,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "482-483",
+    "target": "book.cleaned/265-fragment-265.md"
+  },
+  {
+    "order": 266,
+    "slug": "266-fragment-266",
+    "title": "Fragment 266",
+    "chapter_label": "266",
+    "fragment_number": 266,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "484-486",
+    "target": "book.cleaned/266-fragment-266.md"
+  },
+  {
+    "order": 267,
+    "slug": "267-fragment-267",
+    "title": "Fragment 267",
+    "chapter_label": "267",
+    "fragment_number": 267,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "487",
+    "target": "book.cleaned/267-fragment-267.md"
+  },
+  {
+    "order": 268,
+    "slug": "268-fragment-268",
+    "title": "Fragment 268",
+    "chapter_label": "268",
+    "fragment_number": 268,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "488",
+    "target": "book.cleaned/268-fragment-268.md"
+  },
+  {
+    "order": 269,
+    "slug": "269-fragment-269",
+    "title": "Fragment 269",
+    "chapter_label": "269",
+    "fragment_number": 269,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "489",
+    "target": "book.cleaned/269-fragment-269.md"
+  },
+  {
+    "order": 270,
+    "slug": "270-fragment-270",
+    "title": "Fragment 270",
+    "chapter_label": "270",
+    "fragment_number": 270,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "490",
+    "target": "book.cleaned/270-fragment-270.md"
+  },
+  {
+    "order": 271,
+    "slug": "271-fragment-271",
+    "title": "Fragment 271",
+    "chapter_label": "271",
+    "fragment_number": 271,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "491",
+    "target": "book.cleaned/271-fragment-271.md"
+  },
+  {
+    "order": 272,
+    "slug": "272-fragment-272",
+    "title": "Fragment 272",
+    "chapter_label": "272",
+    "fragment_number": 272,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "492",
+    "target": "book.cleaned/272-fragment-272.md"
+  },
+  {
+    "order": 273,
+    "slug": "273-fragment-273",
+    "title": "Fragment 273",
+    "chapter_label": "273",
+    "fragment_number": 273,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "493",
+    "target": "book.cleaned/273-fragment-273.md"
+  },
+  {
+    "order": 274,
+    "slug": "274-fragment-274",
+    "title": "Fragment 274",
+    "chapter_label": "274",
+    "fragment_number": 274,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "494-495",
+    "target": "book.cleaned/274-fragment-274.md"
+  },
+  {
+    "order": 275,
+    "slug": "275-fragment-275",
+    "title": "Fragment 275",
+    "chapter_label": "275",
+    "fragment_number": 275,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "496",
+    "target": "book.cleaned/275-fragment-275.md"
+  },
+  {
+    "order": 276,
+    "slug": "276-fragment-276",
+    "title": "Fragment 276",
+    "chapter_label": "276",
+    "fragment_number": 276,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "497",
+    "target": "book.cleaned/276-fragment-276.md"
+  },
+  {
+    "order": 277,
+    "slug": "277-fragment-277",
+    "title": "Fragment 277",
+    "chapter_label": "277",
+    "fragment_number": 277,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "498-500",
+    "target": "book.cleaned/277-fragment-277.md"
+  },
+  {
+    "order": 278,
+    "slug": "278-fragment-278",
+    "title": "Fragment 278",
+    "chapter_label": "278",
+    "fragment_number": 278,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "501",
+    "target": "book.cleaned/278-fragment-278.md"
+  },
+  {
+    "order": 279,
+    "slug": "279-fragment-279",
+    "title": "Fragment 279",
+    "chapter_label": "279",
+    "fragment_number": 279,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "502-503",
+    "target": "book.cleaned/279-fragment-279.md"
+  },
+  {
+    "order": 280,
+    "slug": "280-fragment-280",
+    "title": "Fragment 280",
+    "chapter_label": "280",
+    "fragment_number": 280,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "504",
+    "target": "book.cleaned/280-fragment-280.md"
+  },
+  {
+    "order": 281,
+    "slug": "281-fragment-281",
+    "title": "Fragment 281",
+    "chapter_label": "281",
+    "fragment_number": 281,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "505",
+    "target": "book.cleaned/281-fragment-281.md"
+  },
+  {
+    "order": 282,
+    "slug": "282-fragment-282",
+    "title": "Fragment 282",
+    "chapter_label": "282",
+    "fragment_number": 282,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "506",
+    "target": "book.cleaned/282-fragment-282.md"
+  },
+  {
+    "order": 283,
+    "slug": "283-fragment-283",
+    "title": "Fragment 283",
+    "chapter_label": "283",
+    "fragment_number": 283,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "507-508",
+    "target": "book.cleaned/283-fragment-283.md"
+  },
+  {
+    "order": 284,
+    "slug": "284-fragment-284",
+    "title": "Fragment 284",
+    "chapter_label": "284",
+    "fragment_number": 284,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "509",
+    "target": "book.cleaned/284-fragment-284.md"
+  },
+  {
+    "order": 285,
+    "slug": "285-fragment-285",
+    "title": "Fragment 285",
+    "chapter_label": "285",
+    "fragment_number": 285,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "510-511",
+    "target": "book.cleaned/285-fragment-285.md"
+  },
+  {
+    "order": 286,
+    "slug": "286-fragment-286",
+    "title": "Fragment 286",
+    "chapter_label": "286",
+    "fragment_number": 286,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "512",
+    "target": "book.cleaned/286-fragment-286.md"
+  },
+  {
+    "order": 287,
+    "slug": "287-fragment-287",
+    "title": "Fragment 287",
+    "chapter_label": "287",
+    "fragment_number": 287,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "513",
+    "target": "book.cleaned/287-fragment-287.md"
+  },
+  {
+    "order": 288,
+    "slug": "288-fragment-288",
+    "title": "Fragment 288",
+    "chapter_label": "288",
+    "fragment_number": 288,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "514",
+    "target": "book.cleaned/288-fragment-288.md"
+  },
+  {
+    "order": 289,
+    "slug": "289-fragment-289",
+    "title": "Fragment 289",
+    "chapter_label": "289",
+    "fragment_number": 289,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "515-517",
+    "target": "book.cleaned/289-fragment-289.md"
+  },
+  {
+    "order": 290,
+    "slug": "290-fragment-290",
+    "title": "Fragment 290",
+    "chapter_label": "290",
+    "fragment_number": 290,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "518-519",
+    "target": "book.cleaned/290-fragment-290.md"
+  },
+  {
+    "order": 291,
+    "slug": "291-fragment-291",
+    "title": "Fragment 291",
+    "chapter_label": "291",
+    "fragment_number": 291,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "520",
+    "target": "book.cleaned/291-fragment-291.md"
+  },
+  {
+    "order": 292,
+    "slug": "292-fragment-292",
+    "title": "Fragment 292",
+    "chapter_label": "292",
+    "fragment_number": 292,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "521",
+    "target": "book.cleaned/292-fragment-292.md"
+  },
+  {
+    "order": 293,
+    "slug": "293-dolorous-interlude",
+    "title": "Dolorous Interlude",
+    "chapter_label": "293",
+    "fragment_number": 293,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "522",
+    "target": "book.cleaned/293-dolorous-interlude.md"
+  },
+  {
+    "order": 294,
+    "slug": "294-fragment-294",
+    "title": "Fragment 294",
+    "chapter_label": "294",
+    "fragment_number": 294,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "523",
+    "target": "book.cleaned/294-fragment-294.md"
+  },
+  {
+    "order": 295,
+    "slug": "295-fragment-295",
+    "title": "Fragment 295",
+    "chapter_label": "295",
+    "fragment_number": 295,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "524",
+    "target": "book.cleaned/295-fragment-295.md"
+  },
+  {
+    "order": 296,
+    "slug": "296-fragment-296",
+    "title": "Fragment 296",
+    "chapter_label": "296",
+    "fragment_number": 296,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "525",
+    "target": "book.cleaned/296-fragment-296.md"
+  },
+  {
+    "order": 297,
+    "slug": "297-fragment-297",
+    "title": "Fragment 297",
+    "chapter_label": "297",
+    "fragment_number": 297,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "526",
+    "target": "book.cleaned/297-fragment-297.md"
+  },
+  {
+    "order": 298,
+    "slug": "298-fragment-298",
+    "title": "Fragment 298",
+    "chapter_label": "298",
+    "fragment_number": 298,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "527-528",
+    "target": "book.cleaned/298-fragment-298.md"
+  },
+  {
+    "order": 299,
+    "slug": "299-fragment-299",
+    "title": "Fragment 299",
+    "chapter_label": "299",
+    "fragment_number": 299,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "529",
+    "target": "book.cleaned/299-fragment-299.md"
+  },
+  {
+    "order": 300,
+    "slug": "300-triangular-dream",
+    "title": "Triangular Dream",
+    "chapter_label": "300",
+    "fragment_number": 300,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "530",
+    "target": "book.cleaned/300-triangular-dream.md"
+  },
+  {
+    "order": 301,
+    "slug": "301-fragment-301",
+    "title": "Fragment 301",
+    "chapter_label": "301",
+    "fragment_number": 301,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "531",
+    "target": "book.cleaned/301-fragment-301.md"
+  },
+  {
+    "order": 302,
+    "slug": "302-fragment-302",
+    "title": "Fragment 302",
+    "chapter_label": "302",
+    "fragment_number": 302,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "532-533",
+    "target": "book.cleaned/302-fragment-302.md"
+  },
+  {
+    "order": 303,
+    "slug": "303-fragment-303",
+    "title": "Fragment 303",
+    "chapter_label": "303",
+    "fragment_number": 303,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "534-536",
+    "target": "book.cleaned/303-fragment-303.md"
+  },
+  {
+    "order": 304,
+    "slug": "304-fragment-304",
+    "title": "Fragment 304",
+    "chapter_label": "304",
+    "fragment_number": 304,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "537",
+    "target": "book.cleaned/304-fragment-304.md"
+  },
+  {
+    "order": 305,
+    "slug": "305-fragment-305",
+    "title": "Fragment 305",
+    "chapter_label": "305",
+    "fragment_number": 305,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "538-539",
+    "target": "book.cleaned/305-fragment-305.md"
+  },
+  {
+    "order": 306,
+    "slug": "306-fragment-306",
+    "title": "Fragment 306",
+    "chapter_label": "306",
+    "fragment_number": 306,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "540-542",
+    "target": "book.cleaned/306-fragment-306.md"
+  },
+  {
+    "order": 307,
+    "slug": "307-aesthetics-of-discouragement",
+    "title": "Aesthetics of Discouragement",
+    "chapter_label": "307",
+    "fragment_number": 307,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "543",
+    "target": "book.cleaned/307-aesthetics-of-discouragement.md"
+  },
+  {
+    "order": 308,
+    "slug": "308-fragment-308",
+    "title": "Fragment 308",
+    "chapter_label": "308",
+    "fragment_number": 308,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "544",
+    "target": "book.cleaned/308-fragment-308.md"
+  },
+  {
+    "order": 309,
+    "slug": "309-fragment-309",
+    "title": "Fragment 309",
+    "chapter_label": "309",
+    "fragment_number": 309,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "545-546",
+    "target": "book.cleaned/309-fragment-309.md"
+  },
+  {
+    "order": 310,
+    "slug": "310-fragment-310",
+    "title": "Fragment 310",
+    "chapter_label": "310",
+    "fragment_number": 310,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "547-548",
+    "target": "book.cleaned/310-fragment-310.md"
+  },
+  {
+    "order": 311,
+    "slug": "311-fragment-311",
+    "title": "Fragment 311",
+    "chapter_label": "311",
+    "fragment_number": 311,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "549",
+    "target": "book.cleaned/311-fragment-311.md"
+  },
+  {
+    "order": 312,
+    "slug": "312-fragment-312",
+    "title": "Fragment 312",
+    "chapter_label": "312",
+    "fragment_number": 312,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "550-551",
+    "target": "book.cleaned/312-fragment-312.md"
+  },
+  {
+    "order": 313,
+    "slug": "313-fragment-313",
+    "title": "Fragment 313",
+    "chapter_label": "313",
+    "fragment_number": 313,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "552",
+    "target": "book.cleaned/313-fragment-313.md"
+  },
+  {
+    "order": 314,
+    "slug": "314-fragment-314",
+    "title": "Fragment 314",
+    "chapter_label": "314",
+    "fragment_number": 314,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "553-554",
+    "target": "book.cleaned/314-fragment-314.md"
+  },
+  {
+    "order": 315,
+    "slug": "315-fragment-315",
+    "title": "Fragment 315",
+    "chapter_label": "315",
+    "fragment_number": 315,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "555",
+    "target": "book.cleaned/315-fragment-315.md"
+  },
+  {
+    "order": 316,
+    "slug": "316-fragment-316",
+    "title": "Fragment 316",
+    "chapter_label": "316",
+    "fragment_number": 316,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "556",
+    "target": "book.cleaned/316-fragment-316.md"
+  },
+  {
+    "order": 317,
+    "slug": "317-fragment-317",
+    "title": "Fragment 317",
+    "chapter_label": "317",
+    "fragment_number": 317,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "557-559",
+    "target": "book.cleaned/317-fragment-317.md"
+  },
+  {
+    "order": 318,
+    "slug": "318-fragment-318",
+    "title": "Fragment 318",
+    "chapter_label": "318",
+    "fragment_number": 318,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "560",
+    "target": "book.cleaned/318-fragment-318.md"
+  },
+  {
+    "order": 319,
+    "slug": "319-fragment-319",
+    "title": "Fragment 319",
+    "chapter_label": "319",
+    "fragment_number": 319,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "561-563",
+    "target": "book.cleaned/319-fragment-319.md"
+  },
+  {
+    "order": 320,
+    "slug": "320-fragment-320",
+    "title": "Fragment 320",
+    "chapter_label": "320",
+    "fragment_number": 320,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "564-565",
+    "target": "book.cleaned/320-fragment-320.md"
+  },
+  {
+    "order": 321,
+    "slug": "321-fragment-321",
+    "title": "Fragment 321",
+    "chapter_label": "321",
+    "fragment_number": 321,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "566",
+    "target": "book.cleaned/321-fragment-321.md"
+  },
+  {
+    "order": 322,
+    "slug": "322-fragment-322",
+    "title": "Fragment 322",
+    "chapter_label": "322",
+    "fragment_number": 322,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "567-569",
+    "target": "book.cleaned/322-fragment-322.md"
+  },
+  {
+    "order": 323,
+    "slug": "323-fragment-323",
+    "title": "Fragment 323",
+    "chapter_label": "323",
+    "fragment_number": 323,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "570",
+    "target": "book.cleaned/323-fragment-323.md"
+  },
+  {
+    "order": 324,
+    "slug": "324-fragment-324",
+    "title": "Fragment 324",
+    "chapter_label": "324",
+    "fragment_number": 324,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "571",
+    "target": "book.cleaned/324-fragment-324.md"
+  },
+  {
+    "order": 325,
+    "slug": "325-fragment-325",
+    "title": "Fragment 325",
+    "chapter_label": "325",
+    "fragment_number": 325,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "572",
+    "target": "book.cleaned/325-fragment-325.md"
+  },
+  {
+    "order": 326,
+    "slug": "326-fragment-326",
+    "title": "Fragment 326",
+    "chapter_label": "326",
+    "fragment_number": 326,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "573",
+    "target": "book.cleaned/326-fragment-326.md"
+  },
+  {
+    "order": 327,
+    "slug": "327-fragment-327",
+    "title": "Fragment 327",
+    "chapter_label": "327",
+    "fragment_number": 327,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "574",
+    "target": "book.cleaned/327-fragment-327.md"
+  },
+  {
+    "order": 328,
+    "slug": "328-fragment-328",
+    "title": "Fragment 328",
+    "chapter_label": "328",
+    "fragment_number": 328,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "575-576",
+    "target": "book.cleaned/328-fragment-328.md"
+  },
+  {
+    "order": 329,
+    "slug": "329-fragment-329",
+    "title": "Fragment 329",
+    "chapter_label": "329",
+    "fragment_number": 329,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "577",
+    "target": "book.cleaned/329-fragment-329.md"
+  },
+  {
+    "order": 330,
+    "slug": "330-fragment-330",
+    "title": "Fragment 330",
+    "chapter_label": "330",
+    "fragment_number": 330,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "578-580",
+    "target": "book.cleaned/330-fragment-330.md"
+  },
+  {
+    "order": 331,
+    "slug": "331-fragment-331",
+    "title": "Fragment 331",
+    "chapter_label": "331",
+    "fragment_number": 331,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "581-582",
+    "target": "book.cleaned/331-fragment-331.md"
+  },
+  {
+    "order": 332,
+    "slug": "332-fragment-332",
+    "title": "Fragment 332",
+    "chapter_label": "332",
+    "fragment_number": 332,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "583",
+    "target": "book.cleaned/332-fragment-332.md"
+  },
+  {
+    "order": 333,
+    "slug": "333-fragment-333",
+    "title": "Fragment 333",
+    "chapter_label": "333",
+    "fragment_number": 333,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "584",
+    "target": "book.cleaned/333-fragment-333.md"
+  },
+  {
+    "order": 334,
+    "slug": "334-fragment-334",
+    "title": "Fragment 334",
+    "chapter_label": "334",
+    "fragment_number": 334,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "585-586",
+    "target": "book.cleaned/334-fragment-334.md"
+  },
+  {
+    "order": 335,
+    "slug": "335-fragment-335",
+    "title": "Fragment 335",
+    "chapter_label": "335",
+    "fragment_number": 335,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "587",
+    "target": "book.cleaned/335-fragment-335.md"
+  },
+  {
+    "order": 336,
+    "slug": "336-fragment-336",
+    "title": "Fragment 336",
+    "chapter_label": "336",
+    "fragment_number": 336,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "588",
+    "target": "book.cleaned/336-fragment-336.md"
+  },
+  {
+    "order": 337,
+    "slug": "337-fragment-337",
+    "title": "Fragment 337",
+    "chapter_label": "337",
+    "fragment_number": 337,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "589",
+    "target": "book.cleaned/337-fragment-337.md"
+  },
+  {
+    "order": 338,
+    "slug": "338-fragment-338",
+    "title": "Fragment 338",
+    "chapter_label": "338",
+    "fragment_number": 338,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "590-592",
+    "target": "book.cleaned/338-fragment-338.md"
+  },
+  {
+    "order": 339,
+    "slug": "339-fragment-339",
+    "title": "Fragment 339",
+    "chapter_label": "339",
+    "fragment_number": 339,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "593-594",
+    "target": "book.cleaned/339-fragment-339.md"
+  },
+  {
+    "order": 340,
+    "slug": "340-fragment-340",
+    "title": "Fragment 340",
+    "chapter_label": "340",
+    "fragment_number": 340,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "595",
+    "target": "book.cleaned/340-fragment-340.md"
+  },
+  {
+    "order": 341,
+    "slug": "341-fragment-341",
+    "title": "Fragment 341",
+    "chapter_label": "341",
+    "fragment_number": 341,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "596-597",
+    "target": "book.cleaned/341-fragment-341.md"
+  },
+  {
+    "order": 342,
+    "slug": "342-fragment-342",
+    "title": "Fragment 342",
+    "chapter_label": "342",
+    "fragment_number": 342,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "598-599",
+    "target": "book.cleaned/342-fragment-342.md"
+  },
+  {
+    "order": 343,
+    "slug": "343-a-day-zigzag",
+    "title": "A Day (zigzag)",
+    "chapter_label": "343",
+    "fragment_number": 343,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "600",
+    "target": "book.cleaned/343-a-day-zigzag.md"
+  },
+  {
+    "order": 344,
+    "slug": "344-in-praise-of-sterile-women",
+    "title": "In Praise of Sterile Women",
+    "chapter_label": "344",
+    "fragment_number": 344,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "601",
+    "target": "book.cleaned/344-in-praise-of-sterile-women.md"
+  },
+  {
+    "order": 345,
+    "slug": "345-fragment-345",
+    "title": "Fragment 345",
+    "chapter_label": "345",
+    "fragment_number": 345,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "602-603",
+    "target": "book.cleaned/345-fragment-345.md"
+  },
+  {
+    "order": 346,
+    "slug": "346-fragment-346",
+    "title": "Fragment 346",
+    "chapter_label": "346",
+    "fragment_number": 346,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "604",
+    "target": "book.cleaned/346-fragment-346.md"
+  },
+  {
+    "order": 347,
+    "slug": "347-a-letter-not-to-post",
+    "title": "A Letter Not to Post",
+    "chapter_label": "347",
+    "fragment_number": 347,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "605",
+    "target": "book.cleaned/347-a-letter-not-to-post.md"
+  },
+  {
+    "order": 348,
+    "slug": "348-fragment-348",
+    "title": "Fragment 348",
+    "chapter_label": "348",
+    "fragment_number": 348,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "606-607",
+    "target": "book.cleaned/348-fragment-348.md"
+  },
+  {
+    "order": 349,
+    "slug": "349-fragment-349",
+    "title": "Fragment 349",
+    "chapter_label": "349",
+    "fragment_number": 349,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "608",
+    "target": "book.cleaned/349-fragment-349.md"
+  },
+  {
+    "order": 350,
+    "slug": "350-fragment-350",
+    "title": "Fragment 350",
+    "chapter_label": "350",
+    "fragment_number": 350,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "609-610",
+    "target": "book.cleaned/350-fragment-350.md"
+  },
+  {
+    "order": 351,
+    "slug": "351-games-of-solitaire",
+    "title": "Games of Solitaire",
+    "chapter_label": "351",
+    "fragment_number": 351,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "611",
+    "target": "book.cleaned/351-games-of-solitaire.md"
+  },
+  {
+    "order": 352,
+    "slug": "352-fragment-352",
+    "title": "Fragment 352",
+    "chapter_label": "352",
+    "fragment_number": 352,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "612",
+    "target": "book.cleaned/352-fragment-352.md"
+  },
+  {
+    "order": 353,
+    "slug": "353-fragment-353",
+    "title": "Fragment 353",
+    "chapter_label": "353",
+    "fragment_number": 353,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "613-614",
+    "target": "book.cleaned/353-fragment-353.md"
+  },
+  {
+    "order": 354,
+    "slug": "354-fragment-354",
+    "title": "Fragment 354",
+    "chapter_label": "354",
+    "fragment_number": 354,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "615",
+    "target": "book.cleaned/354-fragment-354.md"
+  },
+  {
+    "order": 355,
+    "slug": "355-fragment-355",
+    "title": "Fragment 355",
+    "chapter_label": "355",
+    "fragment_number": 355,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "616",
+    "target": "book.cleaned/355-fragment-355.md"
+  },
+  {
+    "order": 356,
+    "slug": "356-fragment-356",
+    "title": "Fragment 356",
+    "chapter_label": "356",
+    "fragment_number": 356,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "617-618",
+    "target": "book.cleaned/356-fragment-356.md"
+  },
+  {
+    "order": 357,
+    "slug": "357-fragment-357",
+    "title": "Fragment 357",
+    "chapter_label": "357",
+    "fragment_number": 357,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "619",
+    "target": "book.cleaned/357-fragment-357.md"
+  },
+  {
+    "order": 358,
+    "slug": "358-fragment-358",
+    "title": "Fragment 358",
+    "chapter_label": "358",
+    "fragment_number": 358,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "620-621",
+    "target": "book.cleaned/358-fragment-358.md"
+  },
+  {
+    "order": 359,
+    "slug": "359-fragment-359",
+    "title": "Fragment 359",
+    "chapter_label": "359",
+    "fragment_number": 359,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "622",
+    "target": "book.cleaned/359-fragment-359.md"
+  },
+  {
+    "order": 360,
+    "slug": "360-fragment-360",
+    "title": "Fragment 360",
+    "chapter_label": "360",
+    "fragment_number": 360,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "623",
+    "target": "book.cleaned/360-fragment-360.md"
+  },
+  {
+    "order": 361,
+    "slug": "361-fragment-361",
+    "title": "Fragment 361",
+    "chapter_label": "361",
+    "fragment_number": 361,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "624",
+    "target": "book.cleaned/361-fragment-361.md"
+  },
+  {
+    "order": 362,
+    "slug": "362-fragment-362",
+    "title": "Fragment 362",
+    "chapter_label": "362",
+    "fragment_number": 362,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "625",
+    "target": "book.cleaned/362-fragment-362.md"
+  },
+  {
+    "order": 363,
+    "slug": "363-fragment-363",
+    "title": "Fragment 363",
+    "chapter_label": "363",
+    "fragment_number": 363,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "626-627",
+    "target": "book.cleaned/363-fragment-363.md"
+  },
+  {
+    "order": 364,
+    "slug": "364-fragment-364",
+    "title": "Fragment 364",
+    "chapter_label": "364",
+    "fragment_number": 364,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "628",
+    "target": "book.cleaned/364-fragment-364.md"
+  },
+  {
+    "order": 365,
+    "slug": "365-fragment-365",
+    "title": "Fragment 365",
+    "chapter_label": "365",
+    "fragment_number": 365,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "629-630",
+    "target": "book.cleaned/365-fragment-365.md"
+  },
+  {
+    "order": 366,
+    "slug": "366-fragment-366",
+    "title": "Fragment 366",
+    "chapter_label": "366",
+    "fragment_number": 366,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "631",
+    "target": "book.cleaned/366-fragment-366.md"
+  },
+  {
+    "order": 367,
+    "slug": "367-fragment-367",
+    "title": "Fragment 367",
+    "chapter_label": "367",
+    "fragment_number": 367,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "632",
+    "target": "book.cleaned/367-fragment-367.md"
+  },
+  {
+    "order": 368,
+    "slug": "368-fragment-368",
+    "title": "Fragment 368",
+    "chapter_label": "368",
+    "fragment_number": 368,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "633",
+    "target": "book.cleaned/368-fragment-368.md"
+  },
+  {
+    "order": 369,
+    "slug": "369-fragment-369",
+    "title": "Fragment 369",
+    "chapter_label": "369",
+    "fragment_number": 369,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "634",
+    "target": "book.cleaned/369-fragment-369.md"
+  },
+  {
+    "order": 370,
+    "slug": "370-fragment-370",
+    "title": "Fragment 370",
+    "chapter_label": "370",
+    "fragment_number": 370,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "635-639",
+    "target": "book.cleaned/370-fragment-370.md"
+  },
+  {
+    "order": 371,
+    "slug": "371-in-praise-of-absurdity",
+    "title": "In Praise of Absurdity",
+    "chapter_label": "371",
+    "fragment_number": 371,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "640",
+    "target": "book.cleaned/371-in-praise-of-absurdity.md"
+  },
+  {
+    "order": 372,
+    "slug": "372-in-praise-of-absurdity",
+    "title": "In Praise of Absurdity",
+    "chapter_label": "372",
+    "fragment_number": 372,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "641",
+    "target": "book.cleaned/372-in-praise-of-absurdity.md"
+  },
+  {
+    "order": 373,
+    "slug": "373-fragment-373",
+    "title": "Fragment 373",
+    "chapter_label": "373",
+    "fragment_number": 373,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "642-643",
+    "target": "book.cleaned/373-fragment-373.md"
+  },
+  {
+    "order": 374,
+    "slug": "374-fragment-374",
+    "title": "Fragment 374",
+    "chapter_label": "374",
+    "fragment_number": 374,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "644-645",
+    "target": "book.cleaned/374-fragment-374.md"
+  },
+  {
+    "order": 375,
+    "slug": "375-fragment-375",
+    "title": "Fragment 375",
+    "chapter_label": "375",
+    "fragment_number": 375,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "646",
+    "target": "book.cleaned/375-fragment-375.md"
+  },
+  {
+    "order": 376,
+    "slug": "376-fragment-376",
+    "title": "Fragment 376",
+    "chapter_label": "376",
+    "fragment_number": 376,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "647",
+    "target": "book.cleaned/376-fragment-376.md"
+  },
+  {
+    "order": 377,
+    "slug": "377-fragment-377",
+    "title": "Fragment 377",
+    "chapter_label": "377",
+    "fragment_number": 377,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "648-649",
+    "target": "book.cleaned/377-fragment-377.md"
+  },
+  {
+    "order": 378,
+    "slug": "378-fragment-378",
+    "title": "Fragment 378",
+    "chapter_label": "378",
+    "fragment_number": 378,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "650-651",
+    "target": "book.cleaned/378-fragment-378.md"
+  },
+  {
+    "order": 379,
+    "slug": "379-dolorous-interlude",
+    "title": "Dolorous Interlude",
+    "chapter_label": "379",
+    "fragment_number": 379,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "652",
+    "target": "book.cleaned/379-dolorous-interlude.md"
+  },
+  {
+    "order": 380,
+    "slug": "380-fragment-380",
+    "title": "Fragment 380",
+    "chapter_label": "380",
+    "fragment_number": 380,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "653-654",
+    "target": "book.cleaned/380-fragment-380.md"
+  },
+  {
+    "order": 381,
+    "slug": "381-fragment-381",
+    "title": "Fragment 381",
+    "chapter_label": "381",
+    "fragment_number": 381,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "655-657",
+    "target": "book.cleaned/381-fragment-381.md"
+  },
+  {
+    "order": 382,
+    "slug": "382-fragment-382",
+    "title": "Fragment 382",
+    "chapter_label": "382",
+    "fragment_number": 382,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "658",
+    "target": "book.cleaned/382-fragment-382.md"
+  },
+  {
+    "order": 383,
+    "slug": "383-fragment-383",
+    "title": "Fragment 383",
+    "chapter_label": "383",
+    "fragment_number": 383,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "659",
+    "target": "book.cleaned/383-fragment-383.md"
+  },
+  {
+    "order": 384,
+    "slug": "384-fragment-384",
+    "title": "Fragment 384",
+    "chapter_label": "384",
+    "fragment_number": 384,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "660",
+    "target": "book.cleaned/384-fragment-384.md"
+  },
+  {
+    "order": 385,
+    "slug": "385-fragment-385",
+    "title": "Fragment 385",
+    "chapter_label": "385",
+    "fragment_number": 385,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "661-663",
+    "target": "book.cleaned/385-fragment-385.md"
+  },
+  {
+    "order": 386,
+    "slug": "386-fragment-386",
+    "title": "Fragment 386",
+    "chapter_label": "386",
+    "fragment_number": 386,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "664-666",
+    "target": "book.cleaned/386-fragment-386.md"
+  },
+  {
+    "order": 387,
+    "slug": "387-fragment-387",
+    "title": "Fragment 387",
+    "chapter_label": "387",
+    "fragment_number": 387,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "667-668",
+    "target": "book.cleaned/387-fragment-387.md"
+  },
+  {
+    "order": 388,
+    "slug": "388-fragment-388",
+    "title": "Fragment 388",
+    "chapter_label": "388",
+    "fragment_number": 388,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "669",
+    "target": "book.cleaned/388-fragment-388.md"
+  },
+  {
+    "order": 389,
+    "slug": "389-fragment-389",
+    "title": "Fragment 389",
+    "chapter_label": "389",
+    "fragment_number": 389,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "670",
+    "target": "book.cleaned/389-fragment-389.md"
+  },
+  {
+    "order": 390,
+    "slug": "390-fragment-390",
+    "title": "Fragment 390",
+    "chapter_label": "390",
+    "fragment_number": 390,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "671",
+    "target": "book.cleaned/390-fragment-390.md"
+  },
+  {
+    "order": 391,
+    "slug": "391-fragment-391",
+    "title": "Fragment 391",
+    "chapter_label": "391",
+    "fragment_number": 391,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "672-673",
+    "target": "book.cleaned/391-fragment-391.md"
+  },
+  {
+    "order": 392,
+    "slug": "392-fragment-392",
+    "title": "Fragment 392",
+    "chapter_label": "392",
+    "fragment_number": 392,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "674",
+    "target": "book.cleaned/392-fragment-392.md"
+  },
+  {
+    "order": 393,
+    "slug": "393-fragment-393",
+    "title": "Fragment 393",
+    "chapter_label": "393",
+    "fragment_number": 393,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "675-677",
+    "target": "book.cleaned/393-fragment-393.md"
+  },
+  {
+    "order": 394,
+    "slug": "394-fragment-394",
+    "title": "Fragment 394",
+    "chapter_label": "394",
+    "fragment_number": 394,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "678",
+    "target": "book.cleaned/394-fragment-394.md"
+  },
+  {
+    "order": 395,
+    "slug": "395-fragment-395",
+    "title": "Fragment 395",
+    "chapter_label": "395",
+    "fragment_number": 395,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "679-680",
+    "target": "book.cleaned/395-fragment-395.md"
+  },
+  {
+    "order": 396,
+    "slug": "396-fragment-396",
+    "title": "Fragment 396",
+    "chapter_label": "396",
+    "fragment_number": 396,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "681-682",
+    "target": "book.cleaned/396-fragment-396.md"
+  },
+  {
+    "order": 397,
+    "slug": "397-fragment-397",
+    "title": "Fragment 397",
+    "chapter_label": "397",
+    "fragment_number": 397,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "683-684",
+    "target": "book.cleaned/397-fragment-397.md"
+  },
+  {
+    "order": 398,
+    "slug": "398-fragment-398",
+    "title": "Fragment 398",
+    "chapter_label": "398",
+    "fragment_number": 398,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "685-686",
+    "target": "book.cleaned/398-fragment-398.md"
+  },
+  {
+    "order": 399,
+    "slug": "399-fragment-399",
+    "title": "Fragment 399",
+    "chapter_label": "399",
+    "fragment_number": 399,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "687-688",
+    "target": "book.cleaned/399-fragment-399.md"
+  },
+  {
+    "order": 400,
+    "slug": "400-fragment-400",
+    "title": "Fragment 400",
+    "chapter_label": "400",
+    "fragment_number": 400,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "689-690",
+    "target": "book.cleaned/400-fragment-400.md"
+  },
+  {
+    "order": 401,
+    "slug": "401-fragment-401",
+    "title": "Fragment 401",
+    "chapter_label": "401",
+    "fragment_number": 401,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "691-692",
+    "target": "book.cleaned/401-fragment-401.md"
+  },
+  {
+    "order": 402,
+    "slug": "402-fragment-402",
+    "title": "Fragment 402",
+    "chapter_label": "402",
+    "fragment_number": 402,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "693",
+    "target": "book.cleaned/402-fragment-402.md"
+  },
+  {
+    "order": 403,
+    "slug": "403-fragment-403",
+    "title": "Fragment 403",
+    "chapter_label": "403",
+    "fragment_number": 403,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "694-695",
+    "target": "book.cleaned/403-fragment-403.md"
+  },
+  {
+    "order": 404,
+    "slug": "404-fragment-404",
+    "title": "Fragment 404",
+    "chapter_label": "404",
+    "fragment_number": 404,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "696",
+    "target": "book.cleaned/404-fragment-404.md"
+  },
+  {
+    "order": 405,
+    "slug": "405-fragment-405",
+    "title": "Fragment 405",
+    "chapter_label": "405",
+    "fragment_number": 405,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "697-698",
+    "target": "book.cleaned/405-fragment-405.md"
+  },
+  {
+    "order": 406,
+    "slug": "406-fragment-406",
+    "title": "Fragment 406",
+    "chapter_label": "406",
+    "fragment_number": 406,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "699-700",
+    "target": "book.cleaned/406-fragment-406.md"
+  },
+  {
+    "order": 407,
+    "slug": "407-fragment-407",
+    "title": "Fragment 407",
+    "chapter_label": "407",
+    "fragment_number": 407,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "701",
+    "target": "book.cleaned/407-fragment-407.md"
+  },
+  {
+    "order": 408,
+    "slug": "408-fragment-408",
+    "title": "Fragment 408",
+    "chapter_label": "408",
+    "fragment_number": 408,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "702",
+    "target": "book.cleaned/408-fragment-408.md"
+  },
+  {
+    "order": 409,
+    "slug": "409-fragment-409",
+    "title": "Fragment 409",
+    "chapter_label": "409",
+    "fragment_number": 409,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "703-704",
+    "target": "book.cleaned/409-fragment-409.md"
+  },
+  {
+    "order": 410,
+    "slug": "410-fragment-410",
+    "title": "Fragment 410",
+    "chapter_label": "410",
+    "fragment_number": 410,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "705-706",
+    "target": "book.cleaned/410-fragment-410.md"
+  },
+  {
+    "order": 411,
+    "slug": "411-fragment-411",
+    "title": "Fragment 411",
+    "chapter_label": "411",
+    "fragment_number": 411,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "707",
+    "target": "book.cleaned/411-fragment-411.md"
+  },
+  {
+    "order": 412,
+    "slug": "412-dolorous-interlude",
+    "title": "Dolorous Interlude",
+    "chapter_label": "412",
+    "fragment_number": 412,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "708-710",
+    "target": "book.cleaned/412-dolorous-interlude.md"
+  },
+  {
+    "order": 413,
+    "slug": "413-fragment-413",
+    "title": "Fragment 413",
+    "chapter_label": "413",
+    "fragment_number": 413,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "711-712",
+    "target": "book.cleaned/413-fragment-413.md"
+  },
+  {
+    "order": 414,
+    "slug": "414-fragment-414",
+    "title": "Fragment 414",
+    "chapter_label": "414",
+    "fragment_number": 414,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "713",
+    "target": "book.cleaned/414-fragment-414.md"
+  },
+  {
+    "order": 415,
+    "slug": "415-fragment-415",
+    "title": "Fragment 415",
+    "chapter_label": "415",
+    "fragment_number": 415,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "714",
+    "target": "book.cleaned/415-fragment-415.md"
+  },
+  {
+    "order": 416,
+    "slug": "416-fragment-416",
+    "title": "Fragment 416",
+    "chapter_label": "416",
+    "fragment_number": 416,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "715-716",
+    "target": "book.cleaned/416-fragment-416.md"
+  },
+  {
+    "order": 417,
+    "slug": "417-fragment-417",
+    "title": "Fragment 417",
+    "chapter_label": "417",
+    "fragment_number": 417,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "717-718",
+    "target": "book.cleaned/417-fragment-417.md"
+  },
+  {
+    "order": 418,
+    "slug": "418-fragment-418",
+    "title": "Fragment 418",
+    "chapter_label": "418",
+    "fragment_number": 418,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "719-720",
+    "target": "book.cleaned/418-fragment-418.md"
+  },
+  {
+    "order": 419,
+    "slug": "419-fragment-419",
+    "title": "Fragment 419",
+    "chapter_label": "419",
+    "fragment_number": 419,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "721-722",
+    "target": "book.cleaned/419-fragment-419.md"
+  },
+  {
+    "order": 420,
+    "slug": "420-funeral-march",
+    "title": "Funeral March",
+    "chapter_label": "420",
+    "fragment_number": 420,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "723",
+    "target": "book.cleaned/420-funeral-march.md"
+  },
+  {
+    "order": 421,
+    "slug": "421-journey-in-the-mind",
+    "title": "Journey in the Mind",
+    "chapter_label": "421",
+    "fragment_number": 421,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "724",
+    "target": "book.cleaned/421-journey-in-the-mind.md"
+  },
+  {
+    "order": 422,
+    "slug": "422-fragment-422",
+    "title": "Fragment 422",
+    "chapter_label": "422",
+    "fragment_number": 422,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "725",
+    "target": "book.cleaned/422-fragment-422.md"
+  },
+  {
+    "order": 423,
+    "slug": "423-fragment-423",
+    "title": "Fragment 423",
+    "chapter_label": "423",
+    "fragment_number": 423,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "726",
+    "target": "book.cleaned/423-fragment-423.md"
+  },
+  {
+    "order": 424,
+    "slug": "424-fragment-424",
+    "title": "Fragment 424",
+    "chapter_label": "424",
+    "fragment_number": 424,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "727",
+    "target": "book.cleaned/424-fragment-424.md"
+  },
+  {
+    "order": 425,
+    "slug": "425-fragment-425",
+    "title": "Fragment 425",
+    "chapter_label": "425",
+    "fragment_number": 425,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "728",
+    "target": "book.cleaned/425-fragment-425.md"
+  },
+  {
+    "order": 426,
+    "slug": "426-fragment-426",
+    "title": "Fragment 426",
+    "chapter_label": "426",
+    "fragment_number": 426,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "729-730",
+    "target": "book.cleaned/426-fragment-426.md"
+  },
+  {
+    "order": 427,
+    "slug": "427-fragment-427",
+    "title": "Fragment 427",
+    "chapter_label": "427",
+    "fragment_number": 427,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "731",
+    "target": "book.cleaned/427-fragment-427.md"
+  },
+  {
+    "order": 428,
+    "slug": "428-aesthetics-of-indifference",
+    "title": "Aesthetics of Indifference",
+    "chapter_label": "428",
+    "fragment_number": 428,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "732-734",
+    "target": "book.cleaned/428-aesthetics-of-indifference.md"
+  },
+  {
+    "order": 429,
+    "slug": "429-fragment-429",
+    "title": "Fragment 429",
+    "chapter_label": "429",
+    "fragment_number": 429,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "735-737",
+    "target": "book.cleaned/429-fragment-429.md"
+  },
+  {
+    "order": 430,
+    "slug": "430-fragment-430",
+    "title": "Fragment 430",
+    "chapter_label": "430",
+    "fragment_number": 430,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "738",
+    "target": "book.cleaned/430-fragment-430.md"
+  },
+  {
+    "order": 431,
+    "slug": "431-fragment-431",
+    "title": "Fragment 431",
+    "chapter_label": "431",
+    "fragment_number": 431,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "739",
+    "target": "book.cleaned/431-fragment-431.md"
+  },
+  {
+    "order": 432,
+    "slug": "432-fragment-432",
+    "title": "Fragment 432",
+    "chapter_label": "432",
+    "fragment_number": 432,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "740",
+    "target": "book.cleaned/432-fragment-432.md"
+  },
+  {
+    "order": 433,
+    "slug": "433-fragment-433",
+    "title": "Fragment 433",
+    "chapter_label": "433",
+    "fragment_number": 433,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "741-742",
+    "target": "book.cleaned/433-fragment-433.md"
+  },
+  {
+    "order": 434,
+    "slug": "434-moonlights",
+    "title": "Moonlights",
+    "chapter_label": "434",
+    "fragment_number": 434,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "743",
+    "target": "book.cleaned/434-moonlights.md"
+  },
+  {
+    "order": 435,
+    "slug": "435-fragment-435",
+    "title": "Fragment 435",
+    "chapter_label": "435",
+    "fragment_number": 435,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "744",
+    "target": "book.cleaned/435-fragment-435.md"
+  },
+  {
+    "order": 436,
+    "slug": "436-rain",
+    "title": "(rain)",
+    "chapter_label": "436",
+    "fragment_number": 436,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "745-748",
+    "target": "book.cleaned/436-rain.md"
+  },
+  {
+    "order": 437,
+    "slug": "437-fragment-437",
+    "title": "Fragment 437",
+    "chapter_label": "437",
+    "fragment_number": 437,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "749-750",
+    "target": "book.cleaned/437-fragment-437.md"
+  },
+  {
+    "order": 438,
+    "slug": "438-fragment-438",
+    "title": "Fragment 438",
+    "chapter_label": "438",
+    "fragment_number": 438,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "751",
+    "target": "book.cleaned/438-fragment-438.md"
+  },
+  {
+    "order": 439,
+    "slug": "439-fragment-439",
+    "title": "Fragment 439",
+    "chapter_label": "439",
+    "fragment_number": 439,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "752",
+    "target": "book.cleaned/439-fragment-439.md"
+  },
+  {
+    "order": 440,
+    "slug": "440-fragment-440",
+    "title": "Fragment 440",
+    "chapter_label": "440",
+    "fragment_number": 440,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "753",
+    "target": "book.cleaned/440-fragment-440.md"
+  },
+  {
+    "order": 441,
+    "slug": "441-fragment-441",
+    "title": "Fragment 441",
+    "chapter_label": "441",
+    "fragment_number": 441,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "754-755",
+    "target": "book.cleaned/441-fragment-441.md"
+  },
+  {
+    "order": 442,
+    "slug": "442-fragment-442",
+    "title": "Fragment 442",
+    "chapter_label": "442",
+    "fragment_number": 442,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "756-757",
+    "target": "book.cleaned/442-fragment-442.md"
+  },
+  {
+    "order": 443,
+    "slug": "443-fragment-443",
+    "title": "Fragment 443",
+    "chapter_label": "443",
+    "fragment_number": 443,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "758",
+    "target": "book.cleaned/443-fragment-443.md"
+  },
+  {
+    "order": 444,
+    "slug": "444-fragment-444",
+    "title": "Fragment 444",
+    "chapter_label": "444",
+    "fragment_number": 444,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "759",
+    "target": "book.cleaned/444-fragment-444.md"
+  },
+  {
+    "order": 445,
+    "slug": "445-fragment-445",
+    "title": "Fragment 445",
+    "chapter_label": "445",
+    "fragment_number": 445,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "760",
+    "target": "book.cleaned/445-fragment-445.md"
+  },
+  {
+    "order": 446,
+    "slug": "446-omar-khayyam",
+    "title": "Omar Khayyám",
+    "chapter_label": "446",
+    "fragment_number": 446,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "761-762",
+    "target": "book.cleaned/446-omar-khayyam.md"
+  },
+  {
+    "order": 447,
+    "slug": "447-fragment-447",
+    "title": "Fragment 447",
+    "chapter_label": "447",
+    "fragment_number": 447,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "763-764",
+    "target": "book.cleaned/447-fragment-447.md"
+  },
+  {
+    "order": 448,
+    "slug": "448-omar-khayyam",
+    "title": "Omar Khayyám",
+    "chapter_label": "448",
+    "fragment_number": 448,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "765",
+    "target": "book.cleaned/448-omar-khayyam.md"
+  },
+  {
+    "order": 449,
+    "slug": "449-fragment-449",
+    "title": "Fragment 449",
+    "chapter_label": "449",
+    "fragment_number": 449,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "766-767",
+    "target": "book.cleaned/449-fragment-449.md"
+  },
+  {
+    "order": 450,
+    "slug": "450-fragment-450",
+    "title": "Fragment 450",
+    "chapter_label": "450",
+    "fragment_number": 450,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "768-769",
+    "target": "book.cleaned/450-fragment-450.md"
+  },
+  {
+    "order": 451,
+    "slug": "451-fragment-451",
+    "title": "Fragment 451",
+    "chapter_label": "451",
+    "fragment_number": 451,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "770",
+    "target": "book.cleaned/451-fragment-451.md"
+  },
+  {
+    "order": 452,
+    "slug": "452-fragment-452",
+    "title": "Fragment 452",
+    "chapter_label": "452",
+    "fragment_number": 452,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "771-772",
+    "target": "book.cleaned/452-fragment-452.md"
+  },
+  {
+    "order": 453,
+    "slug": "453-fragment-453",
+    "title": "Fragment 453",
+    "chapter_label": "453",
+    "fragment_number": 453,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "773",
+    "target": "book.cleaned/453-fragment-453.md"
+  },
+  {
+    "order": 454,
+    "slug": "454-fragment-454",
+    "title": "Fragment 454",
+    "chapter_label": "454",
+    "fragment_number": 454,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "774",
+    "target": "book.cleaned/454-fragment-454.md"
+  },
+  {
+    "order": 455,
+    "slug": "455-fragment-455",
+    "title": "Fragment 455",
+    "chapter_label": "455",
+    "fragment_number": 455,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "775",
+    "target": "book.cleaned/455-fragment-455.md"
+  },
+  {
+    "order": 456,
+    "slug": "456-fragment-456",
+    "title": "Fragment 456",
+    "chapter_label": "456",
+    "fragment_number": 456,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "776-777",
+    "target": "book.cleaned/456-fragment-456.md"
+  },
+  {
+    "order": 457,
+    "slug": "457-fragment-457",
+    "title": "Fragment 457",
+    "chapter_label": "457",
+    "fragment_number": 457,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "778",
+    "target": "book.cleaned/457-fragment-457.md"
+  },
+  {
+    "order": 458,
+    "slug": "458-fragment-458",
+    "title": "Fragment 458",
+    "chapter_label": "458",
+    "fragment_number": 458,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "779-782",
+    "target": "book.cleaned/458-fragment-458.md"
+  },
+  {
+    "order": 459,
+    "slug": "459-fragment-459",
+    "title": "Fragment 459",
+    "chapter_label": "459",
+    "fragment_number": 459,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "783",
+    "target": "book.cleaned/459-fragment-459.md"
+  },
+  {
+    "order": 460,
+    "slug": "460-fragment-460",
+    "title": "Fragment 460",
+    "chapter_label": "460",
+    "fragment_number": 460,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "784",
+    "target": "book.cleaned/460-fragment-460.md"
+  },
+  {
+    "order": 461,
+    "slug": "461-fragment-461",
+    "title": "Fragment 461",
+    "chapter_label": "461",
+    "fragment_number": 461,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "785",
+    "target": "book.cleaned/461-fragment-461.md"
+  },
+  {
+    "order": 462,
+    "slug": "462-fragment-462",
+    "title": "Fragment 462",
+    "chapter_label": "462",
+    "fragment_number": 462,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "786-787",
+    "target": "book.cleaned/462-fragment-462.md"
+  },
+  {
+    "order": 463,
+    "slug": "463-fragment-463",
+    "title": "Fragment 463",
+    "chapter_label": "463",
+    "fragment_number": 463,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "788-789",
+    "target": "book.cleaned/463-fragment-463.md"
+  },
+  {
+    "order": 464,
+    "slug": "464-fragment-464",
+    "title": "Fragment 464",
+    "chapter_label": "464",
+    "fragment_number": 464,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "790-791",
+    "target": "book.cleaned/464-fragment-464.md"
+  },
+  {
+    "order": 465,
+    "slug": "465-fragment-465",
+    "title": "Fragment 465",
+    "chapter_label": "465",
+    "fragment_number": 465,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "792-793",
+    "target": "book.cleaned/465-fragment-465.md"
+  },
+  {
+    "order": 466,
+    "slug": "466-fragment-466",
+    "title": "Fragment 466",
+    "chapter_label": "466",
+    "fragment_number": 466,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "794",
+    "target": "book.cleaned/466-fragment-466.md"
+  },
+  {
+    "order": 467,
+    "slug": "467-fragment-467",
+    "title": "Fragment 467",
+    "chapter_label": "467",
+    "fragment_number": 467,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "795",
+    "target": "book.cleaned/467-fragment-467.md"
+  },
+  {
+    "order": 468,
+    "slug": "468-fragment-468",
+    "title": "Fragment 468",
+    "chapter_label": "468",
+    "fragment_number": 468,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "796-797",
+    "target": "book.cleaned/468-fragment-468.md"
+  },
+  {
+    "order": 469,
+    "slug": "469-fragment-469",
+    "title": "Fragment 469",
+    "chapter_label": "469",
+    "fragment_number": 469,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "798",
+    "target": "book.cleaned/469-fragment-469.md"
+  },
+  {
+    "order": 470,
+    "slug": "470-fragment-470",
+    "title": "Fragment 470",
+    "chapter_label": "470",
+    "fragment_number": 470,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "799",
+    "target": "book.cleaned/470-fragment-470.md"
+  },
+  {
+    "order": 471,
+    "slug": "471-fragment-471",
+    "title": "Fragment 471",
+    "chapter_label": "471",
+    "fragment_number": 471,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "800",
+    "target": "book.cleaned/471-fragment-471.md"
+  },
+  {
+    "order": 472,
+    "slug": "472-fragment-472",
+    "title": "Fragment 472",
+    "chapter_label": "472",
+    "fragment_number": 472,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "801",
+    "target": "book.cleaned/472-fragment-472.md"
+  },
+  {
+    "order": 473,
+    "slug": "473-fragment-473",
+    "title": "Fragment 473",
+    "chapter_label": "473",
+    "fragment_number": 473,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "802",
+    "target": "book.cleaned/473-fragment-473.md"
+  },
+  {
+    "order": 474,
+    "slug": "474-a-day",
+    "title": "A Day",
+    "chapter_label": "474",
+    "fragment_number": 474,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "803",
+    "target": "book.cleaned/474-a-day.md"
+  },
+  {
+    "order": 475,
+    "slug": "475-fragment-475",
+    "title": "Fragment 475",
+    "chapter_label": "475",
+    "fragment_number": 475,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "804",
+    "target": "book.cleaned/475-fragment-475.md"
+  },
+  {
+    "order": 476,
+    "slug": "476-fragment-476",
+    "title": "Fragment 476",
+    "chapter_label": "476",
+    "fragment_number": 476,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "805",
+    "target": "book.cleaned/476-fragment-476.md"
+  },
+  {
+    "order": 477,
+    "slug": "477-fragment-477",
+    "title": "Fragment 477",
+    "chapter_label": "477",
+    "fragment_number": 477,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "806",
+    "target": "book.cleaned/477-fragment-477.md"
+  },
+  {
+    "order": 478,
+    "slug": "478-lunar-scene",
+    "title": "(lunar scene)",
+    "chapter_label": "478",
+    "fragment_number": 478,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "807",
+    "target": "book.cleaned/478-lunar-scene.md"
+  },
+  {
+    "order": 479,
+    "slug": "479-fragment-479",
+    "title": "Fragment 479",
+    "chapter_label": "479",
+    "fragment_number": 479,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "808",
+    "target": "book.cleaned/479-fragment-479.md"
+  },
+  {
+    "order": 480,
+    "slug": "480-fragment-480",
+    "title": "Fragment 480",
+    "chapter_label": "480",
+    "fragment_number": 480,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "809",
+    "target": "book.cleaned/480-fragment-480.md"
+  },
+  {
+    "order": 481,
+    "slug": "481-fragment-481",
+    "title": "Fragment 481",
+    "chapter_label": "481",
+    "fragment_number": 481,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "810-811",
+    "target": "book.cleaned/481-fragment-481.md"
+  },
+  {
+    "order": 482,
+    "slug": "482-advice-to-unhappily-married-women-i",
+    "title": "Advice to Unhappily Married Women (I)",
+    "chapter_label": "Advice to Unhappily Married Women (I)",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "813-814",
+    "target": "book.cleaned/482-advice-to-unhappily-married-women-i.md"
+  },
+  {
+    "order": 483,
+    "slug": "483-advice-to-unhappily-married-women-ii",
+    "title": "Advice to Unhappily Married Women (II)",
+    "chapter_label": "Advice to Unhappily Married Women (II)",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "814-815",
+    "target": "book.cleaned/483-advice-to-unhappily-married-women-ii.md"
+  },
+  {
+    "order": 484,
+    "slug": "484-advice-to-unhappily-married-women-iii",
+    "title": "Advice to Unhappily Married Women (III)",
+    "chapter_label": "Advice to Unhappily Married Women (III)",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "815-816",
+    "target": "book.cleaned/484-advice-to-unhappily-married-women-iii.md"
+  },
+  {
+    "order": 485,
+    "slug": "485-apocalyptic-feeling",
+    "title": "Apocalyptic Feeling",
+    "chapter_label": "Apocalyptic Feeling",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "816-821",
+    "target": "book.cleaned/485-apocalyptic-feeling.md"
+  },
+  {
+    "order": 486,
+    "slug": "486-the-art-of-effective-dreaming-i",
+    "title": "The Art of Effective Dreaming (I)",
+    "chapter_label": "The Art of Effective Dreaming (I)",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "821-822",
+    "target": "book.cleaned/486-the-art-of-effective-dreaming-i.md"
+  },
+  {
+    "order": 487,
+    "slug": "487-the-art-of-effective-dreaming-ii",
+    "title": "The Art of Effective Dreaming (II)",
+    "chapter_label": "The Art of Effective Dreaming (II)",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "822-823",
+    "target": "book.cleaned/487-the-art-of-effective-dreaming-ii.md"
+  },
+  {
+    "order": 488,
+    "slug": "488-the-art-of-effective-dreaming-iii",
+    "title": "The Art of Effective Dreaming (III)",
+    "chapter_label": "The Art of Effective Dreaming (III)",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "823-824",
+    "target": "book.cleaned/488-the-art-of-effective-dreaming-iii.md"
+  },
+  {
+    "order": 489,
+    "slug": "489-the-art-of-effective-dreaming-for-metaphysical-minds",
+    "title": "The Art of Effective Dreaming for Metaphysical Minds",
+    "chapter_label": "The Art of Effective Dreaming for Metaphysical Minds",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "824-829",
+    "target": "book.cleaned/489-the-art-of-effective-dreaming-for-metaphysical-minds.md"
+  },
+  {
+    "order": 490,
+    "slug": "490-cascade",
+    "title": "Cascade",
+    "chapter_label": "Cascade",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "829-830",
+    "target": "book.cleaned/490-cascade.md"
+  },
+  {
+    "order": 491,
+    "slug": "491-cenotaph",
+    "title": "Cenotaph",
+    "chapter_label": "Cenotaph",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "830-832",
+    "target": "book.cleaned/491-cenotaph.md"
+  },
+  {
+    "order": 492,
+    "slug": "492-declaration-of-difference",
+    "title": "Declaration of Difference",
+    "chapter_label": "Declaration of Difference",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "832-835",
+    "target": "book.cleaned/492-declaration-of-difference.md"
+  },
+  {
+    "order": 493,
+    "slug": "493-divine-envy",
+    "title": "Divine Envy",
+    "chapter_label": "Divine Envy",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "835-837",
+    "target": "book.cleaned/493-divine-envy.md"
+  },
+  {
+    "order": 494,
+    "slug": "494-funeral-march",
+    "title": "Funeral March",
+    "chapter_label": "Funeral March",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "837-839",
+    "target": "book.cleaned/494-funeral-march.md"
+  },
+  {
+    "order": 495,
+    "slug": "495-funeral-march-for-ludwig-ii-king-of-bavaria",
+    "title": "Funeral March for Ludwig II, King of Bavaria*",
+    "chapter_label": "Funeral March for Ludwig II, King of Bavaria*",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "839-845",
+    "target": "book.cleaned/495-funeral-march-for-ludwig-ii-king-of-bavaria.md"
+  },
+  {
+    "order": 496,
+    "slug": "496-imperial-legend",
+    "title": "Imperial Legend",
+    "chapter_label": "Imperial Legend",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "845-846",
+    "target": "book.cleaned/496-imperial-legend.md"
+  },
+  {
+    "order": 497,
+    "slug": "497-in-the-forest-of-estrangement",
+    "title": "In the Forest of Estrangement",
+    "chapter_label": "In the Forest of Estrangement",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "846-856",
+    "target": "book.cleaned/497-in-the-forest-of-estrangement.md"
+  },
+  {
+    "order": 498,
+    "slug": "498-the-lake-of-possession-i",
+    "title": "The Lake of Possession (I)",
+    "chapter_label": "The Lake of Possession (I)",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "856-857",
+    "target": "book.cleaned/498-the-lake-of-possession-i.md"
+  },
+  {
+    "order": 499,
+    "slug": "499-the-lake-of-possession-ii",
+    "title": "The Lake of Possession (II)",
+    "chapter_label": "The Lake of Possession (II)",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "857",
+    "target": "book.cleaned/499-the-lake-of-possession-ii.md"
+  },
+  {
+    "order": 500,
+    "slug": "500-a-letter-i",
+    "title": "A Letter (I)",
+    "chapter_label": "A Letter (I)",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "857-859",
+    "target": "book.cleaned/500-a-letter-i.md"
+  },
+  {
+    "order": 501,
+    "slug": "501-a-letter-ii",
+    "title": "A Letter (II)",
+    "chapter_label": "A Letter (II)",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "859-861",
+    "target": "book.cleaned/501-a-letter-ii.md"
+  },
+  {
+    "order": 502,
+    "slug": "502-lucid-diary",
+    "title": "Lucid Diary",
+    "chapter_label": "Lucid Diary",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "861-863",
+    "target": "book.cleaned/502-lucid-diary.md"
+  },
+  {
+    "order": 503,
+    "slug": "503-the-major",
+    "title": "The Major",
+    "chapter_label": "The Major",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "863-864",
+    "target": "book.cleaned/503-the-major.md"
+  },
+  {
+    "order": 504,
+    "slug": "504-maxims",
+    "title": "Maxims",
+    "chapter_label": "Maxims",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "864-866",
+    "target": "book.cleaned/504-maxims.md"
+  },
+  {
+    "order": 505,
+    "slug": "505-milky-way",
+    "title": "Milky Way",
+    "chapter_label": "Milky Way",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "866-874",
+    "target": "book.cleaned/505-milky-way.md"
+  },
+  {
+    "order": 506,
+    "slug": "506-millimetres",
+    "title": "Millimetres",
+    "chapter_label": "Millimetres",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "874-876",
+    "target": "book.cleaned/506-millimetres.md"
+  },
+  {
+    "order": 507,
+    "slug": "507-our-lady-of-silence",
+    "title": "Our Lady of Silence",
+    "chapter_label": "Our Lady of Silence",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "876-885",
+    "target": "book.cleaned/507-our-lady-of-silence.md"
+  },
+  {
+    "order": 508,
+    "slug": "508-pedros-pastoral",
+    "title": "Pedro’s Pastoral",
+    "chapter_label": "Pedro’s Pastoral",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "885-886",
+    "target": "book.cleaned/508-pedros-pastoral.md"
+  },
+  {
+    "order": 509,
+    "slug": "509-peristyle",
+    "title": "Peristyle",
+    "chapter_label": "Peristyle",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "886-890",
+    "target": "book.cleaned/509-peristyle.md"
+  },
+  {
+    "order": 510,
+    "slug": "510-random-diary",
+    "title": "Random Diary",
+    "chapter_label": "Random Diary",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "890-893",
+    "target": "book.cleaned/510-random-diary.md"
+  },
+  {
+    "order": 511,
+    "slug": "511-the-river-of-possession",
+    "title": "The River of Possession",
+    "chapter_label": "The River of Possession",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "893-897",
+    "target": "book.cleaned/511-the-river-of-possession.md"
+  },
+  {
+    "order": 512,
+    "slug": "512-self-examination",
+    "title": "Self-examination",
+    "chapter_label": "Self-examination",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "897-899",
+    "target": "book.cleaned/512-self-examination.md"
+  },
+  {
+    "order": 513,
+    "slug": "513-the-sensationist",
+    "title": "The Sensationist",
+    "chapter_label": "The Sensationist",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "899-901",
+    "target": "book.cleaned/513-the-sensationist.md"
+  },
+  {
+    "order": 514,
+    "slug": "514-sentimental-education",
+    "title": "Sentimental Education",
+    "chapter_label": "Sentimental Education",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "901-906",
+    "target": "book.cleaned/514-sentimental-education.md"
+  },
+  {
+    "order": 515,
+    "slug": "515-symphony-of-the-restless-night",
+    "title": "Symphony of the Restless Night",
+    "chapter_label": "Symphony of the Restless Night",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "906-908",
+    "target": "book.cleaned/515-symphony-of-the-restless-night.md"
+  },
+  {
+    "order": 516,
+    "slug": "516-the-visual-lover-i",
+    "title": "The Visual Lover (I)",
+    "chapter_label": "The Visual Lover (I)",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "908-910",
+    "target": "book.cleaned/516-the-visual-lover-i.md"
+  },
+  {
+    "order": 517,
+    "slug": "517-the-visual-lover-ii",
+    "title": "The Visual Lover (II)",
+    "chapter_label": "The Visual Lover (II)",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "910-912",
+    "target": "book.cleaned/517-the-visual-lover-ii.md"
+  },
+  {
+    "order": 518,
+    "slug": "518-a-voyage-i-never-made-i",
+    "title": "A Voyage I Never Made (I)",
+    "chapter_label": "A Voyage I Never Made (I)",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "912-914",
+    "target": "book.cleaned/518-a-voyage-i-never-made-i.md"
+  },
+  {
+    "order": 519,
+    "slug": "519-a-voyage-i-never-made-ii",
+    "title": "A Voyage I Never Made (II)",
+    "chapter_label": "A Voyage I Never Made (II)",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "914-915",
+    "target": "book.cleaned/519-a-voyage-i-never-made-ii.md"
+  },
+  {
+    "order": 520,
+    "slug": "520-a-voyage-i-never-made-iii",
+    "title": "A Voyage I Never Made (III)",
+    "chapter_label": "A Voyage I Never Made (III)",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "915-916",
+    "target": "book.cleaned/520-a-voyage-i-never-made-iii.md"
+  },
+  {
+    "order": 521,
+    "slug": "521-a-voyage-i-never-made-iv",
+    "title": "A Voyage I Never Made (IV)",
+    "chapter_label": "A Voyage I Never Made (IV)",
+    "fragment_number": null,
+    "source_pdf": "Book of Disquiet, The - Fernando Pessoa.pdf",
+    "source_pages": "916",
+    "target": "book.cleaned/521-a-voyage-i-never-made-iv.md"
+  }
+]

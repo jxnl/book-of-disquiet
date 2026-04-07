@@ -1,0 +1,8 @@
+---
+title: "Imperial Legend"
+chapter_label: "Imperial Legend"
+source_pdf: "Book of Disquiet, The - Fernando Pessoa.pdf"
+source_pages: "845-846"
+---
+
+My Imagination is a city in the Orient. The entire substance of its spatial reality has the surface sensuality of a plush and luxurious rug. The tents and stalls that brightly colour the streets stand out against a strange background that doesn’t match, like red or yellow embroidery on light-blue satin. The entire history of this city circles around the light bulb of my dream like a scarcely audible moth in the penumbra of my room. My fantasy once lived amid splendours and received time-tarnished jewels from the hands of queens. Intimate velvets carpeted the beaches of my non-existence, and seaweeds like shadowy puffs floated in plain view on my rivers. And so I was porticos from lost civilizations, feverish arabesques in dead friezes, the blackening of eternity in the twists of broken columns, lonely masts of remote shipwrecks, the stone steps of toppled thrones, veils veiling nothing but seeming to veil shadows, phantoms risen up from the ground like smoke from dashed censers. My reign was gloomy, and constant wars in the border regions tainted the imperial peace of my palace. Always the vague sound of parties in the distance, always a procession that was supposed to pass beneath my windows, but no golden red fish in my pools, and no apples in the green stillness of my orchard; and not even the smoke from beyond the trees, rising from the chimneys of poor huts with happy people, ever lulled to sleep with their ballads of simplicity the restless mystery* of my self-awareness.*

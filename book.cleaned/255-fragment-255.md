@@ -1,0 +1,19 @@
+---
+title: "Fragment 255"
+chapter_label: "255"
+source_pdf: "Book of Disquiet, The - Fernando Pessoa.pdf"
+source_pages: "462-464"
+fragment_number: "255"
+---
+
+If there’s one thing life grants us for which we should thank the Gods, besides thanking them for life itself, it’s the gift of not knowing: of not knowing ourselves and of not knowing each other. The human soul is a murky and slimy abyss, a well on the earth’s surface that’s never used. No one would love himself if he really knew himself, and without the vanity which is born of this ignorance and is the blood of the spiritual life, our souls would die of anemia. No one knows anyone else, and it’s just as well, for if he did, he would discover – in his very own mother, wife or son – his inveterate, metaphysical enemy.
+
+We get along because we’re strangers at heart. What would become of so many happy couples if they could see into one another’s soul, if they could truly understand one another, as romantics say, without knowing the danger (albeit ultimately inconsequential) of what they’re saying? All marriages are flawed, because each partner holds inside, in a secret corner where the soul belongs to the Devil, the wispy image of the desired man who is nothing like the husband, the hazy figure of the sublime woman whom the wife doesn’t live up to. The happiest people are unaware of their frustrated inclinations; the less happy are aware but choose to ignore them, and only an occasional jerky movement or brusque remark evokes, on the casual surface of gestures and words, the hidden Demon, the ancient Eve, the Knight and the Sylph. The life we live is a flexible, fluid misunderstanding, a happy mean between the greatness that doesn’t exist and the happiness that can’t exist. We are content thanks to our capacity, even as we think and feel, for not believing in the soul’s existence. In the masked ball which is our life, we’re satisfied by the agreeable sensation of the costumes, which are all that really count for a ball. We’re servants of the lights and colours, moving in the dance as if in the truth, and we’re not even aware – unless, remaining alone, we don’t dance – of the so cold and lofty night outside, of the mortal body under the tatters that will outlive it, of all that we privately imagine is essentially us but that is actually just an inner parody of that supposedly true self.
+
+All that we do, say, think or feel wears the same mask and the same costume. No matter how much we take off what we wear, we’ll never reach nakedness, which is a phenomenon of the soul and not of removing clothes. And so, dressed in a body and soul, with our multiple costumes stuck to us like feathers on a bird, we live happily or unhappily – or without knowing how we live – this brief time given us by the gods that we might amuse them, like children who play at serious games.
+
+One or another man, liberated or cursed, suddenly sees – but even this man sees rarely – that all we are is what we aren’t, that we fool ourselves about what’s true and are wrong about what we conclude is right. And this man, who in a flash sees the universe naked, creates a philosophy or dreams up a religion; and the philosophy spreads and the religion propagates, and those who believe in the philosophy begin to wear it as a suit they don’t see, and those who believe in the religion put it on as a mask they soon forget.
+
+Knowing neither ourselves nor each other, and therefore cheerfully getting along, we keep twirling round in the dance and chatting during the intervals – human, futile, and in earnest – to the sound of the great orchestra of the stars, under the aloof and disdainful gaze of the show’s organizers.
+
+Only they know we’re the prey of the illusion they created for us. But what’s the reason for this illusion, and why is there this or any illusion, and why did they, likewise deluded, give us the illusion they gave us? This, undoubtedly, not even they know.

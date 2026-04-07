@@ -1,0 +1,15 @@
+---
+title: "Fragment 167"
+chapter_label: "167"
+source_pdf: "Book of Disquiet, The - Fernando Pessoa.pdf"
+source_pages: "321-322"
+fragment_number: "167"
+---
+
+It’s one of those days when the monotony of everything oppresses me like being thrown into jail. The monotony of everything is merely the monotony of myself, however. Each face, even if seen just yesterday, is different today, because today isn’t yesterday. Each day is the day it is, and there was never another one like it in the world. Only our soul makes the identification – a genuinely felt but erroneous identification – by which everything becomes similar and simplified. The world is a set of distinct things with varied edges, but if we’re near-sighted, it’s a continual and indecipherable fog.
+
+I feel like fleeing. Like fleeing from what I know, fleeing from what’s mine, fleeing from what I love. I want to depart, not for impossible Indias or for the great islands south of everything, but for any place at all – village or wilderness – that isn’t this place. I want to stop seeing these unchanging faces, this routine, these days. I want to rest, far removed, from my inveterate feigning. I want to feel sleep come to me as life, not as rest. A cabin on the seashore or even a cave in a rocky mountainside could give me this, but my will, unfortunately, cannot.
+
+Slavery is the law of life, and it is the only law, for it must be observed: there is no revolt possible, no way to escape it. Some are born slaves, others become slaves, and still others are forced to accept slavery. Our faint-hearted love of freedom – which, if we had it, we would all reject, unable to get used to it – is proof of how ingrained our slavery is. I myself, having just said that I’d like a cabin or a cave where I could be free from the monotony of everything, which is the monotony of me – would I dare set out for this cabin or cave, knowing from experience that the monotony, since it stems from me, will always be with me? I myself, suffocating from where I am and because I am – where would I breathe easier, if the sickness is in my lungs rather than in the things that surround me? I myself, who long for pure sunlight and open country, for the ocean in plain view and the unbroken horizon – could I get used to my new bed, the food, not having to descend eight flights of stairs to the street, not entering the tobacco shop on the corner, not saying good-morning to the barber standing outside his shop?
+
+Everything that surrounds us becomes part of us, infiltrating our physical sensations and our feeling of life, and like spittle of the great Spider it subtly binds us to whatever is close, tucking us into a soft bed of slow death which is rocked by the wind. Everything is us, and we are everything, but what good is this, if everything is nothing? A ray of sunlight, a cloud whose shadow tells us it is passing, a breeze that rises, the silence that follows when it ceases, one or another face, a few voices, the incidental laughter of the girls who are talking, and then night with the meaningless, fractured hieroglyphs of the stars.

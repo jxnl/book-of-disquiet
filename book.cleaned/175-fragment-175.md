@@ -1,0 +1,13 @@
+---
+title: "Fragment 175"
+chapter_label: "175"
+source_pdf: "Book of Disquiet, The - Fernando Pessoa.pdf"
+source_pages: "336-337"
+fragment_number: "175"
+---
+
+The generation I belong to was born into a world where those with a brain as well as a heart couldn’t find any support. The destructive work of previous generations left us a world that offered no security in the religious sphere, no guidance in the moral sphere, and no tranquillity in the political sphere. We were born into the midst of metaphysical anguish, moral anxiety and political disquiet. Inebriated with objective formulas, with the mere methods of reason and science, the generations that preceded us did away with the foundations of the Christian faith, for their biblical criticism – progressing from textual to mythological criticism – reduced the gospels and the earlier scriptures of the Jews to a doubtful heap of myths, legends and mere literature, while their scientific criticism gradually revealed the mistakes and ingenuous notions of the gospels’ primitive ‘science’. At the same time, the spirit of free inquiry brought all metaphysical problems out into the open, and with them all the religious problems that had to do with metaphysics. Drunk with a hazy notion they called ‘positivism’, these generations criticized all morality and scrutinized all rules of life, and all that remained from the clash of doctrines was the certainty of none of them and the grief over there being no certainty. A society so undisciplined in its cultural foundations could obviously not help but be a victim, politically, of its own chaos, and so we woke up to a world eager for social innovations, a world that gleefully pursued a freedom it didn’t grasp and a progress it had never defined.
+
+But while the sloppy criticism of our fathers bequeathed us the impossibility of being Christians, it didn’t bequeath us an acceptance of the impossibility; while it bequeathed us a disbelief in established moral codes, it didn’t bequeath us an indifference to morality and the rules for peaceful human coexistence; while it left the thorny problem of politics in doubt, it didn’t leave our minds unconcerned about how to solve it. Our fathers blithely wreaked destruction, for they lived in a time that was still informed by the solidity of the past. The very thing they destroyed was what gave strength to society and enabled them to destroy without noticing that the building was cracking. We inherited the destruction and its aftermath.
+
+Today the world belongs only to the stupid, the insensitive and the agitated. Today the right to live and triumph is awarded on virtually the same basis as admission into an insane asylum: an inability to think, amorality, and nervous excitability.
