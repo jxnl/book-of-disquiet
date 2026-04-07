@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "build:github": "DEPLOY_TARGET=github-pages astro build",
+    "build:cloudflare": "DEPLOY_TARGET=cloudflare astro build",
+    "deploy:cloudflare": "pnpm build:cloudflare && wrangler pages deploy dist --project-name=book-of-disquiet"
   },
   "dependencies": {
     "@astrojs/tailwind": "^6.0.0",

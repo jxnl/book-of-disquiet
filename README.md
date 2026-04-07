@@ -61,35 +61,60 @@ corepack pnpm build
 corepack pnpm preview
 ```
 
-## Deploy To Cloudflare Pages
+## Deploy To Cloudflare Pages With Wrangler
 
-This repo builds as a static Astro site, so the easiest Cloudflare setup is a Pages project connected to GitHub.
+This repo is set up so Cloudflare deployments can use `wrangler` both locally and in GitHub Actions.
 
-Recommended dashboard settings:
+### One-time Cloudflare setup
 
-- Framework preset: `Astro`
-- Production branch: `main`
-- Build command: `npm run build`
-- Build output directory: `dist`
-- Root directory: leave blank
-
-Deployment flow:
-
-1. Open Cloudflare Workers & Pages.
-2. Create a new Pages application.
-3. Import the GitHub repo `jxnl/book-of-disquiet`.
-4. Apply the settings above.
-5. Save and deploy.
-
-After that, Cloudflare will automatically rebuild the site whenever you push to `main`, and it will create preview deployments for other branches.
-
-If you prefer local manual deploys instead of Git integration, you can also build locally and upload `dist/` with Wrangler:
+1. Log in locally:
 
 ```bash
-corepack pnpm build
-npx wrangler pages project create
-npx wrangler pages deploy dist
+wrangler login
 ```
+
+2. Create the Pages project once:
+
+```bash
+wrangler pages project create
+```
+
+Use:
+
+- Project name: `book-of-disquiet`
+- Production branch: `main`
+
+### Local deploy
+
+```bash
+corepack pnpm deploy:cloudflare
+```
+
+That builds the site without the GitHub Pages base path and uploads `dist/` with `wrangler pages deploy`.
+
+### GitHub Action deploy
+
+This repo also includes a Cloudflare workflow at [.github/workflows/deploy-cloudflare.yml](/Users/jasonliu/dev/book-of-d/.github/workflows/deploy-cloudflare.yml).
+
+Add these GitHub repository secrets before enabling it:
+
+- `CLOUDFLARE_API_TOKEN`
+- `CLOUDFLARE_ACCOUNT_ID`
+
+The workflow:
+
+- installs dependencies
+- runs the Cloudflare-targeted Astro build
+- deploys with `wrangler pages deploy dist --project-name=book-of-disquiet --branch=main`
+
+### GitHub Pages note
+
+GitHub Pages and Cloudflare Pages use different base-path needs for this repo.
+
+- `pnpm build:github` builds with `/book-of-disquiet`
+- `pnpm build:cloudflare` builds without that base path
+
+The Astro config switches behavior via `DEPLOY_TARGET`, so both deployment targets can coexist.
 
 ## Python Import Workflow
 
