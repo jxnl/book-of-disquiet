@@ -61,6 +61,36 @@ corepack pnpm build
 corepack pnpm preview
 ```
 
+## Deploy To Cloudflare Pages
+
+This repo builds as a static Astro site, so the easiest Cloudflare setup is a Pages project connected to GitHub.
+
+Recommended dashboard settings:
+
+- Framework preset: `Astro`
+- Production branch: `main`
+- Build command: `npm run build`
+- Build output directory: `dist`
+- Root directory: leave blank
+
+Deployment flow:
+
+1. Open Cloudflare Workers & Pages.
+2. Create a new Pages application.
+3. Import the GitHub repo `jxnl/book-of-d`.
+4. Apply the settings above.
+5. Save and deploy.
+
+After that, Cloudflare will automatically rebuild the site whenever you push to `main`, and it will create preview deployments for other branches.
+
+If you prefer local manual deploys instead of Git integration, you can also build locally and upload `dist/` with Wrangler:
+
+```bash
+corepack pnpm build
+npx wrangler pages project create
+npx wrangler pages deploy dist
+```
+
 ## Python Import Workflow
 
 The Python project description says this repo also supports a Desktop-PDF import pipeline for regenerating the corpus:
