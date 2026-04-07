@@ -9,7 +9,8 @@ type HighlightRange = {
 }
 
 const ORDER_STORAGE_KEY = "book-of-disquiet-order"
-const SEARCH_INDEX_URL = "/search-index.json"
+const BASE_URL = import.meta.env.BASE_URL
+const SEARCH_INDEX_URL = `${BASE_URL}search-index.json`
 const searchIndexPromise = fetch(SEARCH_INDEX_URL).then(
   (response) => response.json() as Promise<SearchEntry[]>,
 )
@@ -44,8 +45,8 @@ function orderStorageKey(query: string) {
 
 function chapterHref(slug: string, query = "") {
   return query
-    ? `/read/${slug}/?q=${encodeURIComponent(query)}`
-    : `/read/${slug}/`
+    ? `${BASE_URL}read/${slug}/?q=${encodeURIComponent(query)}`
+    : `${BASE_URL}read/${slug}/`
 }
 
 function readStoredStringArray(storageKey: string) {

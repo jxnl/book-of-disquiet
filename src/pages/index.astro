@@ -4,6 +4,7 @@ import { getChapter, getChapterSlugs } from "@/lib/book"
 
 const slugs = getChapterSlugs()
 const firstChapter = getChapter(slugs[0])
+const firstChapterHref = `${Astro.url.pathname}read/${firstChapter.slug}/`
 ---
 
 <BookLayout title="The Book of Disquiet">
@@ -19,7 +20,7 @@ const firstChapter = getChapter(slugs[0])
 
       <a
         id="start-random"
-        href={firstChapter.path}
+        href={firstChapterHref}
         class="font-book text-[1rem] italic tracking-[0.01em] text-ink transition-colors hover:text-fog"
       >
         begin

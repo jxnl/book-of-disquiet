@@ -15,6 +15,8 @@ const canonicalIndex = slugs.indexOf(slug)
 const prevSlug = slugs[(canonicalIndex - 1 + slugs.length) % slugs.length]
 const nextSlug = slugs[(canonicalIndex + 1) % slugs.length]
 const showTitle = !/^Fragment \d+$/.test(chapter.title)
+const prevHref = `../${prevSlug}/`
+const nextHref = `../${nextSlug}/`
 ---
 
 <BookLayout title={`${chapter.title} | The Book of Disquiet`}>
@@ -24,7 +26,7 @@ const showTitle = !/^Fragment \d+$/.test(chapter.title)
   >
     <a
       id="prev-link"
-      href={`/read/${prevSlug}/`}
+      href={prevHref}
       class="fixed inset-y-0 left-0 z-10 w-8 cursor-w-resize sm:w-[14vw]"
       aria-label="Previous fragment"
     >
@@ -32,7 +34,7 @@ const showTitle = !/^Fragment \d+$/.test(chapter.title)
     </a>
     <a
       id="next-link"
-      href={`/read/${nextSlug}/`}
+      href={nextHref}
       class="fixed inset-y-0 right-0 z-10 w-8 cursor-e-resize sm:w-[14vw]"
       aria-label="Next fragment"
     >
