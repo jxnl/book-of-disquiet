@@ -1,5 +1,5 @@
 [project]
-name = "book-of-d"
+name = "book-of-disquiet"
 version = "0.1.0"
 description = "Astro reader and Desktop-PDF import workflow for The Book of Disquiet"
 requires-python = ">=3.12"

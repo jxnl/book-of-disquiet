@@ -1,6 +1,6 @@
-# Book of D
+# Book of Disquiet
 
-`book-of-d` is a workspace for a cleaned Markdown edition of *The Book of Disquiet* plus an Astro-based reading site built on top of that corpus.
+`book-of-disquiet` is a workspace for a cleaned Markdown edition of *The Book of Disquiet* plus an Astro-based reading site built on top of that corpus.
 
 The repo includes both the cleaned corpus and the app/source files used to browse it locally.
 
@@ -77,7 +77,7 @@ Deployment flow:
 
 1. Open Cloudflare Workers & Pages.
 2. Create a new Pages application.
-3. Import the GitHub repo `jxnl/book-of-d`.
+3. Import the GitHub repo `jxnl/book-of-disquiet`.
 4. Apply the settings above.
 5. Save and deploy.
 
