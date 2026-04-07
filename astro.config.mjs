@@ -9,6 +9,8 @@ export default defineConfig({
         site: "https://jxnl.github.io",
         base: "/book-of-disquiet",
       }
-    : {}),
+    : {
+        site: "https://book-of-disquiet.pages.dev",
+      }),
   integrations: [tailwind()],
 })

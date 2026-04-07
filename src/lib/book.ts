@@ -12,6 +12,7 @@ export type ChapterMeta = {
 
 export type Chapter = ChapterMeta & {
   bodyHtml: string
+  previewText: string
 }
 
 export type SearchEntry = {
@@ -55,6 +56,23 @@ function escapeHtml(value: string) {
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
+}
+
+function stripMarkdown(value: string) {
+  return value
+    .replace(/^#\s+/gm, "")
+    .replace(/^>\s+/gm, "")
+    .replace(/\*\*([^*]+)\*\*/g, "$1")
+    .replace(/\*([^*]+)\*/g, "$1")
+    .replace(/\s+/g, " ")
+    .trim()
+}
+
+function excerptText(value: string, maxLength = 320) {
+  if (value.length <= maxLength) return value
+  const sliced = value.slice(0, maxLength)
+  const boundary = sliced.lastIndexOf(" ")
+  return `${(boundary > 0 ? sliced.slice(0, boundary) : sliced).trim()}...`
 }
 
 function formatInline(value: string) {
@@ -136,6 +154,7 @@ export function getChapter(slug: string): Chapter {
     title,
     chapterLabel: data.chapter_label || data.fragment_number || slug,
     bodyHtml: markdownToHtml(body, title),
+    previewText: excerptText(stripMarkdown(body)),
   }
 
   chapterCache.set(slug, chapter)

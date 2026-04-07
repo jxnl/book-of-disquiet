@@ -5,9 +5,15 @@ import { getChapter, getChapterSlugs } from "@/lib/book"
 const slugs = getChapterSlugs()
 const firstChapter = getChapter(slugs[0])
 const firstChapterHref = `${Astro.url.pathname}read/${firstChapter.slug}/`
+const socialImage = `${import.meta.env.BASE_URL}og/index.png`
 ---
 
-<BookLayout title="The Book of Disquiet">
+<BookLayout
+  title="The Book of Disquiet"
+  description="A randomized reader for Fernando Pessoa's The Book of Disquiet."
+  socialImage={socialImage}
+  canonicalPath={Astro.url.pathname}
+>
   <main class="mx-auto min-h-screen bg-white px-6 sm:px-10">
     <section class="book-measure mx-auto pt-24 sm:pt-32">
       <p class="mb-14 font-book text-[1rem] tracking-[0.01em] text-ink">

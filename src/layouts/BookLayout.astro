@@ -4,10 +4,21 @@ import "@/styles/global.css"
 type Props = {
   title: string
   description?: string
+  socialImage?: string
+  canonicalPath?: string
 }
 
-const { title, description = "A randomized reader for Fernando Pessoa's The Book of Disquiet." } =
+const {
+  title,
+  description = "A randomized reader for Fernando Pessoa's The Book of Disquiet.",
+  socialImage,
+  canonicalPath,
+} =
   Astro.props
+
+const metadataBase = Astro.site ?? Astro.url
+const canonicalUrl = canonicalPath ? new URL(canonicalPath, metadataBase).toString() : null
+const socialImageUrl = socialImage ? new URL(socialImage, metadataBase).toString() : null
 ---
 
 <!doctype html>
@@ -16,6 +27,16 @@ const { title, description = "A randomized reader for Fernando Pessoa's The Book
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
+    {socialImageUrl && <meta property="og:image" content={socialImageUrl} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {socialImageUrl && <meta name="twitter:image" content={socialImageUrl} />}
     <title>{title}</title>
   </head>
   <body>

@@ -17,9 +17,15 @@ const nextSlug = slugs[(canonicalIndex + 1) % slugs.length]
 const showTitle = !/^Fragment \d+$/.test(chapter.title)
 const prevHref = `../${prevSlug}/`
 const nextHref = `../${nextSlug}/`
+const socialImage = `${import.meta.env.BASE_URL}og/${slug}.png`
 ---
 
-<BookLayout title={`${chapter.title} | The Book of Disquiet`}>
+<BookLayout
+  title={`${chapter.title} | The Book of Disquiet`}
+  description={chapter.previewText}
+  socialImage={socialImage}
+  canonicalPath={Astro.url.pathname}
+>
   <main
     class="mx-auto min-h-screen max-w-7xl bg-white px-5 sm:px-8"
     data-reader-slug={slug}

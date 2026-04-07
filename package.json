@@ -5,11 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "render:og": "node scripts/render_og_images.mjs",
+    "render:og:preview": "OG_SAMPLE_ONLY=1 node scripts/render_og_images.mjs",
+    "build": "node scripts/render_og_images.mjs && astro build",
     "preview": "astro preview",
-    "build:github": "DEPLOY_TARGET=github-pages astro build",
-    "build:cloudflare": "DEPLOY_TARGET=cloudflare astro build",
-    "deploy:cloudflare": "pnpm build:cloudflare && wrangler pages deploy dist --project-name=book-of-disquiet"
+    "build:github": "node scripts/render_og_images.mjs && DEPLOY_TARGET=github-pages astro build",
+    "build:cloudflare": "node scripts/render_og_images.mjs && DEPLOY_TARGET=cloudflare astro build",
+    "deploy:cloudflare": "node scripts/render_og_images.mjs && DEPLOY_TARGET=cloudflare astro build && wrangler pages deploy dist --project-name=book-of-disquiet"
   },
   "dependencies": {
     "@astrojs/tailwind": "^6.0.0",
@@ -17,6 +19,7 @@
     "tailwindcss": "^3.4.17"
   },
   "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
     "@types/node": "^25.5.0",
     "playwright": "^1.59.1"
   },
