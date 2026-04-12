@@ -1,4 +1,5 @@
 ---
+import { ClientRouter } from "astro:transitions"
 import "@/styles/global.css"
 
 type Props = {
@@ -38,8 +39,22 @@ const socialImageUrl = socialImage ? new URL(socialImage, metadataBase).toString
     <meta name="twitter:description" content={description} />
     {socialImageUrl && <meta name="twitter:image" content={socialImageUrl} />}
     <title>{title}</title>
+    <ClientRouter />
   </head>
   <body>
     <slot />
+    <script>
+      import { setupCurrentPage } from "@/scripts/book-ui"
+
+      const pageSetupListenerFlag = "__bookOfDisquietPageSetupInstalled"
+      if (!window[pageSetupListenerFlag]) {
+        document.addEventListener("astro:page-load", () => {
+          setupCurrentPage()
+        })
+        window[pageSetupListenerFlag] = true
+      }
+
+      setupCurrentPage()
+    </script>
   </body>
 </html>

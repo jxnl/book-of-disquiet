@@ -6,6 +6,10 @@ const slugs = getChapterSlugs()
 const firstChapter = getChapter(slugs[0])
 const firstChapterHref = `${Astro.url.pathname}read/${firstChapter.slug}/`
 const socialImage = `${import.meta.env.BASE_URL}og/index.png`
+const navLinkClass =
+  "font-book text-[0.98rem] tracking-[0.01em] text-[rgba(92,92,92,0.88)] no-underline transition-colors hover:text-ink focus-visible:text-ink focus-visible:outline-none"
+const navSearchClass =
+  "w-full border-0 bg-transparent px-0 py-0 font-book text-[0.98rem] tracking-[0.01em] text-[rgba(92,92,92,0.88)] outline-none transition-colors placeholder:text-[rgba(120,120,120,0.55)] focus:text-ink"
 ---
 
 <BookLayout
@@ -24,39 +28,33 @@ const socialImage = `${import.meta.env.BASE_URL}og/index.png`
         The Book of Disquiet
       </h1>
 
-      <a
-        id="start-random"
-        href={firstChapterHref}
-        class="font-book text-[1rem] italic tracking-[0.01em] text-ink transition-colors hover:text-fog"
-      >
-        begin
-      </a>
+      <nav class="grid max-w-[10rem] gap-3" aria-label="Home navigation">
+        <a
+          id="start-random"
+          href={firstChapterHref}
+          class={navLinkClass}
+        >
+          read
+        </a>
 
-      <p class="pt-4">
         <a
           href={`${import.meta.env.BASE_URL}stars/`}
-          class="font-book text-[0.95rem] italic tracking-[0.01em] text-ink/70 transition-colors hover:text-fog"
+          class={navLinkClass}
         >
           stars
         </a>
-      </p>
 
-      <form id="search-form" class="group max-w-[10rem] pt-24" autocomplete="off">
-        <label class="sr-only" for="search-query">Search fragments</label>
-        <input
-          id="search-query"
-          name="q"
-          type="search"
-          placeholder="search"
-          class="w-full border-0 bg-transparent px-0 py-0 font-book text-[1rem] italic tracking-[0.01em] text-ink opacity-10 outline-none transition-opacity duration-500 placeholder:text-fog focus:opacity-100 group-hover:opacity-100"
-        />
-      </form>
+        <form id="search-form" class="w-full" autocomplete="off">
+          <label class="sr-only" for="search-query">Search fragments</label>
+          <input
+            id="search-query"
+            name="q"
+            type="search"
+            placeholder="search"
+            class={navSearchClass}
+          />
+        </form>
+      </nav>
     </section>
   </main>
-
-  <script>
-    import { setupHomePage } from "../scripts/book-ui"
-
-    setupHomePage()
-  </script>
 </BookLayout>

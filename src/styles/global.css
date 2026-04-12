@@ -20,6 +20,16 @@
 }
 
 @layer components {
+  @keyframes marginalia-enter {
+    from {
+      transform: translate3d(0, 0.24rem, 0);
+    }
+
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
   .book-page p {
     margin: 0;
     text-align: justify;

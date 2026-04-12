@@ -1,3 +1,4 @@
+import { navigate } from "astro:transitions/client"
 import { icons, renderIcon } from "@/lib/icons"
 
 type SearchEntry = {
@@ -32,6 +33,11 @@ type ReaderState = {
   related: ReaderRelated[]
 }
 
+type CachedReaderState = {
+  state: ReaderState
+  cachedAt: number
+}
+
 type FragmentDetail = {
   slug: string
   path: string
@@ -42,8 +48,14 @@ type FragmentDetail = {
   canonicalOrder: number
 }
 
+const MARGIN_ITEM_CLASS =
+  "opacity-[0.32] transition-opacity duration-200 ease-out hover:opacity-[0.72] focus-within:opacity-[0.72]"
+const MARGIN_ENTRY_CLASS = "motion-safe:animate-[marginalia-enter_340ms_cubic-bezier(0.22,1,0.36,1)]"
+
 const ORDER_STORAGE_KEY = "book-of-disquiet-order"
 const STAR_STORAGE_KEY = "book-of-disquiet-stars"
+const READER_STATE_STORAGE_KEY = "book-of-disquiet-reader-state"
+const READER_STATE_TTL_MS = 45_000
 const BASE_URL = import.meta.env.BASE_URL
 const SEARCH_INDEX_URL = `${BASE_URL}search-index.json`
 const FRAGMENT_INDEX_URL = `${BASE_URL}fragments.json`
@@ -53,6 +65,8 @@ const searchIndexPromise = fetch(SEARCH_INDEX_URL).then(
 const fragmentIndexPromise = fetch(FRAGMENT_INDEX_URL).then(
   (response) => response.json() as Promise<FragmentDetail[]>,
 )
+const cachedReaderStates = new Map<string, CachedReaderState>()
+let activePageController: AbortController | null = null
 
 async function getAllSlugs() {
   const entries = await searchIndexPromise
@@ -88,9 +102,124 @@ function chapterHref(slug: string, query = "") {
     : `${BASE_URL}read/${slug}/`
 }
 
-function readStoredStringArray(storageKey: string) {
+function readerStateStorageKey(slug: string) {
+  return `${READER_STATE_STORAGE_KEY}:${slug}`
+}
+
+function isFiniteNumber(value: unknown) {
+  return typeof value === "number" && Number.isFinite(value)
+}
+
+function isReaderComment(value: unknown): value is ReaderComment {
+  return Boolean(
+    value &&
+      typeof value === "object" &&
+      typeof (value as ReaderComment).id === "string" &&
+      typeof (value as ReaderComment).body === "string" &&
+      isFiniteNumber((value as ReaderComment).created_at),
+  )
+}
+
+function isReaderRelated(value: unknown): value is ReaderRelated {
+  return Boolean(
+    value &&
+      typeof value === "object" &&
+      typeof (value as ReaderRelated).slug === "string" &&
+      typeof (value as ReaderRelated).title === "string" &&
+      typeof (value as ReaderRelated).chapter_label === "string" &&
+      typeof (value as ReaderRelated).preview_text === "string",
+  )
+}
+
+function isReaderState(value: unknown): value is ReaderState {
+  return Boolean(
+    value &&
+      typeof value === "object" &&
+      isFiniteNumber((value as ReaderState).highlightCount) &&
+      isFiniteNumber((value as ReaderState).commentCount) &&
+      isFiniteNumber((value as ReaderState).starCount) &&
+      isFiniteNumber((value as ReaderState).heat) &&
+      Array.isArray((value as ReaderState).comments) &&
+      (value as ReaderState).comments.every(isReaderComment) &&
+      Array.isArray((value as ReaderState).related) &&
+      (value as ReaderState).related.every(isReaderRelated),
+  )
+}
+
+function readCachedReaderState(slug: string) {
+  const now = Date.now()
+  const memoryEntry = cachedReaderStates.get(slug)
+  if (memoryEntry && now - memoryEntry.cachedAt <= READER_STATE_TTL_MS) {
+    return memoryEntry.state
+  }
+
+  if (memoryEntry) {
+    cachedReaderStates.delete(slug)
+  }
+
   try {
-    const parsed = JSON.parse(sessionStorage.getItem(storageKey) || "null")
+    const parsed = JSON.parse(
+      sessionStorage.getItem(readerStateStorageKey(slug)) || "null",
+    ) as CachedReaderState | null
+
+    if (
+      parsed &&
+      isReaderState(parsed.state) &&
+      isFiniteNumber(parsed.cachedAt) &&
+      now - parsed.cachedAt <= READER_STATE_TTL_MS
+    ) {
+      cachedReaderStates.set(slug, parsed)
+      return parsed.state
+    }
+  } catch {
+    return null
+  }
+
+  return null
+}
+
+function cacheReaderState(slug: string, state: ReaderState) {
+  const entry = {
+    state,
+    cachedAt: Date.now(),
+  }
+
+  cachedReaderStates.set(slug, entry)
+  sessionStorage.setItem(readerStateStorageKey(slug), JSON.stringify(entry))
+}
+
+function scheduleBackgroundWork(task: () => void, signal: AbortSignal) {
+  if (signal.aborted) return
+
+  if ("requestIdleCallback" in window) {
+    const idleId = window.requestIdleCallback(() => {
+      if (!signal.aborted) task()
+    })
+    signal.addEventListener(
+      "abort",
+      () => {
+        window.cancelIdleCallback(idleId)
+      },
+      { once: true },
+    )
+    return
+  }
+
+  const timeoutId = window.setTimeout(() => {
+    if (!signal.aborted) task()
+  }, 140)
+  signal.addEventListener(
+    "abort",
+    () => {
+      window.clearTimeout(timeoutId)
+    },
+    { once: true },
+  )
+}
+
+function readStoredStringArray(storage: Storage, storageKey: string) {
+  try {
+    const parsed = JSON.parse(storage.getItem(storageKey) || "null")
     if (
       Array.isArray(parsed) &&
       parsed.length > 0 &&
@@ -105,7 +234,7 @@ function readStoredStringArray(storageKey: string) {
 }
 
 function readStoredStars() {
-  return readStoredStringArray(STAR_STORAGE_KEY) || []
+  return readStoredStringArray(localStorage, STAR_STORAGE_KEY) || []
 }
 
 function writeStoredStars(slugs: string[]) {
@@ -153,7 +282,7 @@ async function startSearchSession(query: string) {
 
 async function resolveSavedOrder() {
   const slugs = await getAllSlugs()
-  const stored = readStoredStringArray(orderStorageKey(""))
+  const stored = readStoredStringArray(sessionStorage, orderStorageKey(""))
   if (!stored || stored.length !== slugs.length) {
     const order = shuffle(slugs)
     sessionStorage.setItem(orderStorageKey(""), JSON.stringify(order))
@@ -173,7 +302,7 @@ async function resolveSavedOrder() {
 
 async function resolveSearchOrder(query: string, fallbackSlug: string) {
   const storageKey = orderStorageKey(query)
-  const stored = readStoredStringArray(storageKey)
+  const stored = readStoredStringArray(sessionStorage, storageKey)
   if (stored) return stored
 
   const matches = await getMatchingSlugs(query)
@@ -323,8 +452,12 @@ function showTooltip(highlightTooltip: HTMLElement, rect: DOMRect) {
   highlightTooltip.style.top = `${Math.max(24, rect.top)}px`
 }
 
-function navigateToChapter(href: string) {
-  window.location.href = href
+async function navigateToChapter(href: string) {
+  try {
+    await navigate(href)
+  } catch {
+    window.location.href = href
+  }
 }
 
 async function fetchJson<T>(input: string, init?: RequestInit) {
@@ -334,6 +467,34 @@ async function fetchJson<T>(input: string, init?: RequestInit) {
   }
 
   return response.json() as Promise<T>
+}
+
+async function fetchReaderState(slug: string, signal?: AbortSignal) {
+  const state = await fetchJson<ReaderState>(
+    `${BASE_URL}api/reader-state?slug=${encodeURIComponent(slug)}`,
+    { signal },
+  )
+  cacheReaderState(slug, state)
+  return state
+}
+
+function prefetchReaderState(slug: string, signal: AbortSignal) {
+  if (!slug || readCachedReaderState(slug)) return
+
+  scheduleBackgroundWork(() => {
+    void fetchReaderState(slug, signal).catch(() => {})
+  }, signal)
+}
+
+function prefetchChapterDocument(href: string, signal: AbortSignal) {
+  if (!href) return
+
+  scheduleBackgroundWork(() => {
+    void fetch(href, {
+      signal,
+      credentials: "same-origin",
+    }).catch(() => {})
+  }, signal)
 }
 
 function hasActiveTextSelection() {
@@ -354,6 +515,35 @@ function isInteractiveTarget(target: EventTarget | null) {
 
 function setText(node: Element | null, text: string) {
   if (node) node.textContent = text
+}
+
+function getReaderStateSignature(state: ReaderState) {
+  return JSON.stringify({
+    highlightCount: state.highlightCount,
+    commentCount: state.commentCount,
+    starCount: state.starCount,
+    heat: state.heat,
+    comments: state.comments.map((comment) => [
+      comment.id,
+      comment.body,
+      comment.created_at,
+    ]),
+    related: state.related.map((item) => [
+      item.slug,
+      item.title,
+      item.chapter_label,
+      item.preview_text,
+    ]),
+  })
+}
+
+function applyMarginaliaEntry(
+  element: HTMLElement,
+  index: number,
+  offsetMs = 0,
+) {
+  element.classList.add(...MARGIN_ENTRY_CLASS.split(" "))
+  element.style.animationDelay = `${offsetMs + index * 36}ms`
 }
 
 function createSummaryIcon(kind: "star" | "highlight" | "note") {
@@ -393,7 +583,7 @@ function renderActivitySummary(
 
   for (const stat of stats) {
     const item = document.createElement("span")
-    item.className = "inline-flex items-center gap-[0.35rem] text-[rgba(78,78,78,0.9)]"
+    item.className = `${MARGIN_ITEM_CLASS} inline-flex items-center gap-[0.35rem] text-[rgba(78,78,78,0.9)]`
     item.setAttribute("aria-label", `${stat.count} ${stat.label}`)
 
     const count = document.createElement("span")
@@ -401,6 +591,7 @@ function renderActivitySummary(
     count.textContent = String(stat.count)
 
     item.append(createSummaryIcon(stat.kind), count)
+    applyMarginaliaEntry(item, container.children.length, 18)
     container.append(item)
   }
 }
@@ -436,7 +627,7 @@ function renderRelatedLinks(
 
   if (related.length === 0) {
     const empty = document.createElement("li")
-    empty.className = "m-0 text-[0.92rem] leading-6 text-[rgba(78,78,78,0.82)]"
+    empty.className = `${MARGIN_ITEM_CLASS} m-0 text-[0.92rem] leading-6 text-[rgba(78,78,78,0.82)]`
     empty.textContent = "No related fragments yet."
     container.append(empty)
     return
@@ -444,7 +635,7 @@ function renderRelatedLinks(
 
   for (const item of related) {
     const entry = document.createElement("li")
-    entry.className = "border-t border-[rgba(128,128,128,0.12)] pt-3 first:border-t-0 first:pt-0"
+    entry.className = `${MARGIN_ITEM_CLASS} border-t border-[rgba(128,128,128,0.12)] pt-3 first:border-t-0 first:pt-0`
 
     const sentence = firstSentence(item.preview_text)
 
@@ -460,6 +651,7 @@ function renderRelatedLinks(
       title.textContent = item.title
       entry.append(title)
     }
+    applyMarginaliaEntry(entry, container.children.length, 56)
     container.append(entry)
   }
 }
@@ -470,7 +662,7 @@ function renderComments(container: HTMLElement | null, comments: ReaderComment[]
 
   if (comments.length === 0) {
     const empty = document.createElement("li")
-    empty.className = "m-0 text-[0.92rem] leading-6 text-[rgba(78,78,78,0.82)]"
+    empty.className = `${MARGIN_ITEM_CLASS} m-0 text-[0.92rem] leading-6 text-[rgba(78,78,78,0.82)]`
     empty.textContent = "No notes yet."
     container.append(empty)
     return
@@ -478,7 +670,7 @@ function renderComments(container: HTMLElement | null, comments: ReaderComment[]
 
   for (const comment of comments) {
     const entry = document.createElement("li")
-    entry.className = "border-t border-[rgba(128,128,128,0.12)] pt-3 first:border-t-0 first:pt-0"
+    entry.className = `${MARGIN_ITEM_CLASS} border-t border-[rgba(128,128,128,0.12)] pt-3 first:border-t-0 first:pt-0`
 
     const body = document.createElement("p")
     body.className = "m-0 text-[0.92rem] leading-6 text-[rgba(78,78,78,0.82)]"
@@ -489,41 +681,51 @@ function renderComments(container: HTMLElement | null, comments: ReaderComment[]
     meta.textContent = formatCommentDate(comment.created_at)
 
     entry.append(body, meta)
+    applyMarginaliaEntry(entry, container.children.length, 92)
     container.append(entry)
   }
 }
 
-export function setupHomePage() {
+export function setupHomePage(signal: AbortSignal) {
   const startRandomLink = document.querySelector<HTMLAnchorElement>("#start-random")
   const searchForm = document.querySelector<HTMLFormElement>("#search-form")
   const searchInput = document.querySelector<HTMLInputElement>("#search-query")
 
-  startRandomLink?.addEventListener("click", async (event) => {
-    event.preventDefault()
-    const slugs = await getAllSlugs()
-    const order = shuffle(slugs)
-    sessionStorage.setItem(orderStorageKey(""), JSON.stringify(order))
-    window.location.href = chapterHref(order[0])
-  })
+  startRandomLink?.addEventListener(
+    "click",
+    async (event) => {
+      event.preventDefault()
+      const slugs = await getAllSlugs()
+      const order = shuffle(slugs)
+      sessionStorage.setItem(orderStorageKey(""), JSON.stringify(order))
+      await navigateToChapter(chapterHref(order[0]))
+    },
+    { signal },
+  )
 
-  searchForm?.addEventListener("submit", async (event) => {
-    event.preventDefault()
+  searchForm?.addEventListener(
+    "submit",
+    async (event) => {
+      event.preventDefault()
 
-    const nextHref = await startSearchSession(searchInput?.value || "")
-    if (nextHref) {
-      window.location.href = nextHref
-      return
-    }
+      const nextHref = await startSearchSession(searchInput?.value || "")
+      if (nextHref) {
+        await navigateToChapter(nextHref)
+        return
+      }
 
-    if (searchInput) {
-      searchInput.value = ""
-      searchInput.placeholder = "No matches"
-    }
-  })
+      if (searchInput) {
+        searchInput.value = ""
+        searchInput.placeholder = "No matches"
+      }
+    },
+    { signal },
+  )
 }
 
-export function setupReaderPage() {
+export function setupReaderPage(signal: AbortSignal) {
   let isNavigating = false
+  let renderedStateSignature = ""
   const slug = document.querySelector<HTMLElement>("[data-reader-slug]")
     ?.dataset.readerSlug || ""
   const readerShell = document.querySelector<HTMLElement>("#reader-shell")
@@ -568,14 +770,18 @@ export function setupReaderPage() {
   async function updateNavigation() {
     const order = await readOrder()
     const currentIndex = Math.max(0, order.indexOf(slug))
-    prevLink?.setAttribute(
-      "href",
-      chapterHref(order[(currentIndex - 1 + order.length) % order.length], query),
-    )
-    nextLink?.setAttribute(
-      "href",
-      chapterHref(order[(currentIndex + 1) % order.length], query),
-    )
+    const prevSlug = order[(currentIndex - 1 + order.length) % order.length]
+    const nextSlug = order[(currentIndex + 1) % order.length]
+    const prevHref = chapterHref(prevSlug, query)
+    const nextHref = chapterHref(nextSlug, query)
+
+    prevLink?.setAttribute("href", prevHref)
+    nextLink?.setAttribute("href", nextHref)
+
+    prefetchChapterDocument(prevHref, signal)
+    prefetchChapterDocument(nextHref, signal)
+    prefetchReaderState(prevSlug, signal)
+    prefetchReaderState(nextSlug, signal)
   }
 
   async function go(delta: number) {
@@ -585,7 +791,7 @@ export function setupReaderPage() {
     try {
       const order = await readOrder()
       const currentIndex = Math.max(0, order.indexOf(slug))
-      navigateToChapter(
+      await navigateToChapter(
         chapterHref(
           order[(currentIndex + delta + order.length) % order.length],
           query,
@@ -597,6 +803,10 @@ export function setupReaderPage() {
   }
 
   function renderReaderState(state: ReaderState) {
+    const nextSignature = getReaderStateSignature(state)
+    if (nextSignature === renderedStateSignature) return
+
+    renderedStateSignature = nextSignature
     setPageHeat(readerShell, state.heat)
     renderActivitySummary(
       activitySummary,
@@ -607,12 +817,17 @@ export function setupReaderPage() {
   }
 
   async function refreshReaderState() {
+    const cachedState = readCachedReaderState(slug)
+    if (cachedState) {
+      renderReaderState(cachedState)
+    }
+
     try {
-      const state = await fetchJson<ReaderState>(
-        `${BASE_URL}api/reader-state?slug=${encodeURIComponent(slug)}`,
-      )
+      const state = await fetchReaderState(slug, signal)
       renderReaderState(state)
     } catch {
+      if (signal.aborted) return
+      if (cachedState) return
       setText(
         activitySummary,
         "Connect D1 to show shared highlights, notes, and related fragments.",
@@ -620,204 +835,256 @@ export function setupReaderPage() {
     }
   }
 
-  document.addEventListener("selectionchange", () => {
-    if (!articleBody || !highlightTooltip) return
+  document.addEventListener(
+    "selectionchange",
+    () => {
+      if (!articleBody || !highlightTooltip) return
 
-    const selectionState = getSelectionState(articleBody)
-    if (!selectionState) {
+      const selectionState = getSelectionState(articleBody)
+      if (!selectionState) {
+        hideTooltip(highlightTooltip)
+        return
+      }
+
+      showTooltip(highlightTooltip, selectionState.rect)
+    },
+    { signal },
+  )
+
+  highlightTooltip?.addEventListener(
+    "mousedown",
+    (event) => {
+      event.preventDefault()
+    },
+    { signal },
+  )
+
+  saveHighlightButton?.addEventListener(
+    "click",
+    async () => {
+      if (!articleBody || !highlightTooltip) return
+
+      const selectionState = getSelectionState(articleBody)
+      if (selectionState) {
+        saveHighlightRange(slug, selectionState.start, selectionState.end)
+        try {
+          await fetchJson(`${BASE_URL}api/highlights`, {
+            method: "POST",
+            headers: {
+              "content-type": "application/json",
+            },
+            body: JSON.stringify({
+              slug,
+              startOffset: selectionState.start,
+              endOffset: selectionState.end,
+            }),
+            signal,
+          })
+        } catch {
+          // Local highlights still work without the shared D1 backend.
+        }
+      }
+
+      window.getSelection()?.removeAllRanges()
       hideTooltip(highlightTooltip)
-      return
-    }
+      restoreHighlights(articleBody, slug, query)
+      void refreshReaderState()
+    },
+    { signal },
+  )
 
-    showTooltip(highlightTooltip, selectionState.rect)
-  })
+  searchSelectionButton?.addEventListener(
+    "click",
+    async () => {
+      if (isNavigating) return
+      if (!highlightTooltip) return
 
-  highlightTooltip?.addEventListener("mousedown", (event) => {
-    event.preventDefault()
-  })
+      const nextQuery = window.getSelection()?.toString() || ""
+      window.getSelection()?.removeAllRanges()
+      hideTooltip(highlightTooltip)
 
-  saveHighlightButton?.addEventListener("click", async () => {
-    if (!articleBody || !highlightTooltip) return
+      const nextHref = await startSearchSession(nextQuery)
+      if (nextHref) {
+        isNavigating = true
+        await navigateToChapter(nextHref)
+      }
+    },
+    { signal },
+  )
 
-    const selectionState = getSelectionState(articleBody)
-    if (selectionState) {
-      saveHighlightRange(slug, selectionState.start, selectionState.end)
+  searchForm?.addEventListener(
+    "submit",
+    async (event) => {
+      event.preventDefault()
+      if (isNavigating) return
+
+      const nextQuery = searchInput?.value || ""
+      if (!normalizeQuery(nextQuery)) {
+        isNavigating = true
+        await navigateToChapter(chapterHref(slug))
+        return
+      }
+
+      const nextHref = await startSearchSession(nextQuery)
+      if (nextHref) {
+        isNavigating = true
+        await navigateToChapter(nextHref)
+        return
+      }
+
+      if (searchInput) {
+        searchInput.value = ""
+        searchInput.placeholder = "none"
+      }
+    },
+    { signal },
+  )
+
+  commentForm?.addEventListener(
+    "submit",
+    async (event) => {
+      event.preventDefault()
+      if (isNavigating || !commentInput) return
+
+      const body = commentInput.value.trim()
+      if (!body) {
+        setText(commentStatus, "Write a note before posting.")
+        return
+      }
+
+      commentInput.disabled = true
+      setText(commentStatus, "Posting...")
+
       try {
-        await fetchJson(`${BASE_URL}api/highlights`, {
+        await fetchJson(`${BASE_URL}api/comments`, {
           method: "POST",
           headers: {
             "content-type": "application/json",
           },
           body: JSON.stringify({
             slug,
-            startOffset: selectionState.start,
-            endOffset: selectionState.end,
+            body,
           }),
+          signal,
         })
+
+        commentInput.value = ""
+        setText(commentStatus, "Posted.")
+        await refreshReaderState()
       } catch {
-        // Local highlights still work without the shared D1 backend.
+        if (!signal.aborted) {
+          setText(
+            commentStatus,
+            "Could not post. Check the D1 binding or rate limit settings.",
+          )
+        }
+      } finally {
+        commentInput.disabled = false
       }
-    }
+    },
+    { signal },
+  )
 
-    window.getSelection()?.removeAllRanges()
-    hideTooltip(highlightTooltip)
-    restoreHighlights(articleBody, slug, query)
-    void refreshReaderState()
-  })
+  starToggle?.addEventListener(
+    "click",
+    async () => {
+      const nextStarred = !hasStoredStar(slug)
+      setStoredStar(slug, nextStarred)
+      setStarButtonState(starToggle, nextStarred)
 
-  searchSelectionButton?.addEventListener("click", async () => {
-    if (isNavigating) return
-    if (!highlightTooltip) return
-
-    const nextQuery = window.getSelection()?.toString() || ""
-    window.getSelection()?.removeAllRanges()
-    hideTooltip(highlightTooltip)
-
-    const nextHref = await startSearchSession(nextQuery)
-    if (nextHref) {
-      isNavigating = true
-      navigateToChapter(nextHref)
-    }
-  })
-
-  searchForm?.addEventListener("submit", async (event) => {
-    event.preventDefault()
-    if (isNavigating) return
-
-    const nextQuery = searchInput?.value || ""
-    if (!normalizeQuery(nextQuery)) {
-      isNavigating = true
-      navigateToChapter(chapterHref(slug))
-      return
-    }
-
-    const nextHref = await startSearchSession(nextQuery)
-    if (nextHref) {
-      isNavigating = true
-      navigateToChapter(nextHref)
-      return
-    }
-
-    if (searchInput) {
-      searchInput.value = ""
-      searchInput.placeholder = "none"
-    }
-  })
-
-  commentForm?.addEventListener("submit", async (event) => {
-    event.preventDefault()
-    if (isNavigating || !commentInput) return
-
-    const body = commentInput.value.trim()
-    if (!body) {
-      setText(commentStatus, "Write a note before posting.")
-      return
-    }
-
-    commentInput.disabled = true
-    setText(commentStatus, "Posting...")
-
-    try {
-      await fetchJson(`${BASE_URL}api/comments`, {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify({
-          slug,
-          body,
-        }),
-      })
-
-      commentInput.value = ""
-      setText(commentStatus, "Posted.")
-      await refreshReaderState()
-    } catch {
-      setText(
-        commentStatus,
-        "Could not post. Check the D1 binding or rate limit settings.",
-      )
-    } finally {
-      commentInput.disabled = false
-    }
-  })
-
-  starToggle?.addEventListener("click", async () => {
-    const nextStarred = !hasStoredStar(slug)
-    setStoredStar(slug, nextStarred)
-    setStarButtonState(starToggle, nextStarred)
-
-    try {
-      if (nextStarred) {
-        await fetchJson(`${BASE_URL}api/stars`, {
-          method: "POST",
-          headers: {
-            "content-type": "application/json",
-          },
-          body: JSON.stringify({ slug }),
-        })
-      } else {
-        await fetchJson(`${BASE_URL}api/stars?slug=${encodeURIComponent(slug)}`, {
-          method: "DELETE",
-        })
+      try {
+        if (nextStarred) {
+          await fetchJson(`${BASE_URL}api/stars`, {
+            method: "POST",
+            headers: {
+              "content-type": "application/json",
+            },
+            body: JSON.stringify({ slug }),
+            signal,
+          })
+        } else {
+          await fetchJson(`${BASE_URL}api/stars?slug=${encodeURIComponent(slug)}`, {
+            method: "DELETE",
+            signal,
+          })
+        }
+        await refreshReaderState()
+      } catch {
+        if (!signal.aborted) {
+          setStoredStar(slug, !nextStarred)
+          setStarButtonState(starToggle, !nextStarred)
+        }
       }
-      await refreshReaderState()
-    } catch {
-      setStoredStar(slug, !nextStarred)
-      setStarButtonState(starToggle, !nextStarred)
-    }
-  })
+    },
+    { signal },
+  )
 
-  window.addEventListener("keydown", (event) => {
-    if (event.key === "ArrowLeft" || event.key === "k") {
+  window.addEventListener(
+    "keydown",
+    (event) => {
+      if (event.key === "ArrowLeft" || event.key === "k") {
+        event.preventDefault()
+        void go(-1)
+      }
+
+      if (event.key === "ArrowRight" || event.key === "j") {
+        event.preventDefault()
+        void go(1)
+      }
+
+      if (event.key === "Escape") {
+        window.getSelection()?.removeAllRanges()
+        hideTooltip(highlightTooltip)
+      }
+    },
+    { signal },
+  )
+
+  prevLink?.addEventListener(
+    "click",
+    (event) => {
       event.preventDefault()
       void go(-1)
-    }
+    },
+    { signal },
+  )
 
-    if (event.key === "ArrowRight" || event.key === "j") {
+  nextLink?.addEventListener(
+    "click",
+    (event) => {
       event.preventDefault()
       void go(1)
-    }
+    },
+    { signal },
+  )
 
-    if (event.key === "Escape") {
-      window.getSelection()?.removeAllRanges()
-      hideTooltip(highlightTooltip)
-    }
-  })
+  document.addEventListener(
+    "click",
+    (event) => {
+      if (
+        event.defaultPrevented ||
+        event.button !== 0 ||
+        event.metaKey ||
+        event.ctrlKey ||
+        event.shiftKey ||
+        event.altKey ||
+        hasActiveTextSelection() ||
+        isInteractiveTarget(event.target)
+      ) {
+        return
+      }
 
-  prevLink?.addEventListener("click", (event) => {
-    event.preventDefault()
-    void go(-1)
-  })
-
-  nextLink?.addEventListener("click", (event) => {
-    event.preventDefault()
-    void go(1)
-  })
-
-  document.addEventListener("click", (event) => {
-    if (
-      event.defaultPrevented ||
-      event.button !== 0 ||
-      event.metaKey ||
-      event.ctrlKey ||
-      event.shiftKey ||
-      event.altKey ||
-      hasActiveTextSelection() ||
-      isInteractiveTarget(event.target)
-    ) {
-      return
-    }
-
-    event.preventDefault()
-    void go(event.clientX < window.innerWidth / 2 ? -1 : 1)
-  })
+      event.preventDefault()
+      void go(event.clientX < window.innerWidth / 2 ? -1 : 1)
+    },
+    { signal },
+  )
 
   void updateNavigation()
   void refreshReaderState()
 }
 
-export function setupStarsPage() {
+export function setupStarsPage(_signal: AbortSignal) {
   const starsList = document.querySelector<HTMLElement>("#stars-list")
   if (!starsList) return
 
@@ -863,4 +1130,23 @@ export function setupStarsPage() {
   }
 
   void renderStars()
+}
+
+export function setupCurrentPage() {
+  activePageController?.abort()
+  activePageController = new AbortController()
+
+  if (document.querySelector("#reader-shell")) {
+    setupReaderPage(activePageController.signal)
+    return
+  }
+
+  if (document.querySelector("#stars-list")) {
+    setupStarsPage(activePageController.signal)
+    return
+  }
+
+  if (document.querySelector("#start-random")) {
+    setupHomePage(activePageController.signal)
+  }
 }
