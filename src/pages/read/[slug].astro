@@ -28,13 +28,13 @@ const socialImage = `${import.meta.env.BASE_URL}og/${slug}.png`
 >
   <main
     id="reader-shell"
-    class="reader-shell mx-auto min-h-screen max-w-7xl px-5 sm:px-8"
+    class="reader-shell mx-auto min-h-screen w-full max-w-none px-5 sm:px-8"
     data-reader-slug={slug}
   >
     <a
       id="prev-link"
       href={prevHref}
-      class="fixed inset-y-0 left-0 z-10 w-8 cursor-w-resize sm:w-[14vw]"
+      class="fixed inset-y-0 left-0 z-0 w-8 cursor-w-resize sm:w-[14vw]"
       aria-label="Previous fragment"
     >
       <span class="sr-only">Previous fragment</span>
@@ -42,76 +42,98 @@ const socialImage = `${import.meta.env.BASE_URL}og/${slug}.png`
     <a
       id="next-link"
       href={nextHref}
-      class="fixed inset-y-0 right-0 z-10 w-8 cursor-e-resize sm:w-[14vw]"
+      class="fixed inset-y-0 right-0 z-0 w-8 cursor-e-resize sm:w-[14vw]"
       aria-label="Next fragment"
     >
       <span class="sr-only">Next fragment</span>
     </a>
 
-    <article class="book-measure mx-auto w-full pt-16 pb-14 sm:pt-24">
-      <div>
-        <p class="mb-7 text-left font-book text-[0.98rem] font-semibold leading-none tracking-[0.01em] text-ink">
-          {chapter.chapterLabel}
-        </p>
-        {
-          showTitle && (
-            <h1 class="mb-10 text-center font-book text-[1.15rem] italic leading-[1.25] tracking-[0.01em] text-ink sm:text-[1.2rem]">
-              {chapter.title}
-            </h1>
-          )
-        }
-        <div
-          class="book-page font-book text-[1.08rem] text-ink sm:text-[1.12rem]"
-          set:html={chapter.bodyHtml}
-        />
-      </div>
-    </article>
+    <div class="reader-layout relative z-10 grid gap-y-10 pt-16 pb-20 xl:grid-cols-[minmax(0,1fr)_minmax(34rem,60ch)_minmax(0,1fr)] xl:gap-x-12 xl:pt-24">
+      <article class="reader-article w-full max-w-[60ch] xl:col-start-2 xl:justify-self-center">
+        <div>
+          <div class="reader-fragment-meta">
+            <p class="reader-fragment-label font-book text-[0.98rem] font-semibold leading-none tracking-[0.01em] text-ink">
+              {chapter.chapterLabel}
+            </p>
+            <button
+              id="star-toggle"
+              type="button"
+              class="reader-star-button"
+              aria-label="Star fragment"
+              aria-pressed="false"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="m12 3 2.8 5.67 6.26.91-4.53 4.42 1.07 6.25L12 17.27 6.4 20.25l1.07-6.25L2.94 9.58l6.26-.91Z" />
+              </svg>
+            </button>
+          </div>
+          {
+            showTitle && (
+              <h1 class="mb-10 text-center font-book text-[1.15rem] italic leading-[1.25] tracking-[0.01em] text-ink sm:text-[1.2rem]">
+                {chapter.title}
+              </h1>
+            )
+          }
+          <div
+            class="book-page font-book text-[1.08rem] text-ink sm:text-[1.12rem]"
+            set:html={chapter.bodyHtml}
+          />
+        </div>
+      </article>
 
-    <section
-      class="reader-community book-measure mx-auto w-full pb-20"
-      data-reader-community
-    >
-      <div class="reader-community-header">
-        <p class="reader-community-label">Marginalia</p>
-        <p id="reader-activity-summary" class="reader-community-summary">
-          Community traces will appear here once D1 is connected.
-        </p>
-      </div>
+      <aside
+        class="reader-community w-full xl:col-start-3 xl:row-start-1 xl:w-full xl:max-w-[18rem] xl:justify-self-start xl:self-start xl:sticky xl:top-24 xl:border-t-0 xl:pt-0"
+        data-reader-community
+      >
+        <div class="reader-community-header">
+          <p class="reader-community-label">Marginalia</p>
+          <p id="reader-activity-summary" class="reader-community-summary">
+            Community traces will appear here once D1 is connected.
+          </p>
+        </div>
 
-      <div class="reader-community-grid">
-        <section class="reader-panel" aria-labelledby="related-fragments-heading">
-          <h2 id="related-fragments-heading" class="reader-panel-title">
-            Related fragments
-          </h2>
-          <ul id="related-links-list" class="reader-list">
-            <li class="reader-empty">No related fragments yet.</li>
-          </ul>
-        </section>
+        <div class="reader-community-grid">
+          <section class="reader-panel" aria-labelledby="related-fragments-heading">
+            <h2 id="related-fragments-heading" class="reader-panel-title">
+              Related fragments
+            </h2>
+            <ul id="related-links-list" class="reader-list">
+              <li class="reader-empty">No related fragments yet.</li>
+            </ul>
+          </section>
 
-        <section class="reader-panel" aria-labelledby="reader-notes-heading">
-          <h2 id="reader-notes-heading" class="reader-panel-title">Notes</h2>
-          <form id="comment-form" class="reader-comment-form">
-            <label class="sr-only" for="comment-body">Leave a note</label>
-            <textarea
-              id="comment-body"
-              name="body"
-              rows="4"
-              maxlength="1200"
-              placeholder="leave a note on this fragment"
-              class="reader-comment-input"
-            />
-            <div class="reader-comment-actions">
-              <p id="comment-status" class="reader-comment-status" aria-live="polite"></p>
-              <button type="submit" class="reader-comment-submit">Post note</button>
-            </div>
-          </form>
+          <section class="reader-panel" aria-labelledby="reader-notes-heading">
+            <h2 id="reader-notes-heading" class="reader-panel-title">Notes</h2>
+            <form id="comment-form" class="reader-comment-form">
+              <label class="sr-only" for="comment-body">Leave a note</label>
+              <textarea
+                id="comment-body"
+                name="body"
+                rows="4"
+                maxlength="1200"
+                placeholder="leave a note on this fragment"
+                class="reader-comment-input"
+              />
+              <div class="reader-comment-actions">
+                <p id="comment-status" class="reader-comment-status" aria-live="polite"></p>
+                <button type="submit" class="reader-comment-submit">Post note</button>
+              </div>
+            </form>
 
-          <ul id="comment-list" class="reader-list">
-            <li class="reader-empty">No notes yet.</li>
-          </ul>
-        </section>
-      </div>
-    </section>
+            <ul id="comment-list" class="reader-list">
+              <li class="reader-empty">No notes yet.</li>
+            </ul>
+          </section>
+        </div>
+      </aside>
+    </div>
 
     <div
       id="highlight-tooltip"

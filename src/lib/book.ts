@@ -15,6 +15,10 @@ export type Chapter = ChapterMeta & {
   previewText: string
 }
 
+export type FragmentEntry = Chapter & {
+  canonicalOrder: number
+}
+
 export type SearchEntry = {
   slug: string
   text: string
@@ -130,6 +134,7 @@ function markdownToHtml(markdown: string, title: string) {
 }
 
 const chapterCache = new Map<string, Chapter>()
+const fragmentCache = new Map<string, FragmentEntry>()
 const searchCache = new Map<string, string>()
 
 export function getChapterSlugs() {
@@ -140,7 +145,19 @@ export function getChapterSlugs() {
 }
 
 export function getChapter(slug: string): Chapter {
-  const cached = chapterCache.get(slug)
+  const fragment = getFragmentEntry(slug)
+  return {
+    slug: fragment.slug,
+    path: fragment.path,
+    title: fragment.title,
+    chapterLabel: fragment.chapterLabel,
+    bodyHtml: fragment.bodyHtml,
+    previewText: fragment.previewText,
+  }
+}
+
+export function getFragmentEntry(slug: string): FragmentEntry {
+  const cached = fragmentCache.get(slug)
   if (cached) return cached
 
   const fileName = `${slug}.md`
@@ -148,17 +165,31 @@ export function getChapter(slug: string): Chapter {
   const markdown = readFileSync(filePath, "utf-8")
   const { data, body } = parseFrontMatter(markdown)
   const title = data.title || slug
-  const chapter: Chapter = {
+  const canonicalOrder = getChapterSlugs().indexOf(slug)
+  const fragment: FragmentEntry = {
     slug,
     path: `/read/${slug}/`,
     title,
     chapterLabel: data.chapter_label || data.fragment_number || slug,
     bodyHtml: markdownToHtml(body, title),
     previewText: excerptText(stripMarkdown(body)),
+    canonicalOrder,
   }
 
-  chapterCache.set(slug, chapter)
-  return chapter
+  fragmentCache.set(slug, fragment)
+  chapterCache.set(slug, {
+    slug: fragment.slug,
+    path: fragment.path,
+    title: fragment.title,
+    chapterLabel: fragment.chapterLabel,
+    bodyHtml: fragment.bodyHtml,
+    previewText: fragment.previewText,
+  })
+  return fragment
+}
+
+export function getFragmentEntries() {
+  return getChapterSlugs().map((slug) => getFragmentEntry(slug))
 }
 
 function normalizeSearchText(value: string) {

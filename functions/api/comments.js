@@ -16,6 +16,15 @@ export async function onRequestGet(context) {
     return json({ error: "Missing or invalid slug." }, { status: 400 })
   }
 
+  const ipHash = await hashValue(
+    getClientIp(context.request),
+    context.env.RATE_LIMIT_SALT,
+  )
+  const allowed = await enforceRateLimit(context.env.DB, `comment-read:${ipHash}`, 90, 60)
+  if (!allowed) {
+    return json({ error: "Rate limit exceeded." }, { status: 429 })
+  }
+
   return json({
     slug,
     comments: await getComments(context.env.DB, slug),
@@ -25,7 +34,7 @@ export async function onRequestGet(context) {
 export async function onRequestPost(context) {
   const body = await context.request.json().catch(() => null)
   const slug = normalizeSlug(body?.slug)
-  const content = String(body?.body || "").trim()
+  const content = String(body?.body || "").replace(/\s+/g, " ").trim()
   const startOffset = body?.startOffset == null ? null : Number(body.startOffset)
   const endOffset = body?.endOffset == null ? null : Number(body.endOffset)
 
