@@ -1,6 +1,7 @@
 ---
 import BookLayout from "@/layouts/BookLayout.astro"
 import { getChapter, getChapterSlugs } from "@/lib/book"
+import { icons, renderIcon } from "@/lib/icons"
 
 export function getStaticPaths() {
   return getChapterSlugs().map((slug) => ({
@@ -48,30 +49,24 @@ const socialImage = `${import.meta.env.BASE_URL}og/${slug}.png`
       <span class="sr-only">Next fragment</span>
     </a>
 
-    <div class="reader-layout relative z-10 grid gap-y-10 pt-16 pb-20 xl:grid-cols-[minmax(0,1fr)_minmax(34rem,60ch)_minmax(0,1fr)] xl:gap-x-12 xl:pt-24">
-      <article class="reader-article w-full max-w-[60ch] xl:col-start-2 xl:justify-self-center">
+    <div class="relative z-10 mx-auto grid max-w-[60ch] gap-y-10 pt-16 pb-20 min-[1260px]:max-w-none min-[1260px]:grid-cols-[minmax(0,1fr)_minmax(34rem,60ch)_minmax(0,1fr)] min-[1260px]:gap-x-[clamp(2rem,4vw,5rem)] min-[1260px]:pt-24">
+      <article class="min-w-0 w-full max-w-[60ch] min-[1260px]:col-start-2 min-[1260px]:justify-self-center">
         <div>
-          <div class="reader-fragment-meta">
-            <p class="reader-fragment-label font-book text-[0.98rem] font-semibold leading-none tracking-[0.01em] text-ink">
+          <div class="mb-7 flex items-center gap-2">
+            <p class="m-0 font-book text-[0.98rem] font-semibold leading-none tracking-[0.01em] text-ink">
               {chapter.chapterLabel}
             </p>
             <button
               id="star-toggle"
               type="button"
-              class="reader-star-button"
+              class="reader-star-button inline-flex h-5 w-5 items-center justify-center border-0 bg-transparent p-0 text-[rgba(115,115,115,0.75)] transition duration-150 ease-out hover:scale-[1.04] hover:text-[rgba(90,90,90,0.95)] focus-visible:scale-[1.04] focus-visible:text-[rgba(90,90,90,0.95)] focus-visible:outline-none"
               aria-label="Star fragment"
               aria-pressed="false"
             >
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+              <span
                 aria-hidden="true"
-              >
-                <path d="m12 3 2.8 5.67 6.26.91-4.53 4.42 1.07 6.25L12 17.27 6.4 20.25l1.07-6.25L2.94 9.58l6.26-.91Z" />
-              </svg>
+                set:html={renderIcon(icons.star, "h-[0.92rem] w-[0.92rem] stroke-[1.75]")}
+              />
             </button>
           </div>
           {
@@ -89,29 +84,39 @@ const socialImage = `${import.meta.env.BASE_URL}og/${slug}.png`
       </article>
 
       <aside
-        class="reader-community w-full xl:col-start-3 xl:row-start-1 xl:w-full xl:max-w-[18rem] xl:justify-self-start xl:self-start xl:sticky xl:top-24 xl:border-t-0 xl:pt-0"
+        class="w-full border-t border-[rgba(128,128,128,0.14)] pt-8 opacity-[0.32] transition-opacity duration-200 ease-out hover:opacity-[0.72] focus-within:opacity-[0.72] min-[1260px]:col-start-3 min-[1260px]:row-start-1 min-[1260px]:w-full min-[1260px]:max-w-[18rem] min-[1260px]:justify-self-start min-[1260px]:self-start min-[1260px]:sticky min-[1260px]:top-24 min-[1260px]:border-t-0 min-[1260px]:pt-0"
         data-reader-community
       >
-        <div class="reader-community-header">
-          <p class="reader-community-label">Marginalia</p>
-          <p id="reader-activity-summary" class="reader-community-summary">
+        <div class="mb-6 flex flex-wrap justify-between gap-x-6 gap-y-3">
+          <p class="m-0 text-[0.92rem] italic text-[rgba(92,92,92,0.9)]">Marginalia</p>
+          <p
+            id="reader-activity-summary"
+            class="m-0 flex max-w-[36rem] flex-wrap items-center gap-3 text-[0.9rem] leading-6 text-[rgba(70,70,70,0.88)]"
+          >
             Community traces will appear here once D1 is connected.
           </p>
         </div>
 
-        <div class="reader-community-grid">
-          <section class="reader-panel" aria-labelledby="related-fragments-heading">
-            <h2 id="related-fragments-heading" class="reader-panel-title">
+        <div class="grid gap-6">
+          <section aria-labelledby="related-fragments-heading">
+            <h2
+              id="related-fragments-heading"
+              class="mb-3 text-[0.98rem] font-medium italic text-ink"
+            >
               Related fragments
             </h2>
-            <ul id="related-links-list" class="reader-list">
-              <li class="reader-empty">No related fragments yet.</li>
+            <ul id="related-links-list" class="m-0 grid list-none gap-3 p-0">
+              <li class="m-0 text-[0.92rem] leading-6 text-[rgba(78,78,78,0.82)]">
+                No related fragments yet.
+              </li>
             </ul>
           </section>
 
-          <section class="reader-panel" aria-labelledby="reader-notes-heading">
-            <h2 id="reader-notes-heading" class="reader-panel-title">Notes</h2>
-            <form id="comment-form" class="reader-comment-form">
+          <section aria-labelledby="reader-notes-heading">
+            <h2 id="reader-notes-heading" class="mb-3 text-[0.98rem] font-medium italic text-ink">
+              Notes
+            </h2>
+            <form id="comment-form" class="mb-4">
               <label class="sr-only" for="comment-body">Leave a note</label>
               <textarea
                 id="comment-body"
@@ -119,16 +124,25 @@ const socialImage = `${import.meta.env.BASE_URL}og/${slug}.png`
                 rows="4"
                 maxlength="1200"
                 placeholder="leave a note on this fragment"
-                class="reader-comment-input"
+                class="w-full resize-y border border-[rgba(140,140,140,0.18)] bg-[rgba(255,255,255,0.92)] px-4 py-3 font-inherit text-inherit text-ink outline-none transition-colors focus:border-[rgba(110,110,110,0.45)]"
               />
-              <div class="reader-comment-actions">
-                <p id="comment-status" class="reader-comment-status" aria-live="polite"></p>
-                <button type="submit" class="reader-comment-submit">Post note</button>
+              <div class="mt-3 flex items-center justify-between gap-4">
+                <p
+                  id="comment-status"
+                  class="m-0 min-h-[1.2rem] text-[0.82rem] text-[rgba(100,100,100,0.9)]"
+                  aria-live="polite"
+                ></p>
+                <button
+                  type="submit"
+                  class="border-0 bg-[#111111] px-4 py-2 text-[0.88rem] text-white transition-colors hover:bg-black focus-visible:bg-black focus-visible:outline-none"
+                >
+                  Post note
+                </button>
               </div>
             </form>
 
-            <ul id="comment-list" class="reader-list">
-              <li class="reader-empty">No notes yet.</li>
+            <ul id="comment-list" class="m-0 grid list-none gap-3 p-0">
+              <li class="m-0 text-[0.92rem] leading-6 text-[rgba(78,78,78,0.82)]">No notes yet.</li>
             </ul>
           </section>
         </div>
@@ -147,16 +161,10 @@ const socialImage = `${import.meta.env.BASE_URL}og/${slug}.png`
         class="highlight-tooltip-action"
         aria-label="Save highlight"
       >
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+        <span
           aria-hidden="true"
-        >
-          <path d="M6 3h12v18l-6-4-6 4Z" />
-        </svg>
+          set:html={renderIcon(icons.highlight)}
+        />
       </button>
       <button
         id="search-selection"
@@ -164,17 +172,10 @@ const socialImage = `${import.meta.env.BASE_URL}og/${slug}.png`
         class="highlight-tooltip-action"
         aria-label="Search selected text"
       >
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+        <span
           aria-hidden="true"
-        >
-          <circle cx="11" cy="11" r="7" />
-          <path d="m21 21-4.3-4.3" />
-        </svg>
+          set:html={renderIcon(icons.search)}
+        />
       </button>
     </div>
 

@@ -11,6 +11,9 @@ dependencies:
   astro:
     specifier: ^5.6.0
     version: 5.18.1(@types/node@25.6.0)(typescript@5.9.3)
+  lucide:
+    specifier: ^1.8.0
+    version: 1.8.0
   tailwindcss:
     specifier: ^3.4.17
     version: 3.4.19
@@ -2642,6 +2645,10 @@ packages:
   /lru-cache@11.3.3:
     resolution: {integrity: sha512-JvNw9Y81y33E+BEYPr0U7omo+U9AySnsMsEiXgwT6yqd31VQWTLNQqmT4ou5eqPFUrTfIDFta2wKhB1hyohtAQ==}
     engines: {node: 20 || >=22}
+    dev: false
+
+  /lucide@1.8.0:
+    resolution: {integrity: sha512-JjV/QnadgFLj1Pyu9IKl0lknrolFEzo04B64QcYLLeRzZl/iEHpdbSrRRKbyXcv45SZNv+WGjIUCT33e7xHO6Q==}
     dev: false
 
   /magic-string@0.30.21:

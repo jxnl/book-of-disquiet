@@ -1,3 +1,5 @@
+import { icons, renderIcon } from "@/lib/icons"
+
 type SearchEntry = {
   slug: string
   text: string
@@ -356,19 +358,9 @@ function setText(node: Element | null, text: string) {
 
 function createSummaryIcon(kind: "star" | "highlight" | "note") {
   const icon = document.createElement("span")
-  icon.className = "reader-stat-icon"
+  icon.className = "inline-flex h-[0.95rem] w-[0.95rem] items-center justify-center"
   icon.setAttribute("aria-hidden", "true")
-
-  const paths = {
-    star:
-      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.8 5.67 6.26.91-4.53 4.42 1.07 6.25L12 17.27 6.4 20.25l1.07-6.25L2.94 9.58l6.26-.91Z"/></svg>',
-    highlight:
-      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4Z"/></svg>',
-    note:
-      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8"/><path d="M8 13h5"/></svg>',
-  }
-
-  icon.innerHTML = paths[kind]
+  icon.innerHTML = renderIcon(icons[kind], "h-[0.95rem] w-[0.95rem] stroke-[1.75]")
   return icon
 }
 
@@ -401,11 +393,11 @@ function renderActivitySummary(
 
   for (const stat of stats) {
     const item = document.createElement("span")
-    item.className = "reader-stat"
+    item.className = "inline-flex items-center gap-[0.35rem] text-[rgba(78,78,78,0.9)]"
     item.setAttribute("aria-label", `${stat.count} ${stat.label}`)
 
     const count = document.createElement("span")
-    count.className = "reader-stat-count"
+    count.className = "text-[0.92rem]"
     count.textContent = String(stat.count)
 
     item.append(createSummaryIcon(stat.kind), count)
@@ -444,7 +436,7 @@ function renderRelatedLinks(
 
   if (related.length === 0) {
     const empty = document.createElement("li")
-    empty.className = "reader-empty"
+    empty.className = "m-0 text-[0.92rem] leading-6 text-[rgba(78,78,78,0.82)]"
     empty.textContent = "No related fragments yet."
     container.append(empty)
     return
@@ -452,19 +444,19 @@ function renderRelatedLinks(
 
   for (const item of related) {
     const entry = document.createElement("li")
-    entry.className = "reader-list-item"
+    entry.className = "border-t border-[rgba(128,128,128,0.12)] pt-3 first:border-t-0 first:pt-0"
 
     const sentence = firstSentence(item.preview_text)
 
     const link = document.createElement("a")
-    link.className = "reader-link"
+    link.className = "block text-ink no-underline transition-colors hover:text-[rgba(40,40,40,0.92)] focus-visible:text-[rgba(40,40,40,0.92)] focus-visible:outline-none"
     link.href = chapterHref(item.slug, query)
     link.textContent = sentence || item.title
 
     entry.append(link)
     if (sentence && sentence !== item.title) {
       const title = document.createElement("p")
-      title.className = "reader-link-title"
+      title.className = "mt-1 text-[0.82rem] text-[rgba(115,115,115,0.95)]"
       title.textContent = item.title
       entry.append(title)
     }
@@ -478,7 +470,7 @@ function renderComments(container: HTMLElement | null, comments: ReaderComment[]
 
   if (comments.length === 0) {
     const empty = document.createElement("li")
-    empty.className = "reader-empty"
+    empty.className = "m-0 text-[0.92rem] leading-6 text-[rgba(78,78,78,0.82)]"
     empty.textContent = "No notes yet."
     container.append(empty)
     return
@@ -486,14 +478,14 @@ function renderComments(container: HTMLElement | null, comments: ReaderComment[]
 
   for (const comment of comments) {
     const entry = document.createElement("li")
-    entry.className = "reader-list-item"
+    entry.className = "border-t border-[rgba(128,128,128,0.12)] pt-3 first:border-t-0 first:pt-0"
 
     const body = document.createElement("p")
-    body.className = "reader-comment-body"
+    body.className = "m-0 text-[0.92rem] leading-6 text-[rgba(78,78,78,0.82)]"
     body.textContent = comment.body
 
     const meta = document.createElement("p")
-    meta.className = "reader-comment-meta"
+    meta.className = "mt-[0.3rem] text-[0.78rem] tracking-[0.01em] text-[rgba(78,78,78,0.82)]"
     meta.textContent = formatCommentDate(comment.created_at)
 
     entry.append(body, meta)
@@ -832,7 +824,7 @@ export function setupStarsPage() {
   async function renderStars() {
     const starred = new Set(readStoredStars())
     if (starred.size === 0) {
-      starsList.innerHTML = '<p class="reader-empty">No starred passages yet.</p>'
+      starsList.innerHTML = '<p class="m-0 text-[0.92rem] leading-6 text-[rgba(78,78,78,0.82)]">No starred passages yet.</p>'
       return
     }
 
@@ -842,20 +834,20 @@ export function setupStarsPage() {
       .sort((left, right) => left.canonicalOrder - right.canonicalOrder)
 
     if (entries.length === 0) {
-      starsList.innerHTML = '<p class="reader-empty">No starred passages yet.</p>'
+      starsList.innerHTML = '<p class="m-0 text-[0.92rem] leading-6 text-[rgba(78,78,78,0.82)]">No starred passages yet.</p>'
       return
     }
 
     starsList.innerHTML = ""
     for (const fragment of entries) {
       const article = document.createElement("article")
-      article.className = "stars-entry"
+      article.className = "border-t border-[rgba(128,128,128,0.14)] pt-6 first:border-t-0 first:pt-0"
 
       const header = document.createElement("div")
-      header.className = "stars-entry-header"
+      header.className = "mb-4 flex items-baseline justify-between gap-4"
 
       const link = document.createElement("a")
-      link.className = "stars-entry-link"
+      link.className = "text-ink no-underline transition-colors hover:text-[rgba(55,55,55,0.92)] focus-visible:text-[rgba(55,55,55,0.92)] focus-visible:outline-none"
       link.href = fragment.path
       link.textContent = `${fragment.chapterLabel} · ${fragment.title}`
 
