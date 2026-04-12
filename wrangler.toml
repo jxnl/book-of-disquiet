@@ -1,0 +1,18 @@
+name = "book-of-disquiet"
+compatibility_date = "2026-04-12"
+pages_build_output_dir = "./dist"
+
+# Set this to the Cloudflare account that owns the existing Pages project.
+# Wrangler exposed these two accounts on this machine when inspected on April 12, 2026:
+# - 567 Studio: 7a3f8821775b581b574de68563bb657c
+# - Hamel.husain@gmail.com's Account: db346331d0d415459a23a16d9a614b94
+# Add the matching account_id here or export CLOUDFLARE_ACCOUNT_ID before remote commands.
+
+[[d1_databases]]
+binding = "DB"
+database_name = "book-of-disquiet"
+database_id = "b826389d-4bdd-4864-8344-ce15bf70ceea"
+preview_database_id = "b826389d-4bdd-4864-8344-ce15bf70ceea"
+
+[vars]
+RATE_LIMIT_SALT = "book-of-disquiet"

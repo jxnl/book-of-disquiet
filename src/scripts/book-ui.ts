@@ -8,6 +8,27 @@ type HighlightRange = {
   end: number
 }
 
+type ReaderComment = {
+  id: string
+  body: string
+  created_at: number
+}
+
+type ReaderRelated = {
+  slug: string
+  title: string
+  chapter_label: string
+  preview_text: string
+}
+
+type ReaderState = {
+  highlightCount: number
+  commentCount: number
+  heat: number
+  comments: ReaderComment[]
+  related: ReaderRelated[]
+}
+
 const ORDER_STORAGE_KEY = "book-of-disquiet-order"
 const BASE_URL = import.meta.env.BASE_URL
 const SEARCH_INDEX_URL = `${BASE_URL}search-index.json`
@@ -266,6 +287,121 @@ function navigateToChapter(href: string) {
   window.location.href = href
 }
 
+async function fetchJson<T>(input: string, init?: RequestInit) {
+  const response = await fetch(input, init)
+  if (!response.ok) {
+    throw new Error(`Request failed with ${response.status}`)
+  }
+
+  return response.json() as Promise<T>
+}
+
+function hasActiveTextSelection() {
+  const selection = window.getSelection()
+  return Boolean(selection && !selection.isCollapsed && selection.toString().trim())
+}
+
+function isInteractiveTarget(target: EventTarget | null) {
+  return (
+    target instanceof Element &&
+    Boolean(
+      target.closest(
+        'a, button, input, textarea, select, summary, label, form, [role="button"], [contenteditable="true"], [data-reader-community]',
+      ),
+    )
+  )
+}
+
+function setText(node: Element | null, text: string) {
+  if (node) node.textContent = text
+}
+
+function setPageHeat(readerShell: HTMLElement | null, heat: number) {
+  readerShell?.style.setProperty(
+    "--page-heat",
+    String(Math.max(0, Math.min(1, heat || 0))),
+  )
+}
+
+function formatCount(count: number, singular: string, plural = `${singular}s`) {
+  return `${count} ${count === 1 ? singular : plural}`
+}
+
+function formatCommentDate(timestamp: number) {
+  return new Intl.DateTimeFormat(undefined, {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  }).format(new Date(timestamp))
+}
+
+function renderRelatedLinks(
+  container: HTMLElement | null,
+  related: ReaderRelated[],
+  query: string,
+) {
+  if (!container) return
+  container.innerHTML = ""
+
+  if (related.length === 0) {
+    const empty = document.createElement("li")
+    empty.className = "reader-empty"
+    empty.textContent = "No related fragments yet."
+    container.append(empty)
+    return
+  }
+
+  for (const item of related) {
+    const entry = document.createElement("li")
+    entry.className = "reader-list-item"
+
+    const link = document.createElement("a")
+    link.className = "reader-link"
+    link.href = chapterHref(item.slug, query)
+
+    const title = document.createElement("span")
+    title.className = "reader-link-title"
+    title.textContent = `${item.chapter_label} · ${item.title}`
+
+    const preview = document.createElement("p")
+    preview.className = "reader-link-preview"
+    preview.textContent = item.preview_text
+
+    link.append(title, preview)
+    entry.append(link)
+    container.append(entry)
+  }
+}
+
+function renderComments(container: HTMLElement | null, comments: ReaderComment[]) {
+  if (!container) return
+  container.innerHTML = ""
+
+  if (comments.length === 0) {
+    const empty = document.createElement("li")
+    empty.className = "reader-empty"
+    empty.textContent = "No notes yet."
+    container.append(empty)
+    return
+  }
+
+  for (const comment of comments) {
+    const entry = document.createElement("li")
+    entry.className = "reader-list-item"
+
+    const body = document.createElement("p")
+    body.className = "reader-comment-body"
+    body.textContent = comment.body
+
+    const meta = document.createElement("p")
+    meta.className = "reader-comment-meta"
+    meta.textContent = formatCommentDate(comment.created_at)
+
+    entry.append(body, meta)
+    container.append(entry)
+  }
+}
+
 export function setupHomePage() {
   const startRandomLink = document.querySelector<HTMLAnchorElement>("#start-random")
   const searchForm = document.querySelector<HTMLFormElement>("#search-form")
@@ -299,6 +435,7 @@ export function setupReaderPage() {
   let isNavigating = false
   const slug = document.querySelector<HTMLElement>("[data-reader-slug]")
     ?.dataset.readerSlug || ""
+  const readerShell = document.querySelector<HTMLElement>("#reader-shell")
   const articleBody = document.querySelector<HTMLElement>(".book-page")
   const prevLink = document.querySelector<HTMLAnchorElement>("#prev-link")
   const nextLink = document.querySelector<HTMLAnchorElement>("#next-link")
@@ -312,6 +449,14 @@ export function setupReaderPage() {
   )
   const searchForm = document.querySelector<HTMLFormElement>("#search-form")
   const searchInput = document.querySelector<HTMLInputElement>("#search-query")
+  const activitySummary = document.querySelector<HTMLElement>(
+    "#reader-activity-summary",
+  )
+  const relatedList = document.querySelector<HTMLElement>("#related-links-list")
+  const commentForm = document.querySelector<HTMLFormElement>("#comment-form")
+  const commentInput = document.querySelector<HTMLTextAreaElement>("#comment-body")
+  const commentStatus = document.querySelector<HTMLElement>("#comment-status")
+  const commentList = document.querySelector<HTMLElement>("#comment-list")
   const query = normalizeQuery(
     new URLSearchParams(window.location.search).get("q") || "",
   )
@@ -358,6 +503,30 @@ export function setupReaderPage() {
     }
   }
 
+  function renderReaderState(state: ReaderState) {
+    setPageHeat(readerShell, state.heat)
+    setText(
+      activitySummary,
+      `${formatCount(state.highlightCount, "highlight")} saved and ${formatCount(state.commentCount, "note")} posted on this fragment.`,
+    )
+    renderRelatedLinks(relatedList, state.related, query)
+    renderComments(commentList, state.comments)
+  }
+
+  async function refreshReaderState() {
+    try {
+      const state = await fetchJson<ReaderState>(
+        `${BASE_URL}api/reader-state?slug=${encodeURIComponent(slug)}`,
+      )
+      renderReaderState(state)
+    } catch {
+      setText(
+        activitySummary,
+        "Connect D1 to show shared highlights, notes, and related fragments.",
+      )
+    }
+  }
+
   document.addEventListener("selectionchange", () => {
     if (!articleBody || !highlightTooltip) return
 
@@ -374,17 +543,33 @@ export function setupReaderPage() {
     event.preventDefault()
   })
 
-  saveHighlightButton?.addEventListener("click", () => {
+  saveHighlightButton?.addEventListener("click", async () => {
     if (!articleBody || !highlightTooltip) return
 
     const selectionState = getSelectionState(articleBody)
     if (selectionState) {
       saveHighlightRange(slug, selectionState.start, selectionState.end)
+      try {
+        await fetchJson(`${BASE_URL}api/highlights`, {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify({
+            slug,
+            startOffset: selectionState.start,
+            endOffset: selectionState.end,
+          }),
+        })
+      } catch {
+        // Local highlights still work without the shared D1 backend.
+      }
     }
 
     window.getSelection()?.removeAllRanges()
     hideTooltip(highlightTooltip)
     restoreHighlights(articleBody, slug, query)
+    void refreshReaderState()
   })
 
   searchSelectionButton?.addEventListener("click", async () => {
@@ -426,6 +611,44 @@ export function setupReaderPage() {
     }
   })
 
+  commentForm?.addEventListener("submit", async (event) => {
+    event.preventDefault()
+    if (isNavigating || !commentInput) return
+
+    const body = commentInput.value.trim()
+    if (!body) {
+      setText(commentStatus, "Write a note before posting.")
+      return
+    }
+
+    commentInput.disabled = true
+    setText(commentStatus, "Posting...")
+
+    try {
+      await fetchJson(`${BASE_URL}api/comments`, {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify({
+          slug,
+          body,
+        }),
+      })
+
+      commentInput.value = ""
+      setText(commentStatus, "Posted.")
+      await refreshReaderState()
+    } catch {
+      setText(
+        commentStatus,
+        "Could not post. Check the D1 binding or rate limit settings.",
+      )
+    } finally {
+      commentInput.disabled = false
+    }
+  })
+
   window.addEventListener("keydown", (event) => {
     if (event.key === "ArrowLeft" || event.key === "k") {
       event.preventDefault()
@@ -453,5 +676,24 @@ export function setupReaderPage() {
     void go(1)
   })
 
+  document.addEventListener("click", (event) => {
+    if (
+      event.defaultPrevented ||
+      event.button !== 0 ||
+      event.metaKey ||
+      event.ctrlKey ||
+      event.shiftKey ||
+      event.altKey ||
+      hasActiveTextSelection() ||
+      isInteractiveTarget(event.target)
+    ) {
+      return
+    }
+
+    event.preventDefault()
+    void go(event.clientX < window.innerWidth / 2 ? -1 : 1)
+  })
+
   void updateNavigation()
+  void refreshReaderState()
 }

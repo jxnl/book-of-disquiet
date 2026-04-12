@@ -27,7 +27,8 @@ const socialImage = `${import.meta.env.BASE_URL}og/${slug}.png`
   canonicalPath={Astro.url.pathname}
 >
   <main
-    class="mx-auto min-h-screen max-w-7xl bg-white px-5 sm:px-8"
+    id="reader-shell"
+    class="reader-shell mx-auto min-h-screen max-w-7xl px-5 sm:px-8"
     data-reader-slug={slug}
   >
     <a
@@ -65,6 +66,52 @@ const socialImage = `${import.meta.env.BASE_URL}og/${slug}.png`
         />
       </div>
     </article>
+
+    <section
+      class="reader-community book-measure mx-auto w-full pb-20"
+      data-reader-community
+    >
+      <div class="reader-community-header">
+        <p class="reader-community-label">Marginalia</p>
+        <p id="reader-activity-summary" class="reader-community-summary">
+          Community traces will appear here once D1 is connected.
+        </p>
+      </div>
+
+      <div class="reader-community-grid">
+        <section class="reader-panel" aria-labelledby="related-fragments-heading">
+          <h2 id="related-fragments-heading" class="reader-panel-title">
+            Related fragments
+          </h2>
+          <ul id="related-links-list" class="reader-list">
+            <li class="reader-empty">No related fragments yet.</li>
+          </ul>
+        </section>
+
+        <section class="reader-panel" aria-labelledby="reader-notes-heading">
+          <h2 id="reader-notes-heading" class="reader-panel-title">Notes</h2>
+          <form id="comment-form" class="reader-comment-form">
+            <label class="sr-only" for="comment-body">Leave a note</label>
+            <textarea
+              id="comment-body"
+              name="body"
+              rows="4"
+              maxlength="1200"
+              placeholder="leave a note on this fragment"
+              class="reader-comment-input"
+            />
+            <div class="reader-comment-actions">
+              <p id="comment-status" class="reader-comment-status" aria-live="polite"></p>
+              <button type="submit" class="reader-comment-submit">Post note</button>
+            </div>
+          </form>
+
+          <ul id="comment-list" class="reader-list">
+            <li class="reader-empty">No notes yet.</li>
+          </ul>
+        </section>
+      </div>
+    </section>
 
     <div
       id="highlight-tooltip"

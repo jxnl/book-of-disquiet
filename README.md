@@ -116,6 +116,53 @@ GitHub Pages and Cloudflare Pages use different base-path needs for this repo.
 
 The Astro config switches behavior via `DEPLOY_TARGET`, so both deployment targets can coexist.
 
+## D1 + Pages Functions
+
+The site can stay a static Astro build while Cloudflare Pages Functions handle shared highlights, notes, related-fragment links, and server-side search through D1.
+
+### What was added
+
+- `functions/api/reader-state.js`: returns shared counts, notes, and related fragments for a slug
+- `functions/api/highlights.js`: stores shared highlight events with anonymous cookies and IP-hash rate limiting
+- `functions/api/comments.js`: stores page notes with anonymous cookies and IP-hash rate limiting
+- `functions/api/search.js`: does weighted token search from D1
+- `migrations/0001_initial.sql`: creates the D1 schema
+- `scripts/build-d1-seed.mjs`: generates `output/d1-seed.sql` from `book.cleaned/`
+- `wrangler.toml`: Cloudflare Pages + D1 config scaffold
+
+### Remote setup through Wrangler
+
+This machine was not logged into Cloudflare when inspected, so remote project/database changes were not applied yet. Once Wrangler auth is fixed and the correct account is selected, the CLI flow is:
+
+```bash
+pnpm exec wrangler login
+pnpm exec wrangler d1 create book-of-disquiet
+```
+
+Update `wrangler.toml` with the returned `database_id` and `preview_database_id`, then run:
+
+```bash
+pnpm d1:migrate:remote
+pnpm d1:seed:sql
+pnpm exec wrangler d1 execute DB --remote --file output/d1-seed.sql
+pnpm build:cloudflare
+pnpm deploy:cloudflare
+```
+
+If the Pages project already exists under a specific Cloudflare account, set `account_id` in `wrangler.toml` or export `CLOUDFLARE_ACCOUNT_ID` before the remote commands.
+
+### Local D1 workflow
+
+```bash
+pnpm d1:migrate:local
+pnpm d1:seed:sql
+pnpm exec wrangler d1 execute DB --local --file output/d1-seed.sql
+pnpm build:cloudflare
+pnpm cf:dev
+```
+
+Then open the local Pages dev server and hit a reader page. Shared highlights and notes will use the local D1 database.
+
 ## Python Import Workflow
 
 The Python project description says this repo also supports a Desktop-PDF import pipeline for regenerating the corpus:
