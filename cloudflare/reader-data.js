@@ -21,6 +21,9 @@ const STOP_WORDS = new Set([
 export function json(data, init = {}) {
   const headers = new Headers(init.headers)
   headers.set("content-type", "application/json; charset=utf-8")
+  headers.set("cache-control", headers.get("cache-control") || "no-store")
+  headers.set("x-content-type-options", "nosniff")
+  headers.set("referrer-policy", "same-origin")
   return new Response(JSON.stringify(data), {
     ...init,
     headers,
@@ -106,6 +109,13 @@ export async function hashValue(value, salt = "book-of-disquiet") {
   ).join("")
 }
 
+export async function getVisitorHash(request, salt = "book-of-disquiet") {
+  const ip = getClientIp(request)
+  const userAgent = request.headers.get("user-agent") || ""
+  const language = request.headers.get("accept-language") || ""
+  return hashValue(`${ip}|${userAgent}|${language}`, salt)
+}
+
 export function getClientIp(request) {
   const forwarded = request.headers.get("cf-connecting-ip")
     || request.headers.get("x-forwarded-for")
@@ -172,7 +182,7 @@ export async function getFragment(db, slug) {
 }
 
 export async function getPageCounts(db, slug) {
-  const [highlightRow, commentRow] = await Promise.all([
+  const [highlightRow, commentRow, starRow] = await Promise.all([
     db
       .prepare("SELECT COUNT(*) AS count FROM highlights WHERE slug = ?")
       .bind(slug)
@@ -183,11 +193,16 @@ export async function getPageCounts(db, slug) {
       )
       .bind(slug)
       .first(),
+    db
+      .prepare("SELECT COUNT(*) AS count FROM stars WHERE slug = ?")
+      .bind(slug)
+      .first(),
   ])
 
   return {
     highlightCount: Number(highlightRow?.count || 0),
     commentCount: Number(commentRow?.count || 0),
+    starCount: Number(starRow?.count || 0),
   }
 }
 
@@ -206,7 +221,7 @@ export async function getComments(db, slug, limit = 24) {
   return result.results || []
 }
 
-export async function getRelatedFragments(db, slug, limit = 5) {
+export async function getRelatedFragments(db, slug, limit = 3) {
   const fragment = await db
     .prepare(
       "SELECT title, preview_text FROM fragments WHERE slug = ? LIMIT 1",
@@ -238,7 +253,7 @@ export async function getReaderState(db, slug) {
   const fragment = await getFragment(db, slug)
   if (!fragment) return null
 
-  const [{ highlightCount, commentCount }, comments, related] = await Promise.all([
+  const [{ highlightCount, commentCount, starCount }, comments, related] = await Promise.all([
     getPageCounts(db, slug),
     getComments(db, slug),
     getRelatedFragments(db, slug),
@@ -249,6 +264,7 @@ export async function getReaderState(db, slug) {
     fragment,
     highlightCount,
     commentCount,
+    starCount,
     heat: scoreToHeat(highlightCount, commentCount),
     comments,
     related,

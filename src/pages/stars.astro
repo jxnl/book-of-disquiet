@@ -1,0 +1,28 @@
+---
+import BookLayout from "@/layouts/BookLayout.astro"
+---
+
+<BookLayout
+  title="Starred Passages | The Book of Disquiet"
+  description="Your starred passages from The Book of Disquiet."
+  canonicalPath={Astro.url.pathname}
+>
+  <main class="mx-auto min-h-screen bg-white px-6 sm:px-10">
+    <section class="book-measure mx-auto pt-20 pb-20 sm:pt-24">
+      <div class="stars-header">
+        <a href={import.meta.env.BASE_URL} class="stars-back">home</a>
+        <h1 class="stars-title">Starred Passages</h1>
+      </div>
+
+      <div id="stars-list" class="stars-list">
+        <p class="reader-empty">No starred passages yet.</p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    import { setupStarsPage } from "../scripts/book-ui"
+
+    setupStarsPage()
+  </script>
+</BookLayout>

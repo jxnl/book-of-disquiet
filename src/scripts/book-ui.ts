@@ -24,16 +24,32 @@ type ReaderRelated = {
 type ReaderState = {
   highlightCount: number
   commentCount: number
+  starCount: number
   heat: number
   comments: ReaderComment[]
   related: ReaderRelated[]
 }
 
+type FragmentDetail = {
+  slug: string
+  path: string
+  title: string
+  chapterLabel: string
+  previewText: string
+  bodyHtml: string
+  canonicalOrder: number
+}
+
 const ORDER_STORAGE_KEY = "book-of-disquiet-order"
+const STAR_STORAGE_KEY = "book-of-disquiet-stars"
 const BASE_URL = import.meta.env.BASE_URL
 const SEARCH_INDEX_URL = `${BASE_URL}search-index.json`
+const FRAGMENT_INDEX_URL = `${BASE_URL}fragments.json`
 const searchIndexPromise = fetch(SEARCH_INDEX_URL).then(
   (response) => response.json() as Promise<SearchEntry[]>,
+)
+const fragmentIndexPromise = fetch(FRAGMENT_INDEX_URL).then(
+  (response) => response.json() as Promise<FragmentDetail[]>,
 )
 
 async function getAllSlugs() {
@@ -84,6 +100,28 @@ function readStoredStringArray(storageKey: string) {
     return null
   }
   return null
+}
+
+function readStoredStars() {
+  return readStoredStringArray(STAR_STORAGE_KEY) || []
+}
+
+function writeStoredStars(slugs: string[]) {
+  localStorage.setItem(STAR_STORAGE_KEY, JSON.stringify(slugs))
+}
+
+function hasStoredStar(slug: string) {
+  return readStoredStars().includes(slug)
+}
+
+function setStoredStar(slug: string, isStarred: boolean) {
+  const next = new Set(readStoredStars())
+  if (isStarred) {
+    next.add(slug)
+  } else {
+    next.delete(slug)
+  }
+  writeStoredStars([...next])
 }
 
 async function getMatchingSlugs(query: string) {
@@ -316,6 +354,31 @@ function setText(node: Element | null, text: string) {
   if (node) node.textContent = text
 }
 
+function createSummaryIcon(kind: "star" | "highlight" | "note") {
+  const icon = document.createElement("span")
+  icon.className = "reader-stat-icon"
+  icon.setAttribute("aria-hidden", "true")
+
+  const paths = {
+    star:
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.8 5.67 6.26.91-4.53 4.42 1.07 6.25L12 17.27 6.4 20.25l1.07-6.25L2.94 9.58l6.26-.91Z"/></svg>',
+    highlight:
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4Z"/></svg>',
+    note:
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8"/><path d="M8 13h5"/></svg>',
+  }
+
+  icon.innerHTML = paths[kind]
+  return icon
+}
+
+function setStarButtonState(button: HTMLButtonElement | null, isStarred: boolean) {
+  if (!button) return
+  button.dataset.active = isStarred ? "true" : "false"
+  button.setAttribute("aria-pressed", isStarred ? "true" : "false")
+  button.setAttribute("aria-label", isStarred ? "Unstar fragment" : "Star fragment")
+}
+
 function setPageHeat(readerShell: HTMLElement | null, heat: number) {
   readerShell?.style.setProperty(
     "--page-heat",
@@ -323,8 +386,31 @@ function setPageHeat(readerShell: HTMLElement | null, heat: number) {
   )
 }
 
-function formatCount(count: number, singular: string, plural = `${singular}s`) {
-  return `${count} ${count === 1 ? singular : plural}`
+function renderActivitySummary(
+  container: HTMLElement | null,
+  counts: Pick<ReaderState, "starCount" | "highlightCount" | "commentCount">,
+) {
+  if (!container) return
+  container.innerHTML = ""
+
+  const stats: Array<{ kind: "star" | "highlight" | "note"; count: number; label: string }> = [
+    { kind: "star", count: counts.starCount, label: "stars" },
+    { kind: "highlight", count: counts.highlightCount, label: "highlights" },
+    { kind: "note", count: counts.commentCount, label: "notes" },
+  ]
+
+  for (const stat of stats) {
+    const item = document.createElement("span")
+    item.className = "reader-stat"
+    item.setAttribute("aria-label", `${stat.count} ${stat.label}`)
+
+    const count = document.createElement("span")
+    count.className = "reader-stat-count"
+    count.textContent = String(stat.count)
+
+    item.append(createSummaryIcon(stat.kind), count)
+    container.append(item)
+  }
 }
 
 function formatCommentDate(timestamp: number) {
@@ -333,6 +419,19 @@ function formatCommentDate(timestamp: number) {
     day: "numeric",
     year: "numeric",
   }).format(new Date(timestamp))
+}
+
+function firstSentence(text: string) {
+  const normalized = text.replace(/\s+/g, " ").trim()
+  if (!normalized) return ""
+
+  const endIndex = normalized.indexOf(".")
+  const sentence = endIndex === -1 ? normalized : normalized.slice(0, endIndex + 1)
+  if (sentence.length <= 120) return sentence
+
+  const shortened = sentence.slice(0, 117)
+  const lastSpace = shortened.lastIndexOf(" ")
+  return `${shortened.slice(0, lastSpace > 72 ? lastSpace : shortened.length).trim()}…`
 }
 
 function renderRelatedLinks(
@@ -355,20 +454,20 @@ function renderRelatedLinks(
     const entry = document.createElement("li")
     entry.className = "reader-list-item"
 
+    const sentence = firstSentence(item.preview_text)
+
     const link = document.createElement("a")
     link.className = "reader-link"
     link.href = chapterHref(item.slug, query)
+    link.textContent = sentence || item.title
 
-    const title = document.createElement("span")
-    title.className = "reader-link-title"
-    title.textContent = `${item.chapter_label} · ${item.title}`
-
-    const preview = document.createElement("p")
-    preview.className = "reader-link-preview"
-    preview.textContent = item.preview_text
-
-    link.append(title, preview)
     entry.append(link)
+    if (sentence && sentence !== item.title) {
+      const title = document.createElement("p")
+      title.className = "reader-link-title"
+      title.textContent = item.title
+      entry.append(title)
+    }
     container.append(entry)
   }
 }
@@ -439,6 +538,7 @@ export function setupReaderPage() {
   const articleBody = document.querySelector<HTMLElement>(".book-page")
   const prevLink = document.querySelector<HTMLAnchorElement>("#prev-link")
   const nextLink = document.querySelector<HTMLAnchorElement>("#next-link")
+  const starToggle = document.querySelector<HTMLButtonElement>("#star-toggle")
   const highlightTooltip = document.querySelector<HTMLElement>(
     "#highlight-tooltip",
   )
@@ -465,6 +565,7 @@ export function setupReaderPage() {
     articleBody.setAttribute("data-original-html", articleBody.innerHTML)
     restoreHighlights(articleBody, slug, query)
   }
+  setStarButtonState(starToggle, hasStoredStar(slug))
 
   async function readOrder() {
     return query
@@ -505,9 +606,9 @@ export function setupReaderPage() {
 
   function renderReaderState(state: ReaderState) {
     setPageHeat(readerShell, state.heat)
-    setText(
+    renderActivitySummary(
       activitySummary,
-      `${formatCount(state.highlightCount, "highlight")} saved and ${formatCount(state.commentCount, "note")} posted on this fragment.`,
+      state,
     )
     renderRelatedLinks(relatedList, state.related, query)
     renderComments(commentList, state.comments)
@@ -649,6 +750,32 @@ export function setupReaderPage() {
     }
   })
 
+  starToggle?.addEventListener("click", async () => {
+    const nextStarred = !hasStoredStar(slug)
+    setStoredStar(slug, nextStarred)
+    setStarButtonState(starToggle, nextStarred)
+
+    try {
+      if (nextStarred) {
+        await fetchJson(`${BASE_URL}api/stars`, {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify({ slug }),
+        })
+      } else {
+        await fetchJson(`${BASE_URL}api/stars?slug=${encodeURIComponent(slug)}`, {
+          method: "DELETE",
+        })
+      }
+      await refreshReaderState()
+    } catch {
+      setStoredStar(slug, !nextStarred)
+      setStarButtonState(starToggle, !nextStarred)
+    }
+  })
+
   window.addEventListener("keydown", (event) => {
     if (event.key === "ArrowLeft" || event.key === "k") {
       event.preventDefault()
@@ -696,4 +823,52 @@ export function setupReaderPage() {
 
   void updateNavigation()
   void refreshReaderState()
+}
+
+export function setupStarsPage() {
+  const starsList = document.querySelector<HTMLElement>("#stars-list")
+  if (!starsList) return
+
+  async function renderStars() {
+    const starred = new Set(readStoredStars())
+    if (starred.size === 0) {
+      starsList.innerHTML = '<p class="reader-empty">No starred passages yet.</p>'
+      return
+    }
+
+    const fragments = await fragmentIndexPromise
+    const entries = fragments
+      .filter((fragment) => starred.has(fragment.slug))
+      .sort((left, right) => left.canonicalOrder - right.canonicalOrder)
+
+    if (entries.length === 0) {
+      starsList.innerHTML = '<p class="reader-empty">No starred passages yet.</p>'
+      return
+    }
+
+    starsList.innerHTML = ""
+    for (const fragment of entries) {
+      const article = document.createElement("article")
+      article.className = "stars-entry"
+
+      const header = document.createElement("div")
+      header.className = "stars-entry-header"
+
+      const link = document.createElement("a")
+      link.className = "stars-entry-link"
+      link.href = fragment.path
+      link.textContent = `${fragment.chapterLabel} · ${fragment.title}`
+
+      header.append(link)
+
+      const body = document.createElement("div")
+      body.className = "book-page"
+      body.innerHTML = fragment.bodyHtml
+
+      article.append(header, body)
+      starsList.append(article)
+    }
+  }
+
+  void renderStars()
 }
