@@ -1,4 +1,5 @@
 ---
+import { icons, renderIcon } from "@/lib/icons"
 import BookLayout from "@/layouts/BookLayout.astro"
 import { getChapter, getChapterSlugs } from "@/lib/book"
 
@@ -46,13 +47,30 @@ const navSearchClass =
 
         <form id="search-form" class="w-full" autocomplete="off">
           <label class="sr-only" for="search-query">Search fragments</label>
-          <input
-            id="search-query"
-            name="q"
-            type="search"
-            placeholder="search"
-            class={navSearchClass}
-          />
+          <div class="flex items-center gap-2">
+            <input
+              id="search-query"
+              name="q"
+              type="text"
+              inputmode="search"
+              enterkeyhint="search"
+              spellcheck="false"
+              autocapitalize="off"
+              placeholder="search"
+              class={`${navSearchClass} min-w-0 flex-1`}
+            />
+            <button
+              type="button"
+              data-search-clear
+              aria-label="Clear search"
+              class="hidden h-4 w-4 shrink-0 border-0 bg-transparent p-0 text-[rgba(92,92,92,0.52)] transition duration-200 ease-out hover:text-[rgba(62,62,62,0.82)] focus-visible:text-[rgba(62,62,62,0.82)] focus-visible:outline-none"
+            >
+              <span
+                aria-hidden="true"
+                set:html={renderIcon(icons.close, "h-4 w-4 stroke-[1.7]")}
+              />
+            </button>
+          </div>
         </form>
       </nav>
     </section>

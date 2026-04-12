@@ -517,6 +517,48 @@ function setText(node: Element | null, text: string) {
   if (node) node.textContent = text
 }
 
+function syncSearchClearButton(
+  searchInput: HTMLInputElement | null,
+  clearButton: HTMLButtonElement | null,
+) {
+  if (!searchInput || !clearButton) return
+  clearButton.classList.toggle("hidden", searchInput.value.length === 0)
+}
+
+function attachSearchFieldBehavior(
+  searchInput: HTMLInputElement | null,
+  clearButton: HTMLButtonElement | null,
+  signal: AbortSignal,
+) {
+  if (!searchInput || !clearButton) return
+
+  const defaultPlaceholder = searchInput.getAttribute("placeholder") || "search"
+
+  syncSearchClearButton(searchInput, clearButton)
+
+  searchInput.addEventListener(
+    "input",
+    () => {
+      syncSearchClearButton(searchInput, clearButton)
+      if (!searchInput.value && searchInput.placeholder !== defaultPlaceholder) {
+        searchInput.placeholder = defaultPlaceholder
+      }
+    },
+    { signal },
+  )
+
+  clearButton.addEventListener(
+    "click",
+    () => {
+      searchInput.value = ""
+      searchInput.placeholder = defaultPlaceholder
+      syncSearchClearButton(searchInput, clearButton)
+      searchInput.focus()
+    },
+    { signal },
+  )
+}
+
 function getReaderStateSignature(state: ReaderState) {
   return JSON.stringify({
     highlightCount: state.highlightCount,
@@ -690,6 +732,9 @@ export function setupHomePage(signal: AbortSignal) {
   const startRandomLink = document.querySelector<HTMLAnchorElement>("#start-random")
   const searchForm = document.querySelector<HTMLFormElement>("#search-form")
   const searchInput = document.querySelector<HTMLInputElement>("#search-query")
+  const searchClear = document.querySelector<HTMLButtonElement>("[data-search-clear]")
+
+  attachSearchFieldBehavior(searchInput, searchClear, signal)
 
   startRandomLink?.addEventListener(
     "click",
@@ -743,6 +788,7 @@ export function setupReaderPage(signal: AbortSignal) {
   )
   const searchForm = document.querySelector<HTMLFormElement>("#search-form")
   const searchInput = document.querySelector<HTMLInputElement>("#search-query")
+  const searchClear = document.querySelector<HTMLButtonElement>("[data-search-clear]")
   const activitySummary = document.querySelector<HTMLElement>(
     "#reader-activity-summary",
   )
@@ -754,6 +800,8 @@ export function setupReaderPage(signal: AbortSignal) {
   const query = normalizeQuery(
     new URLSearchParams(window.location.search).get("q") || "",
   )
+
+  attachSearchFieldBehavior(searchInput, searchClear, signal)
 
   if (articleBody) {
     articleBody.setAttribute("data-original-html", articleBody.innerHTML)
